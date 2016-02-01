@@ -67,4 +67,9 @@ projects.config(function($stateProvider, $urlRouterProvider) {
             url:'/aqua',
             templateUrl: 'templates/aqua.html'
         })
+
+        .state('share', {
+            url:'/share',
+            templateUrl: 'templates/share.html'
+        })
 });

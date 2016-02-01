@@ -30,6 +30,10 @@ body {
 	left: 100px;
 }
 
+#c4 {
+	opacity: 0.7;
+}
+
 #nav {
 	border: none;
 	border-radius: 0;
@@ -58,7 +62,7 @@ body {
 	text-decoration: none;
 }
 
-#intro {
+#intro/*, #about*/ {
 	text-align: center;
 }
 
@@ -67,15 +71,11 @@ body {
 	font-family: 'Sacramento', cursive;	
 	color: #04A1D6;
 	position: relative;
-	top: 8vh;
+	top: 15vh;
 }
 
 #crane {
 	width: 45%;
-}
-
-#about {
-	text-align: center;
 }
 
 .hi {
@@ -102,16 +102,23 @@ body {
 #enjoy {
 	font-family: 'Sacramento', cursive;	
 	font-size: 70px;
-	color: #DEEEFC;
+	color: #fff;
 	margin-bottom: 20px;
 }
 
-#aqua {
-	width: 200px;
+#crane {
+	width: 100px;
+	margin-top: 60px;
 }
 
-#surf {
-	width: 200px;
+#thumbnails {
+	margin-bottom: 40px;
+}
+
+#thumbnails li {
+	display: inline;
+	list-style: none;
+	margin: 0 10px 0 10px;
 }
 
 #contact {
@@ -146,8 +153,8 @@ body {
     	height: 100vh;
     }
 
-    #crane {
-		transform: translate(0, 15vh);
+    #about {
+		transform: translate(0, 20vh);
 	}
 }
 
@@ -156,7 +163,7 @@ body {
 		margin-bottom: 30px;
 	}
 
-	#crane {
+	#about {
 		margin-top: 70px;
     	margin-bottom: 40px;
 	}
