@@ -1,30 +1,100 @@
 body {
-	background-color: pink;
+	background-color: #AFE8FF;
 	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#c1, #c2, #c3 {
+	z-index: -100;
+	position: fixed;
+}
+
+#c1 {
+	width: 220px;
+	top: 50px;
+}
+
+#c2 {
+	width: 180px;
+	top: 200px;
+	right: 50px;
+}
+
+#c3 {
+	width: 150px;
+	top: 400px;
+	left: 100px;
+}
+
+#nav {
+	border: none;
+	border-radius: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    display: none;
+    height: 50px;
+    box-shadow: 0px 0.1px 1px 1px #fff;
+    background-color: rgba(255,255,255,0.8);
+    padding-right: 30px;
+}
+
+#links {
+    float: right;
+    margin-top: 13px;
+}
+
+#links td {
+    width: 130px;
+    font-size: 16px;
+    text-align: right;
+}
+
+#intro {
+	height: 100vh;
 }
 
 #about {
-	height: 300px;
+	text-align: center;
+}
+
+#about-me {
+	border-radius: 50%;
+	background-color: #474747;
+	width: 150px;
 }
 
 #work {
-	background-color: white;
+	text-align: center;
+}
+
+#aqua {
+	width: 200px;
+}
+
+#surf {
+	width: 200px;
+}
+
+footer {
+	margin-top: 40px;
+	background-color: #474747;
 	height: 200px;
 }
 
 #contact {
-	margin-top: 40px;
-	background-color: gray;
-	height: 300px;
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+	color: white;
 }
 
-#progress {
-	position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 30px;
-    max-height: 30px;
-    background-color: #C4C4C4;
-    text-align: center;
-	background-color: orange;
+#contact-me, #info {
+	float: left;
+}
+
+#behance {
+	width: 40px;
+	border-radius: 10%;
+	opacity: 0.85;
 }
