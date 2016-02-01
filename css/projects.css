@@ -1,3 +1,46 @@
-h1 {
-	color: red;
+body {
+	margin: 0;
+	padding-top: 20px;
+}
+
+#main {
+	background-color: #F5F5F5;
+	border-top: solid #474747 1px;
+	padding-top: 20px;
+	height: 100%;
+}
+
+.title {
+	/*background-color: #474747;*/
+	text-align: center;
+}
+
+#aqua-logo {
+	width: 20%;
+}
+
+h3 {
+	margin: 0;
+}
+
+.content {
+	display: flex;
+}
+
+.left, .right {
+	margin-top: 20px;
+}
+
+.left {
+	width: 150px;
+	border-right: solid black 1px;
+}
+
+.right {
+	margin-left: 20px;
+}
+
+iframe {
+	margin-left: auto;
+	margin-right: auto;
 }

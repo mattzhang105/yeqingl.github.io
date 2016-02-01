@@ -3,6 +3,7 @@ body {
 	margin: 0;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
+	color: #474747;
 }
 
 #c1, #c2, #c3 {
@@ -53,7 +54,7 @@ body {
     text-align: right;
 }
 
-#links td a:hover {
+#links td a:hover, #links td a:focus {
 	text-decoration: none;
 }
 
@@ -113,28 +114,31 @@ body {
 	width: 200px;
 }
 
-footer {
-	margin-top: 40px;
-	background-color: #474747;
-	height: 100%;
-	overflow: auto;
-}
-
 #contact {
-	width: 60%;
+	background-color: #474747;
+	width: 100%;
 	margin-right: auto;
 	margin-left: auto;
 	color: white;
+	text-align: center;
 }
 
-#contact-me, #info {
-	float: left;
+#contact table {
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;	
+}
+
+#info p {
+	margin-bottom: 0;
+	margin-top: 10px;
 }
 
 .connect {
 	width: 30px;
 	border-radius: 10%;
 	opacity: 0.95;
+	/*margin-top: 13px;*/
 }
 
 @media screen and (min-width: 760px) and (min-device-width : 760px) {
@@ -148,9 +152,6 @@ footer {
 }
 
 @media screen and (max-width: 760px) and (max-device-width : 760px) {
-	body {
-		background-color: pink;
-	}
 	#name {
 		margin-bottom: 30px;
 	}

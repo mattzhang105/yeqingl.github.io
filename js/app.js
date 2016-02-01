@@ -60,11 +60,11 @@ projects.config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
         .state('surf', {
             url:'/surf',
-            templateUrl: 'templates/surf.html',
+            templateUrl: 'templates/surf.html'
         })
 
         .state('aqua', {
             url:'/aqua',
-            templateUrl: 'templates/aqua.html',
+            templateUrl: 'templates/aqua.html'
         })
 });
