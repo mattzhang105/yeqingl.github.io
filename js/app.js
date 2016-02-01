@@ -39,7 +39,7 @@ $(document).ready(function(){
 
         $('#goToAbout').click(function () {
             $('body,html').animate({
-                scrollTop: 550
+                scrollTop: 270
             }, 800);
             return false;
         });
