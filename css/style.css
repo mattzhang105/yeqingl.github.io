@@ -137,7 +137,7 @@ footer {
 	opacity: 0.95;
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 760px) and (min-device-width : 760px) {
     #intro {
     	height: 100vh;
     }
@@ -147,7 +147,10 @@ footer {
 	}
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 760px) and (max-device-width : 760px) {
+	body {
+		background-color: pink;
+	}
 	#name {
 		margin-bottom: 30px;
 	}
