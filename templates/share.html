@@ -1,35 +1,64 @@
 <link href="./css/projects.css" type="text/css" rel="stylesheet" />
 
-<div id="about2">
-	<div><img id="about-me" src="img/me.svg"></div>
-	<div id="about-text">
-		<p>I am Yeqing Lou<br>UX Designer | Web Developer</p>
-	</div>
-</div>
 <div id="main">
 	<div class="title">
-		<h2>Share</h2>
+		<h1>Share</h1>
+		<a href="http://share-123.appspot.com/" target="_blank">Visit Site</a>
 	</div>
-	<ul>
-		<li class="content">
-			<div class="left">Summary</div>
-			<div class="right">
-				<p>
-					Share is a web application that enables users to post their needs and chat with people nearby.
-				</p>
-			</div>
-		</li>
-		<li class="content">
-			<div class="left">Video Demo</div>
-			<div class="right">
-				<iframe width="640" height="360" src="https://www.youtube.com/embed/Soy12jQGwE4?list=PL_ZP6dYsYdf2DIdZrQDSiPa3BjA7Mh8G5" frameborder="0" allowfullscreen></iframe>
-			</div>
-		</li>
-		<!-- <li class="content">
-			<div class="left">Process</div>
-			<div class="right">
-				
-			</div>
-		</li> -->
-	</ul>
+	<section class="content">
+		<h2>Project Overview</h2>
+		<p>
+			This project is about building a web application called Share that allows users to make posts and chat with people nearby. I did this project in a group of two, using Python and Google App Engine to build the application.
+		</p>
+		<p>
+			Why did we build this? We want make it easier for people to get help. Accidents happen all the time. Imagine you are writing a paper that is due in one hour on your laptop in the library, and  suddenly, you realize your laptop has only 10% battery. You look around and find out that you are the only person in the room using a Macbook……
+		</p>
+		<img src="templates/share/scenario.jpg" width="500px">
+	</section>
+	<section class="content">
+		<h2>My Role</h2>
+		<p></p>
+	</section> 
+	<section class="content">
+		<h2>Work Process</h2>
+		<h3>Step 1: Identify Problem</h3>
+		<p>
+			People tend to turn to their friends when they are in trouble even if their friends are not nearby. Although mobile phones can let them contact their friends immediately, their problems might not be able to wait until their friends show up. Therefore, in many cases, they have to turn to strangers, but it is not very effective and efficient for them to ask for help one by one. It would be great if there is an application that is designed for people to help strangers.
+		</p>
+		<h3>Step 2: User Research</h3>
+		<p>
+			Because of the time limit, my partner and me could not conduct a complete user research, so we interviewed some of our friends instead. Combining what we learn from our friends and our inspirations from YikYak.com, we discussed the features of out application and created the low-fidelity prototypes.
+		</p>
+		<img src="templates/share/share-mockup.png" width="500px">
+		<img src="templates/share/share-mockup2.png" width="500px">
+		<h3>Step 3: Develop</h3>
+		<p>
+			We spent the most time writing code. It was not easy to use what we had learned to accomplish what we wanted to build, but we decided to challenge ourselves.
+		</p>
+	</section>
+	<section class="content">
+		<h2>Challenge</h2>
+		<p>
+			The biggest challenge that I encountered is to have the latest post shown on the page right after the submission. Share used Google Datastore to store users’ posts, but it took longer for Datastore to update the newest entity than the page redirection. I made several attempts. For instance, I created a separate page for submission instead of using modal so that the home page would not automatically refresh. We could just update the view first or let the page wait for a little bit time before it refreshes, but we decided not to do that. One night, I was trying to set a time interval so that the posts could be synchronized on multiple screens without refreshing manually. Then I surprisingly realized that the datastore problem could be fixed when I set the time interval to have the ajax function called repeatedly, and I was so happy about it. 
+		</p>
+	</section>
+	<section class="content">
+		<h2>Takeaways</h2>
+		<h3>Stay confident, but avoid underestimation.</h3>
+		<p>
+			It was hard to know how difficult the problem was until we started to solve it. Sometimes the problem was easier than we thought, sometimes we got stuck in an unexpected problem for a really long time. It is important to have a positive attitude, and take each problem seriously.
+		</p>
+		<h3>Try to become the team member that myself would love to work with.</h3>
+		<p>
+			I was lucky to have a partner with great ideas and I feel proud of both of us because we did not avoid challenges due to its complexity. He was very supportive when I almost wanted to give up. I really enjoyed working with him, and it also made me think that the same time I expect to have a pleasant working experience, I should be a lovable teammate first. 
+		</p>
+		<h3>What I would do if have more time?</h3>
+		<p>
+			We enabled Facebook login, but we did not have enough time to work on it. Currently all it does is to have name filled on the form once the user is logged in. We would love spend some time to explore Facebook API, and improve the user experience with it.
+		</p>
+	</section>
+	<section class="content">
+		<h2>Video Demo</h2>
+		<iframe width="640" height="360" src="https://www.youtube.com/embed/Soy12jQGwE4?list=PL_ZP6dYsYdf2DIdZrQDSiPa3BjA7Mh8G5" frameborder="0" allowfullscreen></iframe>
+	</section>
 </div>
