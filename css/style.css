@@ -2,7 +2,7 @@ body {
 	background-color: #AFE8FF;
 	margin: 0;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	color: #474747;
 }
 
@@ -136,12 +136,11 @@ ul {
 }
 
 @media screen and (max-width: 760px) and (max-device-width : 760px) {
-	#name {
-		margin-bottom: 30px;
-	}
+	#intro {
+    	height: 100vh;
+    }
 
-	#about {
-		margin-top: 70px;
-    	margin-bottom: 40px;
+    #name {
+		display: none;
 	}
 }

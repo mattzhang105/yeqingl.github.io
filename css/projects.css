@@ -17,42 +17,89 @@ ul {
 }
 
 #main {
-	background-color: #F5F5F5;
+	background: rgba(245,245,245, 1);
 	border-top: solid #474747 1px;
 	padding-top: 20px;
 	height: 100%;
-	width: 80%;
+	width: 85%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-#nav {
-    position: fixed;
-    top:0;
-    width: 100%;
-    z-index: 100;
+.demo-btn {
+	background-color:#79bbff;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+	display:inline-block;
+	cursor:pointer;
+	color:#fff;
+	font-family:Arial;
+	font-size:16px;
+	padding:14px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+.demo-btn:hover {
+	background-color:#378de5;
+	text-decoration: none;
+	color: #fff;
+}
+.demo-btn:active {
+	position:relative;
+	top:1px;
+}
+
+.navbar {
     height: 50px;
     box-shadow: 0px 0.1px 1px 1px #fff;
     background-color: #fff;
-    padding-right: 30px;
+    padding: 0 30px 0 30px;
     list-style: none;
     text-align: right;
+    border: none;
+    font-weight: 100;
 }
 
-#nav li {
+.navbar-right li {
 	display: inline;
+	margin-left: 30px;
 }
 
-#brand {
-	float: left;
+.navbar li a {
+	padding: 0;
+	color: #474747;
+}
+
+.navbar li a:hover, .navbar li a:focus {
+	text-decoration: none;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	color: #474747;
+	background-color: #fff;
+}
+
+.navbar-right, .brand-name {
+	padding-top: 14px;
+}
+
+.brand {
 	font-family: 'Sacramento', cursive;	
 	font-size: 20px;
+	margin: 0;
+	vertical-align: middle;
 }
 
-#about-me {
-	width: 100px;
+#main h3, #main p {
+	text-align: left;
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
-#about-text {
-	font-size: 16px;
+#main h2 {
+	border-left: solid #474747 5px;
+	padding-left: 20px;
+	text-align: left;
 }
+
