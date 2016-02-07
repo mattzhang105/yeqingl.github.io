@@ -1,36 +1,49 @@
-<link href="./css/projects.css" type="text/css" rel="stylesheet" />
-
-<div id="about2">
-	<div><img id="about-me" src="img/me.svg"></div>
-	<div id="about-text">
-		<p>I am Yeqing Lou<br>UX Designer | Web Developer</p>
-	</div>
-</div>
 <div id="main">
 	<div class="title">
 		<h2>AQUA Music Player</h2>
 	</div>
-	<ul>
-		<li class="content">
-			<div class="left">Summary</div>
-			<div class="right">
-				<p>
-					Aqua is a music player with learning abilities. It aims to provide the best music by learning about its users listening habbits and styles.
-				</p>
+	<section class="content">
+		<h2>Project Overview</h2>
+		<p>
+			Aqua is a music player that remembers, learns and visualizes users’ listening habits. I used Adobe Illustrator to design interfaces, and used AfterEffects to make animations. 
+		</p>
+		<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+		 	View Demo
+		</button>
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Video and Gif Demo of Aqua</h4>
+					</div>
+					<div class="modal-body">
+						<iframe width="480" height="270" src="https://www.youtube.com/embed/FdicXDKz8gI" frameborder="0" allowfullscreen></iframe>
+						<img src="templates/aqua/aqua.gif" width="480px">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
 			</div>
-		</li>
-		<li class="content">
-			<div class="left">Demo</div>
-			<div class="right">
-				<iframe width="480" height="270" src="https://www.youtube.com/embed/FdicXDKz8gI" frameborder="0" allowfullscreen></iframe>
-				<p><a href="https://www.behance.net/gallery/32543933/Aqua-Music-Player">Demo on Behance</a></p>
-			</div>
-		</li>
-		<!-- <li class="content">
-			<div class="left">Process</div>
-			<div class="right">
-				
-			</div>
-		</li> -->
-	</ul>
+		</div>	
+	</section>
+	<section class="content">
+		<h2>Work Process</h2>
+		<h3>Step1: Identify Problem</h3>
+		<p>			
+			Weekly recommendation is a common function of many music players, but very often the music players fails to offer music that the user really want because it does not know the user very well. They figure out the recommendation lists by tracking users’ listening history, but the history reflects only what the user has listened to, which is not always equal to what they like, and if the user wants to try something new music, the history is unable to help at this time.
+		</p>
+		<h3>Step2: Brainstorm and Sketch</h3>
+		<p>
+			Since new users do not have any listening history, I designed a quiz after signup to help Aqua get information about users’ interested genres and types of music so that it can provide suitable recommendations. I was also thinking about visualizing users’ listening history, since it is helpful for them to know about their listening styles, too. The first idea I came up with was to create a planet for each user, and the components of the planet change as the user listen to more music. Then I realized it could not make noticeable changes, because the components were represented by color blocks. Therefore, I changed the planet into a tree, and used branches of tree to represent genres the user has listened to. 
+		</p>
+		<img src="templates/aqua/planet1.png" width="200px">
+		<img src="templates/aqua/planet2.png" width="200px">
+		<h3>Step3: Implement the Design</h3>
+		<img src="templates/aqua/1gen-quiz.png" width="200px">
+		<img src="templates/aqua/2gen-quiz.png" width="200px"><br>
+		<img src="templates/aqua/1gen-tree.png" width="200px">
+		<img src="templates/aqua/2gen-tree.png" width="200px">
+	</section>		
 </div>
