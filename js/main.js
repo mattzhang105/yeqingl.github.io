@@ -1,9 +1,7 @@
-$(document).ready(function(){       
+$(document).ready(function(){ 
     var scroll_pos = 0;
     $(document).scroll(function() { 
         scroll_pos = $(this).scrollTop();
-
-        // change background color
         if(scroll_pos < 100) {
             $("body").css('background-color', '#AFE8FF');
         } else if(scroll_pos < 850) {
@@ -13,13 +11,6 @@ $(document).ready(function(){
         } else {
             $("body").css('background-color', '#91abe1');
         }
-
-        // change banner display
-        // if(scroll_pos < 400) {
-        //     $('#nav').fadeOut(100);
-        // } else {
-        //     $('#nav').fadeIn();
-        // }
     });
 
     $(function () {

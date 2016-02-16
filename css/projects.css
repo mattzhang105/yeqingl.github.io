@@ -25,7 +25,7 @@ ul {
 }
 
 .title {
-	padding: 40px 0 10px 0;
+	padding: 40px 0 10px 30px;
 }
 
 .share {
@@ -53,96 +53,53 @@ ul {
 }
 
 .content {
-	width: 60%;
+	width: 70%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.demo-btn {
-	background-color:#79bbff;
-	-moz-border-radius:7px;
-	-webkit-border-radius:7px;
-	border-radius:7px;
-	display:inline-block;
-	cursor:pointer;
-	color:#fff;
-	font-family:Arial;
-	font-size:16px;
-	padding:14px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #528ecc;
+.abstract {
+	margin-top: 20px;
+  border-bottom: solid 1px;
+  border-top: solid 1px;
+  padding: 10px 0 0 0;
 }
+
+.d-t {
+	font-weight: bold;
+}
+
+.demo-btn {
+    background-color: #adabab;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    padding: 6px 8px;
+    text-decoration: none;
+}
+
 .demo-btn:hover {
-	background-color:#378de5;
+	background-color:#7f7f7f;
 	text-decoration: none;
 	color: #fff;
 }
+
 .demo-btn:active {
 	position:relative;
 	top:1px;
 }
 
-.navbar {
-  height: 50px;
-  box-shadow: 0px 0.1px 1px 1px #fff;
-  background-color: #fff;
-  padding: 0 30px 0 30px;
-  list-style: none;
-  text-align: right;
-  border: none;
-  font-weight: 100;
-  overflow: hidden;
-}
-
-.navbar-right li {
-	display: inline;
-	margin-left: 30px;
-}
-
-.navbar li a {
-	padding: 0;
-	color: #474747;
-}
-
-.navbar li a:hover, .navbar li a:focus {
-	text-decoration: none;
-}
-
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-	color: #474747;
-	background-color: #fff;
-}
-
-.navbar-right, .brand-name {
-	padding-top: 14px;
-}
-
-.brand {
-	font-family: 'Sacramento', cursive;	
-	font-size: 20px;
-	margin: 0;
-	vertical-align: middle;
-}
-
-#main h3, #main p {
+#main h4, #main p {
 	text-align: left;
 	padding-left: 25px;
 	padding-right: 25px;
 }
 
-#main h2 {
-	border-left: solid #474747 5px;
-	padding-left: 15px;
+#main h3 {
+	padding-left: 24px;
 	text-align: left;
-}
-
-.abstract {
-	text-align: left;
-	font-weight: 100;
-  position: fixed;
-  right: 0;
-  top: 40%;
-  width: 200px;
-  padding: 10px;
-  border-radius: 5px;
 }
