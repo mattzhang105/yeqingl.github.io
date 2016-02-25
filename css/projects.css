@@ -26,30 +26,32 @@ ul {
 
 .title {
 	padding: 40px 0 10px 30px;
+	color: #fff;
+	background: #0e83ff;
 }
 
 .share {
-	color: #fff;
-	background: #0e83ff; 
 	background: -moz-linear-gradient(left,  #0e83ff 0%, #57deff 50%);
 	background: -webkit-linear-gradient(left,  #0e83ff 0%, #57deff 50%);
 	background: linear-gradient(to right,  #0e83ff 0%, #57deff 50%);
 }
 
 .surf {
-	color: #fff;
-	background: #0e83ff; 
 	background: -moz-linear-gradient(left,  #57deff 0%, #0dc8dd 50%);
 	background: -webkit-linear-gradient(left,  #57deff 0%, #0dc8dd 50%);
 	background: linear-gradient(to right,  #57deff 0%, #0dc8dd 50%);
 }
 
 .aqua {
-	color: #fff;
-	background: #0e83ff; 
 	background: -moz-linear-gradient(left,  #0dc8dd 0%, #40E9BA 50%);
 	background: -webkit-linear-gradient(left,  #0dc8dd 0%, #40E9BA 50%);
 	background: linear-gradient(to right,  #0dc8dd 0%, #40E9BA 50%);
+}
+
+.bridge { 
+	background: -moz-linear-gradient(left,  #40E9BA 0%, #96e800 50%);
+	background: -webkit-linear-gradient(left,  #40E9BA 0%, #96e800 50%);
+	background: linear-gradient(to right,  #40E9BA 0%, #86ce00 50%);
 }
 
 .content {

@@ -121,7 +121,7 @@ a:hover, a:focus {
 
 #thumbnails {
 	margin-bottom: 40px;
-	width: 80%;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -163,6 +163,8 @@ a:hover, a:focus {
 }
 
 .hovereffect h2 {
+	font-size: 25px;
+	font-weight: 100;
   text-transform: uppercase;
   position: relative;
   top: 10%;
@@ -178,7 +180,10 @@ a:hover, a:focus {
 	left: 0;
 	right: 0;
   background-color: transparent;
-  font-weight: 400;
+}
+
+.hovereffect .bridge {
+	top: 65%;
 }
 
 .hovereffect .info, .hovereffect h2 {

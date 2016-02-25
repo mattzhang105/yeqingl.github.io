@@ -27,6 +27,10 @@ projects.config(function($stateProvider, $urlRouterProvider) {
       url:'/aqua',
       templateUrl: 'templates/aqua.html'
     })
+    .state('home.projects.bridge', {
+      url:'/bridge',
+      templateUrl: 'templates/bridge.html'
+    })
 });
 
 projects.run(function ($rootScope, $state, $stateParams) {
