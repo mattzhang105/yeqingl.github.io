@@ -48,7 +48,7 @@ ul {
 	background: linear-gradient(to right,  #0dc8dd 0%, #40E9BA 50%);
 }
 
-.bridge { 
+.building-bridge { 
 	background: -moz-linear-gradient(left,  #40E9BA 0%, #96e800 50%);
 	background: -webkit-linear-gradient(left,  #40E9BA 0%, #96e800 50%);
 	background: linear-gradient(to right,  #40E9BA 0%, #86ce00 50%);
@@ -104,4 +104,6 @@ ul {
 #main h3 {
 	padding-left: 24px;
 	text-align: left;
+	color: #000;
+	margin-top: 25px;
 }

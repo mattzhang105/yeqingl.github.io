@@ -27,9 +27,15 @@ projects.config(function($stateProvider, $urlRouterProvider) {
       url:'/aqua',
       templateUrl: 'templates/aqua.html'
     })
+
     .state('home.projects.bridge', {
       url:'/bridge',
       templateUrl: 'templates/bridge.html'
+    })
+
+    .state('home.projects.kc', {
+      url:'/korean-cuban',
+      templateUrl: 'templates/korean-cuban.html'
     })
 });
 
