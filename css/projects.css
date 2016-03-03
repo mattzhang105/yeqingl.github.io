@@ -63,7 +63,6 @@ ul {
 .abstract {
 	margin-top: 20px;
   border-bottom: solid 1px;
-  border-top: solid 1px;
   padding: 10px 0 0 0;
 }
 
@@ -102,8 +101,10 @@ ul {
 }
 
 #main h3 {
+	font-weight: bold;
+	font-size: 35px;
 	padding-left: 24px;
 	text-align: left;
-	color: #000;
+	color: #bababa;
 	margin-top: 25px;
 }
