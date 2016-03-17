@@ -14,9 +14,9 @@
 		
 			<rect x="157.845" y="300.485" fill="#FFFFFF" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" width="20.082" height="70.633"/>
 	</g>
-	<polygon fill="#FFFFFF" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" points="136,294.118 
+	<polygon fill="#D3D5D6" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" points="136,294.118 
 		130,301.118 152,322.118 167.979,303.118 154,287.118 	"/>
-	<polygon fill="#FFFFFF" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" points="
+	<polygon fill="#D3D5D6" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" points="
 		199.959,294.118 205.959,301.118 183.959,322.118 167.979,303.118 181.959,287.118 	"/>
 </g>
 <g id="Layer_3">
@@ -101,22 +101,25 @@
 </g>
 <g id="dog">
 	<g id="Layer_18">
-		<path fill="#F9CC55" stroke="#000000" stroke-width="5" stroke-miterlimit="10" d="M281.802,293.575
+		<path fill="#FFFFFF" stroke="#000000" stroke-width="5" stroke-miterlimit="10" d="M281.802,293.575
 			c0-12.257-2.135-32.061-15.469-36.061c-13.333-4-3.796,5.71-4.531,18.061c-0.469,7.876-58.198-6.211-67.667-4
-			c-10.893,2.543-15.135,54.543,10,60c12.013,2.608,33.333,0,31.333,8s-32.667-2.667-32.667,6c0,5.568,7.705,8.106,15.865,8.858l0,0
-			v14.352h34v-26.667C252.667,342.118,281.802,336.118,281.802,293.575z"/>
+			c-10.893,2.543-12.527,29.964,20.449,50.543c10.429,6.508,22.885,9.457,20.885,17.457s-32.667-2.667-32.667,6
+			c0,5.568,7.705,8.106,15.865,8.858l0,0v14.352h34v-26.667C252.667,342.118,281.802,336.118,281.802,293.575z"/>
+		<path fill="#231F20" stroke="#000000" stroke-width="5" stroke-miterlimit="10" d="M281.802,293.575
+			c0-12.257-2.135-32.061-15.469-36.061c-13.333-4-3.796,5.71-4.531,18.061c-0.469,7.876-23.066,0.406-27.342,1.565
+			c-15.989,4.337,18.207,64.978,18.207,64.978S281.802,336.118,281.802,293.575z"/>
 	</g>
 	<g id="Layer_19">
-		<path fill="#774100" stroke="#000000" stroke-width="5" stroke-miterlimit="10" d="M210,277.451
+		<path fill="#231F20" stroke="#000000" stroke-width="5" stroke-miterlimit="10" d="M210,277.451
 			c-0.793,4.177-14.422,13.953-20.333,13.953c-3.882,0-3.05-15.953,3.469-18.829C198.544,270.188,211.029,272.031,210,277.451z"/>
 	</g>
 	<g id="Layer_20">
 		<path fill="none" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" d="M202.538,294.421
-			c0,0,2.08,4.457,3.06,11.246c0.98,6.789,0.282,11.904,0.282,11.904"/>
+			c0,0,1.937,3.468,2.709,8.817c0.772,5.349,0.924,8.422,0.924,8.422"/>
 		<path fill="none" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" d="M209.168,291.2
 			c0,0,2.892,0.583,7.088,6.009c3.796,4.908,3.744,11.572,3.744,11.572"/>
-		<path fill="none" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" d="M238.745,290.222
-			c0,0,2.758,0.311,6.378,5.108c3.274,4.339,2.667,10.666,2.667,10.666"/>
+		<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" d="M238.745,290.222
+			c0,0,2.758,0.311,6.378,5.108c3.274,4.339,2.667,7.666,2.667,7.666"/>
 	</g>
 </g>
 <g id="hair_band">
