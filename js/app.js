@@ -1,5 +1,5 @@
 var projects = angular.module('projects', ['ui.router'])
-projects.config(function($stateProvider, $urlRouterProvider) {
+projects.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
   $urlRouterProvider.otherwise('/home');
 
   $stateProvider
@@ -37,6 +37,8 @@ projects.config(function($stateProvider, $urlRouterProvider) {
       url:'/korean-cuban',
       templateUrl: 'templates/korean-cuban.html'
     })
+
+  $locationProvider.html5Mode(true);
 });
 
 projects.run(function ($rootScope, $state, $stateParams) {
