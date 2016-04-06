@@ -8,37 +8,35 @@ projects.config(function($stateProvider, $urlRouterProvider, $locationProvider) 
       templateUrl: 'templates/home.html'
     })
 
-    .state('home.projects', {
+    .state('projects', {
       url:'/projects',
       templateUrl: 'templates/projects.html'
     })
 
-    .state('home.projects.share', {
+    .state('projects.share', {
       url:'/share',
       templateUrl: 'templates/share.html'
     })
 
-    .state('home.projects.surf', {
+    .state('projects.surf', {
       url:'/surf',
       templateUrl: 'templates/surf.html'
     })
 
-    .state('home.projects.aqua', {
+    .state('projects.aqua', {
       url:'/aqua',
       templateUrl: 'templates/aqua.html'
     })
 
-    .state('home.projects.bridge', {
+    .state('projects.bridge', {
       url:'/bridge',
       templateUrl: 'templates/bridge.html'
     })
 
-    .state('home.projects.kc', {
+    .state('projects.kc', {
       url:'/korean-cuban',
       templateUrl: 'templates/korean-cuban.html'
     })
-
-  $locationProvider.html5Mode(true);
 });
 
 projects.run(function ($rootScope, $state, $stateParams) {
