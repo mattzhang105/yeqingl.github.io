@@ -138,6 +138,10 @@ body {
 	color: #777;
 }
 
+#contact a:focus {
+	text-decoration: none;
+}
+
 .blue {
 	color: #FCAF95;
 }
