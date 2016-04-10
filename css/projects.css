@@ -12,7 +12,6 @@ body {
   font-weight: 100;
   background-color: #fff;
   vertical-align: middle;
-  font-size: 16px;
 }
 
 .navbar-right2 {
@@ -71,7 +70,7 @@ ul {
 	background: linear-gradient(to right,  #40E9BA 0%, #f9e000 80%);
 }
 
-.content {
+.content, .abstract {
 	margin-left: 125px;
 	margin-right: 125px;
 }
@@ -81,7 +80,7 @@ ul {
   border-bottom: solid 1px;
   border-top: solid 1px;
   padding: 10px 0 0 0;
-  text-align: left;
+  text-align: center;
 }
 
 .demo-btn {
@@ -110,8 +109,6 @@ ul {
 
 #main .content h4, #main .content p {
 	text-align: left;
-/*	padding-left: 25px;
-	padding-right: 25px;*/
 }
 
 #main .c2 {
@@ -129,11 +126,8 @@ ul {
 #main .content h3 {
 	font-weight: bold;
 	font-size: 40px;
-	/*padding-left: 24px;*/
 	text-align: left;
 	color: #bababa;
-	/*margin-bottom: 30px;*/
-	/*margin-top: 50px;*/
 }
 
 #main .content p {
@@ -141,7 +135,6 @@ ul {
 }
 
 #main .content p span {
-	/*display: none;*/
 	z-index: 10;
 	opacity: 0;
 	position: absolute;

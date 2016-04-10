@@ -10,15 +10,19 @@
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="brand"><img src="img/me.png" width="50px"></li>
+        <li class="brand"><a ui-sref="home" ui-sref-active="active"><img src="img/me.png" width="50px"></a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right navbar-right2">
-        <li><a ui-sref="home" ui-sref-active="active">Home</a></li>
-        <li style="font-weight: 400;">Projects:</li>
-        <li><a ui-sref="projects.share">Share</a></li>
-        <li><a ui-sref="projects.surf">Surf</a></li>
-        <li><a ui-sref="projects.aqua">Aqua</a></li>
-        <li><a ui-sref="projects.bridge">Building Bridges</a></li>
+        <li><a href="lyq-resume.pdf" target="_blank">Resume</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a ui-sref="projects.share">Share</a></li>
+            <li><a ui-sref="projects.surf">Surf</a></li>
+            <li><a ui-sref="projects.aqua">Aqua</a></li>
+            <li><a ui-sref="projects.bridge">Building Bridges</a></li>   
+          </ul>
+        </li>
       </ul>
     </div>
   </div>

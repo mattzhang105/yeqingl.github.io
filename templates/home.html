@@ -15,9 +15,15 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="lyq-resume.pdf" target="_blank">Resume</a></li>
-          <li><a href="https://www.behance.net/sveaL" target="_blank"><i class="fa fa-behance"></i></a></li>
-          <li><a href="https://github.com/YeqingL" target="_blank"><i class="fa fa-github-alt"></i></a></li>
-          <!-- <li><a href="lyq-resume.pdf" target="_blank"><i class="fa fa-linkedin"></i></a></li> -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a ui-sref="projects.share">Share</a></li>
+              <li><a ui-sref="projects.surf">Surf</a></li>
+              <li><a ui-sref="projects.aqua">Aqua</a></li>
+              <li><a ui-sref="projects.bridge">Building Bridges</a></li>   
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
@@ -26,6 +32,7 @@
     <p>I'm Yeqing Lou,</p>
     <p id="underline"><span>a UX/UI desi</span>g<span>ner.</span></p>
   </div>
+
   <div class="row overview">
     <div class="col-md-4 col-xs-6 portfolio share1">
       <a ui-sref="projects.share">
@@ -52,5 +59,15 @@
         <img class="img-responsive" src="img/dc.png">
       </a>
     </div>
+  </div>
+
+  <div id="contact">
+    <hr style="margin: 30px 125px 30px 125px">
+    <p>Contact Me:</p>
+    <ul>
+      <li><a href="https://www.behance.net/sveaL" target="_blank"><i class="fa fa-behance"></i></a></li>
+      <li><a href="https://github.com/YeqingL" target="_blank"><i class="fa fa-github-alt"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/yeqinglou" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+    </ul>
   </div>
 </div>
