@@ -39,8 +39,14 @@ projects.config(function($stateProvider, $urlRouterProvider, $locationProvider) 
     })
 });
 
-projects.run(function ($rootScope, $state, $stateParams) {
+projects.run(['$rootScope', '$location', '$window', function ($rootScope, $state, $stateParams, $location, $window) {
   $rootScope.$on('$stateChangeSuccess', function() {
     window.scrollTo(0,0);
   });
-});
+
+  $rootScope.$on('$stateChangeSuccess', function(event){
+    if (!$window.ga)
+      return;
+    $window.ga('send', 'pageview', { page: $location.path() });
+  });
+}]);
