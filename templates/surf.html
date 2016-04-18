@@ -8,12 +8,12 @@
   </div>
   <section class="abstract row">
     <div class="col-sm-3">
-      <h4 class="d-t">Date</h4>
-      <p>Nov 2015<br />- Dec 2015</p>
+      <h4 class="d-t">Duration</h4>
+      <p>Nov 2015<br />4 Weeks</p>
     </div>
     <div class="col-sm-3">
       <h4 class="d-t">My Contribution</h4>
-      <p>Branding<br />Visual System</p>
+      <p>Brand Identity<br />Visual System</p>
     </div>
     <div class="col-sm-3">
       <h4 class="d-t">Deliverables</h4>
@@ -41,12 +41,47 @@
       <img src="img/ps.png" width="45px" />
     </div>
   </section>
-  <section class="content">
-    <h3>Surf Incubator</h3>
+
+  <section class="content c2">
+    <img src="templates/surf/overview.png" width="100%" />
+  </section>
+  <section class="1 content c2">
+    <h3>Research</h3>
     <p>
-      Surf Incubator is a company that helps technology startups to develop by providing an affordable and professional environment.
+      My research serves as a guide of my redesign. In order to find out what Surf Incubator is, what it does and its goal, I visited its company website and facebook page.
     </p>
   </section>
+  <section class="content c2">
+    <h3>Brand Identity</h3>
+    <p>
+      Surf Incubator is a company that helps technology startups grow and develop by providing an affordable and professional environment. I identified Surf’s brand attributes as technological and credible, which came from its target (technology startups) and its missions (being supportive).
+    </p>
+  </section>
+  <section class="content c2">
+    <h3>Logo</h3>
+    <h4>Sketches</h4>
+    <div class="my-slider">
+      <ul>
+        <li><img src="templates/surf/sketch1.jpg" width="100%" /></li>
+        <li><img src="templates/surf/sketch2.jpg" width="100%" /></li>
+        <li><img src="templates/surf/sketch3.jpg" width="100%" /></li>
+        <li><img src="templates/surf/sketch4.jpg" width="100%" /></li>
+        <li><img src="templates/surf/sketch5.jpg" width="100%" /></li>
+        <li><img src="templates/surf/sketch6.jpg" width="100%" /></li>
+      </ul>
+    </div>
+    <h4>Iterations</h4>
+    <img src="templates/surf/logo.png" width="80%" />
+  </section>
+  <section class="2 content c2">
+  <h3>Web Mockup</h3>
+  </section>
+  <section class="content c2">
+  <h3>Mobile Mockup</h3>
+  </section>
+
+
+
   <section class="content c2">
     <h3>Process</h3>
     <h4>Research</h4>
@@ -93,3 +128,22 @@
     <p><a ui-sref="projects.aqua"><img src="img/right.png" width="50px" /></a></p>
   </div>
 </div>
+
+<script>
+  jQuery(document).ready(function($) {
+    $('.my-slider').unslider();
+  });
+
+  $(window).on("scroll touchmove", function() {
+    $('#progress').children().css('background', '#fff');
+    if ($(document).scrollTop() + 150 >= $(".1").position().top) {
+      $('#1').css('background', '#a9f0fc');
+    }
+    if ($(document).scrollTop() + 150 >= $(".2").position().top) { 
+      $('#2').css('background', '#85dee5');
+    }
+    if ($(document).scrollTop() + 150 >= $(".3").position().top) { 
+      $('#3').css('background', '#74cfd6');
+    } 
+  });
+</script>

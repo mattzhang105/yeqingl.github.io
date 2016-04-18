@@ -4,9 +4,30 @@ body {
 	text-align: center;
 }
 
+.proj-nav, .title, .abstract, .content {
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+}
+
+#progress {
+	position: absolute;
+	top: 20px;
+	left: 80px;
+	color: #fff;
+}
+
+#progress div {
+	padding: 1px 8px 2px 8px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
 .proj-nav {
 	box-shadow: 0px 0.1px 1px 1px #fff;
-  padding: 10px 125px 5px 125px;
+  /*padding: 10px 125px 5px 125px;*/
+  padding-top: 10px;
+  padding-bottom: 5px;
   list-style: none;
   border: none;
   font-weight: 100;
@@ -32,7 +53,6 @@ ul {
 }
 
 #main {
-	border-top: solid #474747 1px;
 	padding-top: 20px;
 	height: 100%;
 	background-color: #fff;
@@ -43,7 +63,8 @@ ul {
 	padding: 40px 0 10px 30px;
 	color: #fff;
 	background: #0e83ff;
-	margin: 0 125px 20px 125px;
+	/*margin: 0 125px 20px 125px;*/
+	margin-bottom: 20px;
 }
 
 .share {
@@ -70,17 +91,23 @@ ul {
 	background: linear-gradient(to right,  #40E9BA 0%, #f9e000 80%);
 }
 
-.content, .abstract {
-	margin-left: 125px;
-	margin-right: 125px;
-}
-
 .abstract {
+/*	margin-left: 125px;
+	margin-right: 125px;*/
 	margin-top: 20px;
   border-bottom: solid 1px;
   border-top: solid 1px;
   padding: 10px 0 0 0;
   text-align: center;
+}
+
+.content {
+/*	margin-right: 210px;
+	margin-left: 210px;*/
+}
+
+.d-t {
+	font-weight: 600;
 }
 
 .demo-btn {
@@ -124,8 +151,8 @@ ul {
 }
 
 #main .content h3 {
-	font-weight: bold;
-	font-size: 40px;
+	font-weight: 800;
+	font-size: 30px;
 	text-align: left;
 	color: #bababa;
 }
@@ -152,20 +179,26 @@ ul {
   -ms-transition: opacity .25s ease-in;
 }
 
-#main .content #mobile1:hover, #main .content #age1:hover {
+#main #mobile1:hover, #main #age1:hover {
 	cursor: pointer;
 }
 
-#main .content #mobile1:hover + #mobile {
+#main #mobile1:hover + #mobile {
 	display: block;
 	background-color: #e8ffc4;
 	opacity: 1;
 }
 
-#main .content #age1:hover + #age {
+#main #age1:hover + #age {
 	display: block;
 	background-color: #f5ffbf;
 	opacity: 1;
+}
+
+.my-slider {
+	width: 55%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #prev, #next {
