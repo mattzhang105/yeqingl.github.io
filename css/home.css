@@ -78,8 +78,16 @@ body {
 	line-height: 90px;
 }
 
+#small {
+	font-size: 11px;
+}
+
 #underline span {
 	text-decoration: underline;
+}
+
+#intro a {
+	color: #474747;
 }
 
 .overview {
