@@ -50,8 +50,7 @@ body {
 }
 
 .dropdown-menu {
-	padding: 10px;
-	padding-left: 25px; 
+	padding: 15px 15px 10px 15px;
 	border: none;
 }
 
@@ -61,6 +60,7 @@ body {
 
 .dropdown-menu li {
 	margin: 0;
+	padding: 0;
 }
 
 .dropdown-menu li a {
