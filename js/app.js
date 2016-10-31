@@ -1,42 +1,63 @@
 var projects = angular.module('projects', ['ui.router']);
 
 projects.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
-  $urlRouterProvider.otherwise('/home');
+  $urlRouterProvider.otherwise('/welcome');
 
   $stateProvider
-    .state('home', {
-      url:'/home',
-      templateUrl: 'templates/home.html'
+
+    .state('welcome', {
+      url:'/welcome',
+      templateUrl: 'templates/welcome.html',
     })
 
-    .state('projects', {
+    .state('main', {
+      url:'/main',
+      templateUrl: 'templates/main.html',
+    })
+
+    .state('main.about', {
+      url:'/about',
+      templateUrl: 'templates/about.html',
+    })
+
+    .state('main.projects', {
       url:'/projects',
-      templateUrl: 'templates/projects.html'
+      templateUrl: 'templates/projects.html',
     })
 
-    .state('projects.share', {
+    .state('main.projects.autelrobotics', {
+      url:'/autelrobotics',
+      templateUrl: 'templates/projects/autelrobotics.html'
+    })
+
+    .state('main.projects.share', {
       url:'/share',
-      templateUrl: 'templates/share.html'
+      templateUrl: 'templates/projects/share.html'
     })
 
-    .state('projects.surf', {
+    .state('main.projects.surf', {
       url:'/surf',
-      templateUrl: 'templates/surf.html'
+      templateUrl: 'templates/projects/surf.html'
     })
 
-    .state('projects.aqua', {
+    .state('main.projects.aqua', {
       url:'/aqua',
-      templateUrl: 'templates/aqua.html'
+      templateUrl: 'templates/projects/aqua.html'
     })
 
-    .state('projects.bridge', {
+    .state('main.projects.bridge', {
       url:'/bridge',
-      templateUrl: 'templates/bridge.html'
+      templateUrl: 'templates/projects/bridge.html'
     })
 
-    .state('projects.kc', {
+    .state('main.projects.echo', {
+      url:'/echo',
+      templateUrl: 'templates/projects/echo.html'
+    })
+
+    .state('main.projects.kc', {
       url:'/korean-cuban',
-      templateUrl: 'templates/korean-cuban.html'
+      templateUrl: 'templates/projects/korean-cuban.html'
     })
 });
 
