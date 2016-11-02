@@ -404,12 +404,28 @@ figure.snip1321:hover img {
   margin: 0;
 }
 
+.prj_content hr {
+  background-color: #333333;
+  height: 3px;
+  width: 40px;
+  border: none;
+  margin-left: 0;
+}
+
+.prj_content h3 {
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: -11px 0 40px 0;
+}
+
 .overview {
   text-align: center;
 }
 
 .prj_content {
   line-height: 23px;
+  margin-bottom: 80px;
 }
 
 .prj_content .content_img {
