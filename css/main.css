@@ -495,7 +495,7 @@ figure.snip1321:hover img {
 }
 
 .surf .h0 {
-/*  background: -moz-linear-gradient(left,  #0dc8dd 0%, #57deff 80%);
+  background: -moz-linear-gradient(left,  #0dc8dd 0%, #57deff 80%);
   background: -webkit-linear-gradient(left,  #0dc8dd 0%, #57deff 80%);
   background: linear-gradient(to right,  #0dc8dd 0%, #57deff 80%);
   -moz-background-clip: text;
@@ -503,8 +503,7 @@ figure.snip1321:hover img {
   background-clip: text;
   -moz-text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;*/
-  color: gray;
+  text-fill-color: transparent;
 }
 
 .aqua .h0 {
