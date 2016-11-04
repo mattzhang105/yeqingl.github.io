@@ -1,5 +1,5 @@
 body {
-	font-family: 'Hind', sans-serif;
+	font-family: 'Hind', 'Helvetica', sans-serif;
 	color: #333333;
 	font-weight: 300;
 	font-size: 15px;
@@ -428,6 +428,10 @@ figure.snip1321:hover img {
   margin-bottom: 80px;
 }
 
+.prj_content .prj_text {
+  text-align: justify;
+}
+
 .prj_content .content_img {
   text-align: center;
 }
@@ -453,7 +457,7 @@ figure.snip1321:hover img {
 
 /*banners*/
 .autel .h0 {
-/*  background: -moz-linear-gradient(left,  #C13F2B 0%, #FF5955 70%);
+  background: -moz-linear-gradient(left,  #C13F2B 0%, #FF5955 70%);
   background: -webkit-linear-gradient(left,  #C13F2B 0%, #FF5955 70%);
   background: linear-gradient(to right,  #C13F2B 0%, #FF5955 70%);
   -moz-background-clip: text;
@@ -461,8 +465,7 @@ figure.snip1321:hover img {
   background-clip: text;
   -moz-text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;*/
-  color: gray;
+  text-fill-color: transparent;
 }
 
 .echo .h0 {
@@ -538,4 +541,11 @@ figure.snip1321:hover img {
   -moz-text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
+}
+
+
+@media screen and (max-width: 480px) {
+  .page, #navbar {
+    width: 85%;
+  }
 }
