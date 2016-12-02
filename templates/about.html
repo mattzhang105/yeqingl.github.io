@@ -1,17 +1,5 @@
 <div ui-view class="content">
   <div class="about_content">
-    <h3>About Me</h3>
-    <p>
-      I’m Yeqing Lou (<i class="fa fa-volume-up" aria-hidden="true"></i> : Yehching Loh). I'm pursuing B.S. degree in Human Centered Design & Engineering in the University of Washington. I love design in general and I’m particularly interested in user experience, interaction, and visual design. I also have experience in web design and development. 
-    </p>
-    <p>
-      While I’m not working, I like to browse different websites, exploring cool design ideas and new technologies. In my spare time, I often cook, draw, and learn to play music. I also like to travel, to feel the nature and learn about different cultures.
-    </p>
-    <p>
-      My name in Chinese means never giving up. It’s the best wish my parents gave me and also the spirit that keeps me company and makes me strong. 
-    </p>
-
-    <h3>T-Shaped Skills</h3>
     <div class="card-container">
       <div class="flipout">
         <div class="foc-main">
@@ -55,14 +43,28 @@
         </div>
       </div>
     </div>
-    <h3>Contact</h3>
+
     <p>
-      City: Seattle, WA<br>
-      Mobile: 206 310 0013<br>
-      E-mail: yeqing9928@gmail.com<br>
-      <a href="https://www.linkedin.com/in/yeqinglou"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      I’m Yeqing Lou (<i class="fa fa-volume-up" aria-hidden="true"></i> : Yehching Loh). I'm now living in Seattle, WA. Currently I'm pursuing B.S. degree in Human Centered Design & Engineering in the University of Washington. I love design in general and I’m particularly interested in <b>user experience, interaction, and visual design</b>. I also have experience in <b>web design and development</b>. 
+    </p>
+    <p>
+      While I’m not working, I like to browse different websites, exploring cool design ideas and new technologies. In my <b><a ui-sref="main.hidden">spare time</a></b>, I often cook, draw, and learn to play music. I also like to travel, to feel the nature and learn about different cultures.
+    </p>
+    <p>
+      My name in Chinese means never giving up. It’s the best wish my parents gave me and also the spirit that keeps me company and makes me strong. 
+    </p>
+
+    <hr><br>
+    <p style="text-align: center;">
+      <b>Feel free to contact me!</b><br><br>
+      yeqing9928@gmail.com<br>
+      206 310 0013<br>
+      <a href="lyq-resume.pdf" target="_blank"><b>Résumé</b></a> | 
+      <a href="https://www.linkedin.com/in/yeqinglou" target="_blank"><i class="fa fa-linkedin" aria-hidden="true" style="color: #424242"></i></a>
     </p>
   </div>
+
+
   
 <!--   <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
     <div class="flipper">
@@ -74,7 +76,6 @@
       </div>
     </div>
   </div> -->
-
   <script type="text/javascript">
       $(".flipout").flipout_cards({
       animation: "flipOut",           // Animations available are: flipOut, slideOut and foldOut. The default value is flipOut
@@ -83,5 +84,9 @@
       beforeClose: function () {},    // This option accepts a callback function. The function will be called before the flip close animation starts.
       afterClose: function () {}      // This option accepts a callback function. The function will be called after the flip close animation finishes.
     });
+
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
   </script>
 </div>

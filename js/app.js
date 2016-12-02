@@ -20,6 +20,11 @@ projects.config(function($stateProvider, $urlRouterProvider, $locationProvider) 
       templateUrl: 'templates/about.html',
     })
 
+    .state('main.hidden', {
+      url:'/hidden',
+      templateUrl: 'hidden.html'
+    })
+
     .state('main.projects', {
       url:'/projects',
       templateUrl: 'templates/projects.html',
@@ -66,3 +71,14 @@ projects.run(['$rootScope', '$location', '$window', function ($rootScope, $state
     window.scrollTo(0,0);
   });
 }]);
+
+projects.controller("myCtrl", function($scope) {
+    $scope.painting = [
+        "img/punch/a.jpg", "img/punch/b.jpg", "img/punch/c.jpg", "img/punch/d.jpg"
+    ]
+    $scope.cook = [
+        "img/punch/1.jpg", "img/punch/2.jpg", "img/punch/3.jpg", "img/punch/4.jpg",
+        "img/punch/5.jpg", "img/punch/6.jpg", "img/punch/7.jpg", "img/punch/8.jpg",
+        "img/punch/9.jpg", "img/punch/10.jpg"
+    ]
+});
