@@ -17,7 +17,7 @@ h2 {
   font-weight: 300;
   margin: 0;
   font-size: 22px;
-  color: #424242;
+  color: #606060;
 }
 
 h2 .num {
@@ -31,17 +31,17 @@ h3 {
 }
 
 b {
-  color: #424242;
+  color: #606060;
 }
 
 a {
-  color: #424242;
+  color: #606060;
 }
 
 a:hover, a:focus {
 	text-decoration: none;
 	cursor: pointer;
-  color: #424242;
+  color: #606060;
 }
 
 ul {
@@ -449,7 +449,7 @@ figure.snip1321:hover img {
 
 .prj_content h2 {
   margin-top: 2px;
-  color: #424242;
+  /*color: #424242;*/
 }
 
 .prj_content h3 {
