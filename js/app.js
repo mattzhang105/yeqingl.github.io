@@ -76,9 +76,14 @@ projects.controller("myCtrl", function($scope) {
     $scope.painting = [
         "img/punch/a.jpg", "img/punch/b.jpg", "img/punch/c.jpg", "img/punch/d.jpg"
     ]
+
     $scope.cook = [
         "img/punch/1.jpg", "img/punch/2.jpg", "img/punch/3.jpg", "img/punch/4.jpg",
         "img/punch/5.jpg", "img/punch/6.jpg", "img/punch/7.jpg", "img/punch/8.jpg",
         "img/punch/9.jpg", "img/punch/10.jpg"
+    ]
+
+    $scope.comic = [
+        "img/punch/p1.jpg", "img/punch/p2.jpg", "img/punch/p3.jpg", "img/punch/p4.jpg"
     ]
 });
