@@ -1,66 +1,55 @@
 var projects = angular.module('projects', ['ui.router']);
 
 projects.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
-  $urlRouterProvider.otherwise('/welcome');
+  $urlRouterProvider.otherwise('/main');
 
   $stateProvider
-
-    .state('welcome', {
-      url:'/welcome',
-      templateUrl: 'templates/welcome.html',
-    })
-
     .state('main', {
       url:'/main',
       templateUrl: 'templates/main.html',
     })
 
-    .state('main.about', {
-      url:'/about',
-      templateUrl: 'templates/about.html',
-    })
+    // .state('main.hidden', {
+    //   url:'/hidden',
+    //   templateUrl: 'hidden.html'
+    // })
 
-    .state('main.hidden', {
-      url:'/hidden',
-      templateUrl: 'hidden.html'
-    })
-
-    .state('main.projects', {
+    .state('projects', {
       url:'/projects',
       templateUrl: 'templates/projects.html',
     })
 
-    .state('main.projects.autelrobotics', {
+    .state('projects.autelrobotics', {
       url:'/autelrobotics',
       templateUrl: 'templates/projects/autelrobotics.html'
     })
 
-    .state('main.projects.share', {
+    .state('projects.share', {
       url:'/share',
       templateUrl: 'templates/projects/share.html'
     })
 
-    .state('main.projects.surf', {
+    .state('projects.surf', {
       url:'/surf',
       templateUrl: 'templates/projects/surf.html'
     })
 
-    .state('main.projects.aqua', {
+    .state('projects.aqua', {
       url:'/aqua',
       templateUrl: 'templates/projects/aqua.html'
     })
 
-    .state('main.projects.bridge', {
+    .state('projects.bridge', {
       url:'/bridge',
       templateUrl: 'templates/projects/bridge.html'
     })
 
-    .state('main.projects.echo', {
+    .state('projects.echo', {
       url:'/echo',
       templateUrl: 'templates/projects/echo.html'
     })
 
-    .state('main.projects.kc', {
+    .state('projects.kc', {
       url:'/korean-cuban',
       templateUrl: 'templates/projects/korean-cuban.html'
     })

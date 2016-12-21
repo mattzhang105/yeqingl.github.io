@@ -1,8 +1,118 @@
 <div>
-  <div ui-view class="page"></div>
+    <script src="js/main.js" type="text/javascript"></script>
+    <div id="aboutme">
+      <div class="row page">
+        <div class="col-sm-2" style="text-align: center;">
+          <img width="100%" src="img/xiaoqiang.png">
+        </div>
+        <div class="col-xs-1"></div>
+        <div class="col-sm-9">
+          <p>
+            I'm Yeqing Lou (<i class="fa fa-volume-up" aria-hidden="true"></i> : ye-ching loh). I'm a senior majoring in Human Centered Design & Engineering at UW. I love design in general and I’m particularly interested in user experience, interaction, and visual design. I also have experience in web design and development.
+          </p>
+          <p>
+            Contact me through <span class="underline"><input size="22" value="yeqing9928@gmail.com" style="border: none; background-color: transparent;" readonly></span> or <span class="underline"><input size="14" value="206·310·0013" style="border: none; background-color: transparent;" readonly></span>.
+          </p>
+          <p>
+            <a class="underline" href="lyq-resume.pdf" target="_blank">View my resume</a>
+          </p>
+         <!--  <p>
+            <a class="underline">About me</a>
+          </p> -->
+        </div>
+      </div>
+    </div>
 
-  <footer class="page" style="text-align: center;">
-    <hr style="margin: 41px 0 35px 0">
-    Last Update: Dec 2016
+    <div class="container-fluid page allprj">
+      <div class="row">
+        <div class="col-xs-2">
+          <ul id="filter">
+            <li ><a class="prj" id="allprj" style="color: #4c4c4c">ALL</a></li>
+            <br>
+            <li><a class="prj" id="mobile">MOBILE</a></li>
+            <br>
+            <li><a class="prj" id="web">WEB</a></li>
+            <br>
+            <li><a class="prj" id="print">PRINT</a></li>
+            <br>
+            <li><a class="prj" id="other">OTHER</a></li>
+          </ul> 
+        </div>
+        <div class="col-xs-1"></div>
+        <div class="col-xs-9">
+          <div class="container-fluid">
+            <div class="row allthumbs">
+              <!-- 1 -->
+              <div class="col-xl-4 col-md-6 col-sm-6 col-xs-12 thumb thumb1 mobile">
+                <a ui-sref="projects.autelrobotics">
+                  <figure>
+                    <img src="img/autel.jpg" alt="Autel Robotics">
+                    <figcaption><span class="name" style="color: #C13F2B">Autel Robitcs</span><br />UX Design Internship</figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!-- 2 -->
+              <div class="col-xl-4 col-md-6 col-sm-6 col-xs-12 thumb thumb1 mobile">
+                <a ui-sref="projects.aqua">
+                  <figure>
+                    <img src="img/aqua.jpg" alt="Aqua Music Player">
+                    <figcaption><span class="name" style="color: #008261">Aqua Music Player</span><br />Interaction & UI Design</figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!-- 3 -->
+              <div class="col-xl-4 col-md-6 col-sm-6 col-xs-12 thumb thumb1 other">
+                <a ui-sref="projects.echo">
+                  <figure>
+                    <img src="img/echo.jpg" alt="How-to Helper">
+                    <figcaption><span class="name" style="color: #132867">How-to Helper</span><br />VUI Design & Develop</figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!-- 4 -->
+              <div class="col-xl-4 col-md-6 col-sm-6 col-xs-12 thumb thumb1 mobile">
+                <a ui-sref="projects.bridge">
+                  <figure>
+                    <img src="img/bridge.jpg" alt="Bridge">
+                    <figcaption><span class="name" style="color: #e02167">Building Bridges</span><br />UX Design</figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!-- 5 -->
+              <div class="col-xl-4 col-md-6 col-sm-6 col-xs-12 thumb thumb1 print web">
+                <a ui-sref="projects.surf">
+                  <figure>
+                    <img src="img/surf.jpg" alt="Surf Incubator">
+                    <figcaption><span class="name" style="color: #00537c">Surf Incubator Redesign</span><br />Visual Communication Design</figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!-- 6 -->
+              <div class="col-xl-4 col-md-6 col-sm-6 col-xs-12 thumb thumb1 web">
+                <a ui-sref="projects.share">
+                  <figure>
+                    <img src="img/share.jpg" alt="Share">
+                    <figcaption><span class="name" style="color: #5e3300">Share</span><br />Web Development</figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!-- 7 -->
+              <div class="col-xl-4 col-md-6 col-sm-6 col-xs-12 thumb thumb1 web">
+                <a ui-sref="projects.kc">
+                  <figure>
+                    <img src="img/kc.jpg" alt="Koran Cuban">
+                    <figcaption><span class="name" style="color: #874d01">Korean Cubans Photos</span><br />Web Design & Development</figcaption>
+                  </figure>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <footer style="text-align: center; margin-bottom: 50px">
+    <hr width="65%" style="margin: 50px auto 50px auto">
+    Last update: Dec 2016
   </footer>
 </div>

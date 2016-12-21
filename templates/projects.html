@@ -1,76 +1,76 @@
-<script src="js/main.js" type="text/javascript"></script>
-
-<div ui-view class="content" style="padding-right: 40px; padding-left: 40px">
-</div>
-
-<!-- <hr style="margin: 33px 0 40px 0"> -->
-<br><br>
-<p><a class="prj" id="allprj"><b>My projects</b></a> involve <a class="prj" id="ux"><b>UX design</b></a>, <a class="prj" id="interaction"><b>interaction design</b></a>, <a class="prj" id="web"><b>web design & development</b></a>, and <a class="prj" id="visual"><b>visual communication design</b></a>.</p> 
-
-<div class="container-fluid">
-  <div class="row allthumbs">
-    <!-- 1 -->
-    <div class="col-xl-3 col-md-4 col-sm-6 col-xs-12 thumb ux">
-      <a ui-sref="main.projects.autelrobotics">
-        <figure>
-          <img src="img/autel.jpg" alt="Autel Robotics">
-          <figcaption><span class="name" style="color: #C13F2B">Autel Robitcs</span><br />UX Design Internship</figcaption>
-        </figure>
-      </a>
-    </div>
-    <!-- 2 -->
-    <div class="col-xl-3 col-md-4 col-sm-6 col-xs-12 thumb interaction">
-      <a ui-sref="main.projects.aqua">
-        <figure>
-          <img src="img/aqua.jpg" alt="Aqua Music Player">
-          <figcaption><span class="name" style="color: #008261">Aqua Music Player</span><br />Interaction & UI Design</figcaption>
-        </figure>
-      </a>
-    </div>
-    <!-- 3 -->
-    <div class="col-xl-3 col-md-4 col-sm-6 col-xs-12 thumb interaction">
-      <a ui-sref="main.projects.echo">
-        <figure>
-          <img src="img/echo.jpg" alt="How-to Helper">
-          <figcaption><span class="name" style="color: #132867">How-to Helper</span><br />VUI Design & Develop</figcaption>
-        </figure>
-      </a>
-    </div>
-    <!-- 4 -->
-    <div class="col-xl-3 col-md-4 col-sm-6 col-xs-12 thumb ux">
-      <a ui-sref="main.projects.bridge">
-        <figure>
-          <img src="img/bridge.jpg" alt="Bridge">
-          <figcaption><span class="name" style="color: #e02167">Building Bridges</span><br />UX Design</figcaption>
-        </figure>
-      </a>
-    </div>
-    <!-- 5 -->
-    <div class="col-xl-3 col-md-4 col-sm-6 col-xs-12 thumb visual">
-      <a ui-sref="main.projects.surf">
-        <figure>
-          <img src="img/surf.jpg" alt="Surf Incubator">
-          <figcaption><span class="name" style="color: #00537c">Surf Incubator Redesign</span><br />Visual Communication Design</figcaption>
-        </figure>
-      </a>
-    </div>
-    <!-- 6 -->
-    <div class="col-xl-3 col-md-4 col-sm-6 col-xs-12 thumb web">
-      <a ui-sref="main.projects.share">
-        <figure>
-          <img src="img/share.jpg" alt="Share">
-          <figcaption><span class="name" style="color: #452A1F">Share</span><br />Web Development</figcaption>
-        </figure>
-      </a>
-    </div>
-    <!-- 7 -->
-    <div class="col-xl-3 col-md-4 col-sm-6 col-xs-12 thumb web">
-      <a ui-sref="main.projects.kc">
-        <figure>
-          <img src="img/kc.jpg" alt="Koran Cuban">
-          <figcaption><span class="name" style="color: #4C361C">Korean Cubans Photos</span><br />Web Design & Development</figcaption>
-        </figure>
-      </a>
+<div class="page">
+  <div ui-view></div>
+  <div class="container-fluid allprj">
+    <div class="row allthumbs">
+      <!-- 1 -->
+      <div class="col-xl-3 col-md-4 col-sm-6 col-xs-12 thumb">
+        <a ui-sref="projects.autelrobotics">
+          <figure>
+            <img src="img/autel.jpg" alt="Autel Robotics">
+            <figcaption><span class="name" style="color: #C13F2B">Autel Robitcs</span><br />UX Design Internship</figcaption>
+          </figure>
+        </a>
+      </div>
+      <!-- 2 -->
+      <div class="col-xl-3 col-md-4 col-sm-6 col-xs-12 thumb">
+        <a ui-sref="projects.aqua">
+          <figure>
+            <img src="img/aqua.jpg" alt="Aqua Music Player">
+            <figcaption><span class="name" style="color: #008261">Aqua Music Player</span><br />Interaction & UI Design</figcaption>
+          </figure>
+        </a>
+      </div>
+      <!-- 3 -->
+      <div class="col-xl-3 col-md-4 col-sm-6 col-xs-12 thumb">
+        <a ui-sref="projects.echo">
+          <figure>
+            <img src="img/echo.jpg" alt="How-to Helper">
+            <figcaption><span class="name" style="color: #132867">How-to Helper</span><br />VUI Design & Develop</figcaption>
+          </figure>
+        </a>
+      </div>
+      <!-- 4 -->
+      <div class="col-xl-3 col-md-4 col-sm-6 col-xs-12 thumb">
+        <a ui-sref="projects.bridge">
+          <figure>
+            <img src="img/bridge.jpg" alt="Bridge">
+            <figcaption><span class="name" style="color: #e02167">Building Bridges</span><br />UX Design</figcaption>
+          </figure>
+        </a>
+      </div>
+      <!-- 5 -->
+      <div class="col-xl-3 col-md-4 col-sm-6 col-xs-12 thumb print">
+        <a ui-sref="projects.surf">
+          <figure>
+            <img src="img/surf.jpg" alt="Surf Incubator">
+            <figcaption><span class="name" style="color: #00537c">Surf Incubator Redesign</span><br />Visual Communication Design</figcaption>
+          </figure>
+        </a>
+      </div>
+      <!-- 6 -->
+      <div class="col-xl-3 col-md-4 col-sm-6 col-xs-12 thumb">
+        <a ui-sref="projects.share">
+          <figure>
+            <img src="img/share.jpg" alt="Share">
+            <figcaption><span class="name" style="color: #5e3300">Share</span><br />Web Development</figcaption>
+          </figure>
+        </a>
+      </div>
+      <!-- 7 -->
+      <div class="col-xl-3 col-md-4 col-sm-6 col-xs-12 thumb">
+        <a ui-sref="projects.kc">
+          <figure>
+            <img src="img/kc.jpg" alt="Koran Cuban">
+            <figcaption><span class="name" style="color: #874d01">Korean Cubans Photos</span><br />Web Design & Development</figcaption>
+          </figure>
+        </a>
+      </div>
     </div>
   </div>
+
+  <footer style="text-align: center; margin-bottom: 50px;">
+    <hr style="margin: 50px 0 50px 0">
+    <input size="22" value="yeqing9928@gmail.com" style="border: none; background-color: transparent;" readonly>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+    <input size="14" value="206·310·0013" style="border: none; background-color: transparent;" readonly>
+  </footer>
 </div>
