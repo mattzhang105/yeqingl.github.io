@@ -1,49 +1,41 @@
-<div>
-    <script src="js/main.js" type="text/javascript"></script>
-    <div id="aboutme">
-      <div class="row page">
-        <div class="col-sm-2" style="text-align: center;">
-          <img width="100%" src="img/xiaoqiang.png">
-        </div>
-        <div class="col-xs-1"></div>
-        <div class="col-sm-9">
-          <p>
-            I'm Yeqing Lou (<i class="fa fa-volume-up" aria-hidden="true"></i> : ye-ching loh). I'm a senior majoring in Human Centered Design & Engineering at UW. I love design in general and I’m particularly interested in user experience, interaction, and visual design. I also have experience in web design and development.
-          </p>
-          <p>
-            Contact me through <span class="underline"><input size="22" value="yeqing9928@gmail.com" style="border: none; background-color: transparent;" readonly></span> or <span class="underline"><input size="14" value="206·310·0013" style="border: none; background-color: transparent;" readonly></span>.
-          </p>
-          <p>
-            <a class="underline" href="lyq-resume.pdf" target="_blank">View my resume</a>
-          </p>
-         <!--  <p>
-            <a class="underline">About me</a>
-          </p> -->
-        </div>
-      </div>
-    </div>
+<div id="main">
+  <script src="js/main.js" type="text/javascript"></script>
 
-    <div class="container-fluid page allprj">
-      <div class="row">
-        <div class="col-xs-2">
-          <ul id="filter">
-            <li ><a class="prj" id="allprj" style="color: #4c4c4c">ALL</a></li>
-            <br>
-            <li><a class="prj" id="mobile">MOBILE</a></li>
-            <br>
-            <li><a class="prj" id="web">WEB</a></li>
-            <br>
-            <li><a class="prj" id="print">PRINT</a></li>
-            <br>
-            <li><a class="prj" id="other">OTHER</a></li>
-          </ul> 
-        </div>
-        <div class="col-xs-1"></div>
-        <div class="col-xs-9">
+  <div class="container-fluid main_content">
+    <div class="row">
+      <div class="col-xs-4 yeqing"><a ui-sref="main">
+        YEQING<br>LOU<br>娄烨青
+      </a></div>
+      <!-- <div class="col-xs-1"></div> -->
+      <!-- <div class="col-xs-9"></div> -->
+    </div>
+    <div class="row">
+      <div class="col-xs-2">
+        <ul id="filter">
+          <li><a ui-sref="main">PROJECTS</a></li>
+          <!-- <li><a ui-sref="main" class="prj" id="mobile">&nbsp;&nbsp;&nbsp;&nbsp;MOBILE</a></li>
+          <li><a ui-sref="main" class="prj" id="web">&nbsp;&nbsp;&nbsp;&nbsp;WEB</a></li>
+          <li><a ui-sref="main" class="prj" id="print">&nbsp;&nbsp;&nbsp;&nbsp;PRINT</a></li>
+          <li><a ui-sref="main" class="prj" id="other">&nbsp;&nbsp;&nbsp;&nbsp;OTHER</a></li> -->
+          <br>
+          <li><a ui-sref="main.about">ABOUT</a></li>
+          <br>
+          <li>
+            <a href="lyq-resume.pdf" target="_blank"><i class="fa fa-paperclip" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
+            <a href="mailto:yeqing9928@gmail.com" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
+            <a href="https://www.linkedin.com/in/yeqinglou" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </div>
+      <!-- <div class="col-xs-1"></div> -->
+      <div class="col-xs-10">
+        <div ui-view>
+          <script src="js/main.js" type="text/javascript"></script>
+          <!-- thumbnails -->
           <div class="container-fluid">
             <div class="row allthumbs">
               <!-- 1 -->
-              <div class="col-xl-4 col-md-6 col-sm-6 col-xs-12 thumb thumb1 mobile">
+              <div class="col-xl-3 col-md-4 col-sm-6 col-xs-12 thumb thumb1 mobile">
                 <a ui-sref="projects.autelrobotics">
                   <figure>
                     <img src="img/autel.jpg" alt="Autel Robotics">
@@ -52,7 +44,7 @@
                 </a>
               </div>
               <!-- 2 -->
-              <div class="col-xl-4 col-md-6 col-sm-6 col-xs-12 thumb thumb1 mobile">
+              <div class="col-xl-3 col-md-4 col-sm-6 col-xs-12 thumb thumb1 mobile">
                 <a ui-sref="projects.aqua">
                   <figure>
                     <img src="img/aqua.jpg" alt="Aqua Music Player">
@@ -61,7 +53,7 @@
                 </a>
               </div>
               <!-- 3 -->
-              <div class="col-xl-4 col-md-6 col-sm-6 col-xs-12 thumb thumb1 other">
+              <div class="col-xl-3 col-md-4 col-sm-6 col-xs-12 thumb thumb1 other">
                 <a ui-sref="projects.echo">
                   <figure>
                     <img src="img/echo.jpg" alt="How-to Helper">
@@ -70,7 +62,7 @@
                 </a>
               </div>
               <!-- 4 -->
-              <div class="col-xl-4 col-md-6 col-sm-6 col-xs-12 thumb thumb1 mobile">
+              <div class="col-xl-3 col-md-4 col-sm-6 col-xs-12 thumb thumb1 mobile">
                 <a ui-sref="projects.bridge">
                   <figure>
                     <img src="img/bridge.jpg" alt="Bridge">
@@ -79,7 +71,7 @@
                 </a>
               </div>
               <!-- 5 -->
-              <div class="col-xl-4 col-md-6 col-sm-6 col-xs-12 thumb thumb1 print web">
+              <div class="col-xl-3 col-md-4 col-sm-6 col-xs-12 thumb thumb1 print web">
                 <a ui-sref="projects.surf">
                   <figure>
                     <img src="img/surf.jpg" alt="Surf Incubator">
@@ -88,7 +80,7 @@
                 </a>
               </div>
               <!-- 6 -->
-              <div class="col-xl-4 col-md-6 col-sm-6 col-xs-12 thumb thumb1 web">
+              <div class="col-xl-3 col-md-4 col-sm-6 col-xs-12 thumb thumb1 web">
                 <a ui-sref="projects.share">
                   <figure>
                     <img src="img/share.jpg" alt="Share">
@@ -97,7 +89,7 @@
                 </a>
               </div>
               <!-- 7 -->
-              <div class="col-xl-4 col-md-6 col-sm-6 col-xs-12 thumb thumb1 web">
+              <div class="col-xl-3 col-md-4 col-sm-6 col-xs-12 thumb thumb1 web">
                 <a ui-sref="projects.kc">
                   <figure>
                     <img src="img/kc.jpg" alt="Koran Cuban">
@@ -110,9 +102,9 @@
         </div>
       </div>
     </div>
+  </div>
 
-  <footer style="text-align: center; margin-bottom: 50px">
-    <hr width="65%" style="margin: 50px auto 50px auto">
+  <footer>
     Last update: Dec 2016
   </footer>
 </div>

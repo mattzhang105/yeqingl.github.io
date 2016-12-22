@@ -9,10 +9,10 @@ projects.config(function($stateProvider, $urlRouterProvider, $locationProvider) 
       templateUrl: 'templates/main.html',
     })
 
-    // .state('main.hidden', {
-    //   url:'/hidden',
-    //   templateUrl: 'hidden.html'
-    // })
+    .state('main.about', {
+      url:'/about',
+      templateUrl: 'templates/about.html'
+    })
 
     .state('projects', {
       url:'/projects',
