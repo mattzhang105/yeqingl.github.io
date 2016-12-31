@@ -1,83 +1,113 @@
-<div class="prev_next up">
-  <a ui-sref="projects.surf"><img src="img/left.png" width="60vw"></a>
-  <a ui-sref="projects.kc"><img src="img/right.png" width="60vw"></a>
-  &nbsp;&nbsp;&nbsp;&nbsp;<a ui-sref="main"><img src="img/exit.png" width="60vw"></a>
+<div class="topnav">
+  <div class="prev_next up nav_content">
+    <a ui-sref="projects.surf"><img src="img/left.png" width="50"></a>
+    <a ui-sref="projects.kc"><img src="img/right.png" width="50"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a ui-sref="main"><img src="img/exit.png" width="50"></a>
+  </div>
 </div>
 
-<div class="banner share">
-  <p class="h0">Share</p>
-</div>
-
-<section class="container-fluid overview">
-  <div class="row">
-    <div class="col-sm-12">
-      <p>A web application allows users to make posts and chat with people nearby.</p>
-      <h4>Web Development</h4>
+<section class="banner" style="background-color: #009ddb">
+  <div class="container-fluid prj_content">
+    <div class="row">
+      <div class="col-sm-4">
+        <p class="h0">Share</p>
+        <p>
+          A web application allows users to make posts and chat with people nearby. 
+        </p>
+      </div>
+      <div class="col-sm-1"></div>
+      <div class="col-sm-7" style="text-align: center;">
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/Soy12jQGwE4" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
+    <div class="row"><div class="col-xs-12"><p class="date"><i>November 2015 - December 2015, Group of 3</i></p></div></div>
   </div>
-  <hr style="margin: 23px 0 26px 0">
-  <div class="row">
-    <div class="col-sm-4">
-      <h4 class="d-t">Date</h4>
-      <p>Nov 2015 - Dec 2015<br />3 Weeks</p>
-    </div>
-    <div class="col-sm-4">
-      <h4 class="d-t">Contribution</h4>
-      <p>Front-end Development</p>
-    </div>
-    <div class="col-sm-4">
-      <h4 class="d-t">Tools</h4>
-      Google App Engine
-    </div>
-  </div>
-</section>
-<hr style="margin: 23px 0 40px 0;">
-
-<section class="prj_content">
-  <hr>
-  <h3>Demonstration</h3>
-  <div style="text-align: center;"><iframe width="640" height="360" src="https://www.youtube.com/embed/Soy12jQGwE4" frameborder="0" allowfullscreen></iframe></div>
 </section>
 
 <section class="prj_content">
-  <hr>
-  <h3>Problem</h3>
-  <div class="row">
-    <div class="col-xs-6">
-      <p>
-        Imagine you are writing a paper that is due in one hour on your laptop in the library, and suddenly, you realize your laptop has only 10% battery. You look around and find out that you are the only person in the room using a Macbook……
-      </p>
-    </div>
-    <div class="col-xs-6"><img width="100%" src="templates/projects/share/storyboard.jpg"></div>
-  </div>
   <div class="row">
     <div class="col-xs-12">
+      <h2>
+        <span class="num">problem</span>
+      </h2>
       <br>
-      <p style="margin-bottom: 0">
-        People tend to turn to their friends when they are in trouble even if their friends are not nearby. Although mobile phones can let them contact their friends immediately, their problems might not be able to wait until their friends show up. Therefore, in many cases, they have to turn to strangers, but it is not very effective and efficient for them to ask for help one by one. It would be great if there is an application that is designed for people to help strangers.
-      </p>
+      <div class="prj_text">
+        <p>
+          Imagine you are writing a paper that is due in one hour on your laptop in the library, and suddenly, you realize your laptop has only 10% battery. You look around and find out that you are the only person in the room using a Macbook…… 
+        </p>
+        <p><img style="margin-top: 5px;" width="100%" src="templates/projects/share/storyboard.jpg"></p>
+        <p>
+          People tend to turn to their friends when they are in trouble even if their friends are not nearby. Although mobile phones can let them contact their friends immediately, their problems might not be able to wait until their friends show up. Therefore, in many cases, they have to turn to strangers, but it is not very effective and efficient for them to ask for help one by one. It would be great if there is an application that is designed for people to help strangers.
+        </p>
+      </div>
+    </div>
+  </div>
+  <hr>
+</section>
+
+<section class="prj_content">
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>
+        <span class="num">solution</span>
+      </h2>
+      <br>
+      <div class="prj_text">
+        <p>
+          We created a web application using Python on Google App Engine. It is a single page web app that allows users to post their requests or have a little chat with people nearby. 
+        </p>
+        <br />
+        <p><span class="num2">Features</span></p>
+        <p>
+          <ul>
+            <li>Users can connect their Facebook account so that they don’t have to enter their names every time they post.</li>
+            <li>The posts show and vanish automatically upon its duration so that the page won’t be filled with expired posts.</li>
+            <li>Only posts within certain miles are shown to keep the communication effective.</li>
+          </ul>
+        </p>
+        <p>
+          People tend to turn to their friends when they are in trouble even if their friends are not nearby. Although mobile phones can let them contact their friends immediately, their problems might not be able to wait until their friends show up. Therefore, in many cases, they have to turn to strangers, but it is not very effective and efficient for them to ask for help one by one. It would be great if there is an application that is designed for people to help strangers.
+        </p>
+        <br />
+        <p><span class="num2">Wireframes</span></p>
+        <div class="row">
+          <div class="col-sm-6">
+            <p><img style="margin-top: 5px;" width="100%" src="templates/projects/share/mockup.png"></p>
+          </div>
+          <div class="col-sm-6">
+            <p><img style="margin-top: 5px;" width="100%" src="templates/projects/share/mockup2.png"></p>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+  <hr>
+</section>
+
+<section class="prj_content">
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>
+        <span class="num">challenge</span>
+      </h2>
+      <br>
+      <div class="prj_text">
+        <p>
+          The posts are stored on Google Cloud Datastore. At first, there was a problem to show the latest post. After the user submitted the form and the page refreshed, the latest post didn’t show up and the user had to refresh the page manually again. I double checked the code many times and also consulted TA, and finally we figured that Datastore couldn’t finish updating the entry before the page refreshed. We didn’t want to spend too much class time on this issue so we set a short wait time before the page refreshed after the form was submitted. I wasn’t satisfied with that solution and believed there would be a better way.
+        </p>
+        <p>
+          In the early stage of the project, I was thinking about using Ajax to make the page update the latest post automatically without refreshing, but I decided to wait until we finished other features. The night after class, I was looking for a better solution for the Datastore problem. I found it worth trying to use Ajax to accomplish these two things the same time. So I spent a couple hours to work on Ajax and made it happen.
+        </p>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="prj_content">
-  <hr>
-  <h3>Wireframes</h3>
-  <div class="row">
-    <div class="col-xs-6">
-      <p><b>Homepage</b><br>I used Ajax to allow the website display latest posts without refreshing.</p>
-    </div>
-    <div class="col-xs-6"><img width="100%" src="templates/projects/share/mockup.png"></div>
+  <p class="end">- END -</p>
+  <div class="prev_next down">
+    <a ui-sref="projects.surf"><img src="img/left.png" width="50"></a>
+    <a ui-sref="projects.kc"><img src="img/right.png" width="50"></a>
   </div>
-  <div class="row">
-    <div class="col-xs-6">
-      <p><b>Form</b><br>Users can post their requests.</p>
-    </div>
-    <div class="col-xs-6"><img width="100%" src="templates/projects/share/mockup2.png"></div>
-  </div>
+  <br /><hr>
 </section>
-
-<div class="prev_next down">
-  <a ui-sref="projects.surf"><img src="img/left.png" width="60vw"></a>
-  <a ui-sref="projects.kc"><img src="img/right.png" width="60vw"></a>
-</div>

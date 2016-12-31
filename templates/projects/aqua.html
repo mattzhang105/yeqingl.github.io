@@ -1,118 +1,93 @@
-<div class="prev_next up">
-  <a ui-sref="projects.autelrobotics"><img src="img/left.png" width="60vw"></a>
-  <a ui-sref="projects.echo"><img src="img/right.png" width="60vw"></a>
-  &nbsp;&nbsp;&nbsp;&nbsp;<a ui-sref="main"><img src="img/exit.png" width="60vw"></a>
+<div class="topnav">
+  <div class="prev_next up nav_content">
+    <a ui-sref="projects.autelrobotics"><img src="img/left.png" width="50"></a>
+    <a ui-sref="projects.echo"><img src="img/right.png" width="50"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a ui-sref="main"><img src="img/exit.png" width="50"></a>
+  </div>
 </div>
 
-<div class="banner aqua">
-  <p class="h0">Aqua Music Player</p>
-</div>
-
-<section class="container-fluid overview">
-  <div class="row">
-    <div class="col-sm-12">
-      <p>A music player that learns, remembers and visualizes users’ listening habits</p>
-      <p><b>Interaction & UI Design</b></p>
+<section class="banner" style="text-shadow: 1px 1px 3px #634b38; background-image: url(templates/projects/aqua/banner.jpg); background-size: 100%; background-repeat: no-repeat; padding-top: 0">
+  <div class="container-fluid prj_content">
+    <div class="row">
+      <div class="col-xs-5 col-sm-4" style="padding: 15px; margin-top: 45px">
+        <p class="h0">Aqua Music Player</p>
+        <p>Aqua is your unique music player that remembers, learns, and visualizes user's listening habit.</p>
+      </div>
+      <div class="col-xs-6 col-sm-7" style="visibility: hidden;">
+        <img width="100%" src="templates/projects/aqua/banner.jpg">
+        <img width="100%" src="templates/projects/aqua/banner.jpg">
+      </div>
     </div>
+    <div class="row"><div class="col-xs-12"><p class="date"><i>June 2015 - July 2015, Individual Project</i></p></div></div>
   </div>
 </section>
-<hr style="margin: 23px 0 26px 0">
-
-<section class="container-fluid overview">
-  <div class="row">
-    <div class="col-sm-4">
-      <p class="d-t"><b>Date</b></p>
-      <p>Jun 2015 - Jul 2015<br />8 Weeks</p>
-    </div>
-    <div class="col-sm-4">
-      <p class="d-t"><b>Role</b></p>
-      <p>Interaction Designer<br />User Interface Designer</p>
-    </div>
-    <div class="col-sm-4">
-      <p class="d-t"><b>Tools</b></p>
-      <img src="img/ai.png" width="45px" />
-      <img src="img/ps.png" width="45px" />
-      <img src="img/ae.png" width="45px" />
-    </div>
-  </div>
-</section>
-<hr style="margin: 23px 0 40px 0;">
 
 <section class="prj_content">
   <div class="row">
     <div class="col-xs-12">
       <h2>
-        <span class="num">1. Final Design Preview</span>
-        <br><br>
-        <i data-toggle="modal" data-target="#aquaPreview" style="cursor: pointer;">Click here to view.</i>
+        <span class="num">ideation</span>
       </h2>
-      <br>
-      <div class="modal fade" id="aquaPreview" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            </div>
-            <div class="modal-body">
-              <img width="100%" src="templates/projects/aqua/aqua.gif">
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
+      <br />
+      <div class="prj_text">
+        <p>
+          Everyone has their own music player. Many students in the class used Spotify or Google music player. At that time, I was using a Chinese music player called <a href="https://douban.fm/" target="_blank" class="underline">Douban FM</a>. Instead of giving users a wide range of control, its simplicity allows very limited interactions and wants users to “meet their music by chance” as its vision statement. Users can’t search for a specific song / singer or customize a playlist (the active search function is enabled in its latest version, which makes me a little sad). I think sometimes it’s good to be passive and enjoy the given beauty. 
+        </p>
+        <p>
+          <span class="highlight">Using a music player is like building a unique friendship.</span> The longer time you use it, the better it knows about you. You don’t have to tell it about what you like, and it already knows. Until that summer, I had been using Douban FM everyday for almost a year. During that period of time, I can feel the change of my taste and the music that Douban FM plays changes along with me. It is a unique existence to me and everyone’s Douban FM is unique. <span class="highlight">Therefore, I decided to design a music player that enhances that uniqueness.</span>
+        </p>
       </div>
     </div>
   </div>
+  <hr>
 </section>
 
 <section class="prj_content">
   <div class="row">
     <div class="col-xs-12">
       <h2>
-        <span class="num">2. SKETCHES</span>
+        <span class="num">design</span>
       </h2>
       <br>
-      <p class="prj_text">
-        <!-- ... -->
-      </p>
-      <img style="margin-top: 5px;" width="100%" src="templates/projects/aqua/sketch.png">
+      <div class="prj_text">
+        <p><span class="num2">Iteration 1</span></p>
+        <p>
+          I came up with an idea that the music player visualizes user’s listening history and taste. I first thought of a planet whose surface grows a little tree that will form a unique shape and inside is composed of the top 4 genres the user listens to.
+        </p>
+        <p><img style="margin-top: 5px;" width="100%" src="templates/projects/aqua/ver1.png"></p>
+        <br />
+        <p><span class="num2">Iteration 2</span></p>
+        <p>
+          Then I realized that it is unnecessary to show the user percentage since the numbers don’t mean a lot to them and without the numbers it’s not obvious to see the difference between each genre. Therefore, I decided to remove the planet and combine its function to the tree.
+        </p>
+        <br />
+        <p><span class="num2">Iteration 3</span></p>
+        <p>
+          This iteration focuses on the UI. I changed the theme color from blue to green because some of my feedback said that the blue tree created a supernatural feeling and not very friendly. I also changed the hamburger menu to a tab bar since it’s easier to switch between different views and easier to see which screen the user is interacting with.
+        </p>
+        <p><img style="margin-top: 5px;" width="100%" src="templates/projects/aqua/ver2-3.png"></p>
+        <br />
+        <p><span class="num2">Sketches</span></p>
+        <p><img style="margin-top: 5px;" width="100%" src="templates/projects/aqua/sketch.png"></p>
+      </div>
     </div>
   </div>
+  <hr>
 </section>
 
 <section class="prj_content">
   <div class="row">
     <div class="col-xs-12">
-      <h2>
-        <span class="num">2. ITERATIONS</span>
-      </h2>
-      <br>
-      <p class="prj_text">
-        <!-- ... -->
-      </p>
-      <img style="margin-top: 5px;" width="100%" src="templates/projects/aqua/iterations.png">
+      <p class="prj_text" style="text-align: center;"><img width="70%" src="templates/projects/aqua/aqua.gif"></p>
     </div>
   </div>
 </section>
 
 <section class="prj_content">
-  <div class="row">
-    <div class="col-xs-12">
-      <h2>
-        <span class="num">3. SELECTED FINAL SCREENS</span>
-      </h2>
-      <br>
-      <p class="prj_text">
-        <!-- ... -->
-      </p>
-      <img style="margin-top: 5px;" width="100%" src="templates/projects/aqua/all.png">
-    </div>
+  <p class="end">- END -</p>
+  <div class="prev_next down">
+    <a ui-sref="projects.autelrobotics"><img src="img/left.png" width="50"></a>
+    <a ui-sref="projects.echo"><img src="img/right.png" width="50"></a>
   </div>
+  <br /><hr>
 </section>
-
-<p class="end">- END -</p>
-<div class="prev_next down">
-  <a ui-sref="projects.autelrobotics"><img src="img/left.png" width="60vw"></a>
-  <a ui-sref="projects.echo"><img src="img/right.png" width="60vw"></a>
-</div>

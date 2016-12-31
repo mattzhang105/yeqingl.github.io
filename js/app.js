@@ -6,12 +6,17 @@ projects.config(function($stateProvider, $urlRouterProvider, $locationProvider) 
   $stateProvider
     .state('main', {
       url:'/main',
-      templateUrl: 'templates/main.html',
+      templateUrl: 'templates/main.html'
     })
 
     .state('main.about', {
       url:'/about',
       templateUrl: 'templates/about.html'
+    })
+
+    .state('main.hidden', {
+      url:'/hidden',
+      templateUrl: 'templates/hidden.html'
     })
 
     .state('projects', {

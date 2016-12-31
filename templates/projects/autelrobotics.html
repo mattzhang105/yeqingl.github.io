@@ -1,162 +1,200 @@
-<div class="prev_next up">
-  <img src="img/left.png" width="60vw" style="opacity: 0.3">
-  <a ui-sref="projects.aqua"><img src="img/right.png" width="60vw"></a>
-  &nbsp;&nbsp;&nbsp;&nbsp;<a ui-sref="main"><img src="img/exit.png" width="60vw"></a>
+<div class="topnav">
+  <div class="prev_next up nav_content">
+    <img src="img/left.png" width="50" style="opacity: 0.3">
+    <a ui-sref="projects.aqua"><img src="img/right.png" width="50"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a ui-sref="main"><img src="img/exit.png" width="50"></a>
+  </div>
 </div>
 
-<div class="banner autel">
-  <p class="h0">Autel Robotics</p>
-</div>
-
-<section class="container-fluid overview">
-  <div class="row">
-    <div class="col-sm-12">
-      <p><b>UX Design internship</b></p>
+<section class="banner" style="background-color: #1d5db7;">
+  <div class="container-fluid prj_content">
+    <div class="row">
+      <div class="col-sm-4">
+        <p class="h0">Starlink Onboarding</p>
+        <p>Onboarding is a feature of Autel Robotics’ Starlink app that takes care of new user’s first time fly experience by providing interactive setup instructions and important fly tips.</p>
+      </div>
+      <div class="col-sm-1"></div>
+      <div class="col-sm-7">
+        <img style="margin-top: 5px;" width="100%" src="templates/projects/autel/final.png">
+      </div>
     </div>
+    <div class="row"><div class="col-xs-12"><p class="date"><i>June 2016 - August 2016, UX Design Intern</i></p></div></div>
   </div>
 </section>
-<hr style="margin: 23px 0 26px 0">
-
-<section class="container-fluid overview">
-  <div class="row">
-    <div class="col-sm-4">
-      <p class="d-t"><b>Date</b></p>
-      <p>Jun 2016 - Aug 2016<br />10 Weeks</p>
-    </div>
-    <div class="col-sm-4">
-      <p class="d-t"><b>Role</b></p>
-      <p>UX Designer<br />User Researcher</p>
-    </div>
-    <div class="col-sm-4">
-      <p class="d-t"><b>Tools</b></p>
-      <p>Pen & Paper<br />Axure</p>
-    </div>
-  </div>
-</section>
-<hr style="margin: 23px 0 40px 0;">
 
 <section class="prj_content">
   <div class="row">
     <div class="col-xs-12">
-      <h2><span class="num">1. OUTCOME</span></h2>
-      <br>
-      <img style="margin-top: 5px;" width="100%" src="templates/projects/autel/final.png">
+      <p class="prj_text">
+        <a href="https://www.autelrobotics.com/support/download-starlink-app/" target="_blank" class="underline">Starlink</a> is <a href="https://www.autelrobotics.com/" target="_blank" class="underline">Autel Robotics</a>’ mobile app that enriches users’ drone ownership experiences. As a UX design intern, I partnered with another designer to develop high-fidelity mockups for the app’s onboarding feature that walks users through drone setup process and teaches them how to fly for the first time. 
+      </p>
     </div>
   </div>
+  <hr>
 </section>
 
 <section class="prj_content">
   <div class="row">
     <div class="col-xs-12">
       <h2>
-        <span class="num">2. PROBLEM</span>
-        <br><br>
-        <i>The user manual is not comprehensive enough for the confusing setup process.</i>
+        <span class="num">problem</span>
       </h2>
       <br>
-      <p class="prj_text">
-        Setting up a drone is complicated, especially for people with no background. <span class="highlight">Although the product comes with a paper Quick Start Guide, it was hard to instruct the users clearly using only texts and static images</span>. The amount of time the assembling takes is a minus to the overall user experience for a user who is really excited and wants to fly as soon as possible. Our goal was to find out what makes the setup so long and make it easier and less painful.
-      </p>
+      <div class="prj_text">
+        <p>
+          Imagine you were new to drones and just ordered your first drone. You were so excited when the drone finally came and couldn’t wait for the first try. <span class="highlight">However, you found the user manual unclear and had to spend way longer time than expected to assemble the drone, you were frustrated by keeping failing the compass calibration, and you were so confused by the icons and buttons on the app.</span> When you finally got ready to fly, would you still be that excited? Or you felt exhausted already?
+        </p>
+        <p>
+          The original setup process includes two parts:
+          <ul>
+            <li>The user assembles and calibrates the drone according to the Quick Start Guide booklet</li>
+            <li>The user understands the app screen before they fly</li>
+          </ul>
+        </p>
+        <p>
+          There are a few factors that stop the setup process from being effective and efficient:
+          <ul>
+            <li>The Quick Start Guide was poorly written</li>
+            <li>Static images and lack of system feedback make users less confident</li>
+            <li>Calibration is hard and needs a good way to be demonstrated to the user</li>
+            <li>The app screen contains a lot of information and the annotations are overwhelming so that the user tends not to read them</li>
+          </ul>
+        </p>
+        <p>In the coming sections, I will talk about how I solved these problems through iterations.</p>
+      </div>
     </div>
   </div>
+  <hr>
 </section>
 
 <section class="prj_content">
   <div class="row">
     <div class="col-xs-12">
       <h2>
-        <span class="num">3. AUDIENCE</span>
-        <br><br>
-        <i>New users are taken cared of.</i>
+        <span class="num">challenge</span>
       </h2>
       <br>
-      <p class="prj_text">
-        Autel Robotics wants to bring drones into people’s daily and professional lives as a great tool for entertainment and work. The users are <span class="highlight">not only the professional drone pilots</span>, but also the photographers, the hobbyists, the farmers, and the real estimate agencies -- <span class="highlight">people from various background and knowledge of drones</span>.
-      </p>
+      <div class="prj_text">
+        <p>
+          The setup process was defined by the hardware and software team together. Although I was aware of the complication of the setup process, there was no way to make changes to it but make it more comprehensive for users. Before I joined, the idea of Onboarding was already generated, which <span class="highlight">aims to decrease total setup time and build basic knowledge base</span> for new users. <span class="highlight">My work focused on figuring out a smooth user flow for Onboarding and how to present information effectively and efficiently by taking advantage of the mobile interactions.</span>
+        </p>
+      </div>
     </div>
   </div>
+  <hr>
 </section>
 
 <section class="prj_content">
   <div class="row">
     <div class="col-xs-12">
-      <h2><span class="num">4. DESIGN PROCESS</h2>
+      <h2>
+        <span class="num">process</span>
+      </h2>
       <br>
-      <p class="prj_text">
-        <b>Iteration #1 & Usability Testing</b><br>
-        This version of the design divides the setup into to four sections. Each section takes one screen and has three to four small steps shown in circles. When a circle is tapped, detail information pops up and each circle corresponds to each tag on the pop up window.
-        <br><br>
-        From the usability testing, we found that users were confused by the circles and the tags. They tended to tap on the first circle, go through all the tags, and then tap on the second circle instead of swiping to the next page.
-      </p>
-      <img style="margin-top: 5px;" width="100%" src="templates/projects/autel/ver1.png">
+      <div class="prj_text">
+        <p><span class="num2">Iteration 1 & Usability Testing</span></p>
+        <p>
+          I started with the usability testing of the first Onboarding prototype that was created by my partner Jasmine to see <span class="highlight">if the Onboarding would be a promising way to achieve the goal and what problems the prototype had at that stage</span>. We decided to conduct an A/B testing on the Quick Start Guide and the Onboarding prototype because we wanted to compare how differently the users appeared.
+        </p>
+        <p>
+          After 17 rounds of tests (9 on the Quick Start Guide and 8 on the Onboarding prototype), we were happy to see that the group who followed the Quick Start Guide needed over 30 minutes to finish the setup process, while the group who followed the prototype spent only about 15 minutes. What’s more, the <a href="https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html" target="_blank" class="underline">SUS scores</a> for the Quick Start Guide and the Onboarding prototype were 63 and 80 respectively.
+        </p>
+      </div>
+
+      <br />
+      <div class="prj_text">
+        <p><span class="num2">Iteration 2</span></p>
+        <p>
+          The Onboarding would be the first screen when the Starlink app is opened for the first time and the user is more likely to hold their phone vertically when they open the app. Therefore, in this iteration, we used vertical screens so that the user doesn’t have to rotate their phone to read the content and reading with vertical screen is more comfortable. 
+        </p>
+        <p>
+          Another big change is the Onboarding content. Instead of simply walking the user through all the steps needed to get into the air, it is important to provide them needed knowledge to fly safely and correctly, as well. The modified content shows our consideration throughout the first fly experience. 
+        </p>
+        <p><img style="margin-top: 5px;" width="100%" src="templates/projects/autel/ver2.png"></p>
+        <p>
+          This iteration also solved the problems that the usability testing revealed:
+          <ul>
+            <li>
+              <p><span class="highlight">Problem:</span> Users still had difficulty understanding some of the images. People feel unsafe about the things they don’t know. For example, it needs some strength to pull out the battery. The first prototype used a static image to tell users how to pull the battery and users failed because they were scared of breaking the drone.</p>
+              <p><span class="highlight">Solution:</span> Use GIFs to show the results of the behavior so that users know what they are expecting and be more confident.</p> 
+            </li>
+            <li>
+              <p><span class="highlight">Problem:</span> Users were confused by how the tabs were aligned with the circles.</p> 
+              <p><span class="highlight">Solution:</span> Simplified the overall navigation by removing circles and tabs and changing them to labels and details.</p>
+              <p><img style="margin-top: 5px;" width="100%" src="templates/projects/autel/ver1.png"></p>
+            </li>
+          </ul>
+        </p>
+      </div>
+
+      <br />
+      <div class="prj_text">
+        <p><span class="num2">Iteration 3 - Recap the Onboarding Goal</span></p>
+        <p>
+          Adding content created a new problem: the Onboarding was getting longer. <span class="highlight">I never forgot that the goal was to make the onboarding process short.</span> Therefore, I started to review the steps to see if they could be short and efficient. 
+        </p>
+        <p>
+          I consulted the technicians in the company about important steps and knowledge for the setup and fly. Also, in the second version, the Onboarding was still independent to the actual app so that the user has to finish the instructions before connecting and calibrating their drone. During the usability tests, the screenshots and calibration video were shown to the users before they started to calibrate and most of them couldn’t calibrate successfully. They couldn’t find the button to get started and they forgot the steps already. 
+        </p>
+        <p>
+          I suggested we break the onboarding content into two parts: the assemble part that only involves the drone and the connected part that the Starlink app is needed. In this way the Onboarding not only wouldn’t feel endlessly long before the user could interact with the app, but also easier to follow step by step.
+        </p>
+        <p><img style="margin-top: 5px;" width="100%" src="templates/projects/autel/connected.png"></p>
+        <p>
+          In this version, we also changed scrolling to pagination to keep the content in a reasonable length and divided the app screen walkthrough into small parts so that it could be easier to read.
+        </p>
+        <p><img style="margin-top: 5px;" width="100%" src="templates/projects/autel/ver3.png"></p>
+        <p><img style="margin-top: 5px;" width="100%" src="templates/projects/autel/screen.png"></p>
+      </div>
     </div>
   </div>
-  <br>
-  <div class="row">
-    <div class="col-xs-12">
-      <p class="prj_text">
-        <b>Iteration #2</b><br>
-        In this version, circles and popup windows were removed, and each step was presented vertically. I suggested to make the screen vertical for the instructions because it was easier to hold the phone and scroll back and forth to read the contents.
-        <br><br>
-        However, it turned out that there was too much scroll for each step, which led to the third iteration.
-      </p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-12">
-      <img style="margin-top: 5px;" width="100%" src="templates/projects/autel/ver2.gif">
-      <p class="prj_text">
-        <b>Iteration 3</b><br>
-      </p>
-      <img style="margin-top: 5px;" width="100%" src="templates/projects/autel/ver3.png">
-    </div>
-  </div>
+  <hr>
 </section>
 
 <section class="prj_content">
   <div class="row">
     <div class="col-xs-12">
-      <h2><span class="num">5. OTHER CONTRIBUTIONS</span></h2>
+      <h2>
+        <span class="num">other contributions</span>
+      </h2>
       <br>
-      <p class="prj_text">
-        <b>Auto Pilot Redesign Sketches</b><br>
-        Although we worked mostly on the onboarding part, we always kept in mind that there were other parts of the app needed to be considered. The sketches on the left are my ideas of the app’s auto pilot feature. This smart feature allows the user to program the route of the drone, such as following, orbiting, and flying along waypoints.
-      </p>
-      <img style="margin-top: 5px;" width="100%" src="templates/projects/autel/auto.png">
-      <br>
-      <p class="prj_text">
-        <b>App Settings Card Sorting</b><br>
-        <i>Problem: How the settings could be better arranged?</i><br>
-        The Starlink app allows users to make changes to the app system, the hardware, and camera. The same time the settings maximize the app’s customizability, they confuse the users. It’s not only because there is too much information under the setting button so that the users need a long time to find what they want, but also many settings are for advanced users only so that general users feel exhausted when reading those professional terms.
-      </p>
+      <div class="prj_text">
+        <p><span class="num2">Autopilot Redesign Sketches</span></p>
+        <p>
+          Although we worked mostly on the onboarding part, we always kept in mind that there were other parts of the app needed to be considered. The sketches on the left are my ideas of the app’s auto pilot feature. This smart feature allows the user to program the route of the drone, such as following, orbiting, and flying along waypoints.
+        </p>
+        <p><img style="margin-top: 5px;" width="100%" src="templates/projects/autel/auto.png"></p>
+        <br />
+
+        <p><span class="num2">Settings Card Sorting</span></p>
+        <p>
+          The Starlink app allows users to make changes to the app system, the hardware, and camera. The same time the settings maximize the app’s customizability, they confuse the users. It’s not only because there is too much information under the setting button so that the users need a long time to find what they want, but also many settings are for advanced users only so that general users feel confused when reading those professional terms.
+        </p>
+        <p><img style="margin-top: 5px;" width="100%" src="templates/projects/autel/card.png"></p>
+      </div>
     </div>
   </div>
-  <br>
+  <hr>
+</section>
+
+<!-- <section class="prj_content">
   <div class="row">
     <div class="col-xs-12">
-      <p class="prj_text">
-        <i>Method: Let people create the settings the way they want.</i>
-      </p>
-      <img style="margin-top: 5px;" width="100%" src="templates/projects/autel/card.png">
+      <h2>
+        <span class="num">reflection</span>
+      </h2>
+      <br>
+      <div class="prj_text">
+      </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <section class="prj_content">
-  <div class="row">
-    <div class="col-xs-12">
-      <h2><span class="num">6. RETROSPECTIVE</span></h2>
-      <br><i></i>
-      <p class="prj_text">
-        <b>Constraints</b><br>
-        The biggest constraint is the communication. Not being able to work side by side with other designers and the developers made the design process less efficient. We needed to work with a visual and interaction design team in China and a group of developers to produce the new generation of the app. We communicated through emails and had a weekly Skype meeting on every Tuesday. I was the only person who spoke mandarin and had design background, so besides working with Jasmine, I was in charge of the communication between the US and the China sides.
-      </p>
-    </div>
+  <p class="end">- END -</p>
+  <div class="prev_next down">
+    <img src="img/left.png" width="50" style="opacity: 0.3">
+    <a ui-sref="projects.aqua"><img src="img/right.png" width="50"></a>
   </div>
+  <br /><hr>
 </section>
-
-<p class="end">- END -</p>
-<div class="prev_next down">
-  <img src="img/left.png" width="60vw" style="opacity: 0.3">
-  <a ui-sref="projects.aqua"><img src="img/right.png" width="60vw"></a>
-</div>

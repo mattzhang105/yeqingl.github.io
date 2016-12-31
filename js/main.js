@@ -1,13 +1,4 @@
 $(document).ready(function() {
-	$("#about").click(function(){
-		$("#filter li a").css("color", "#4c4c4c");
-	});
-
-	$(".category").click(function(){
-		$(".mobile, .web, .other, .print").fadeIn();
-		$("#filter li a").css("color", "#4c4c4c");
-	});
-
 	$("#mobile").click(function(){
 		$(".web, .other, .print").hide();
 		$(".mobile").fadeIn();

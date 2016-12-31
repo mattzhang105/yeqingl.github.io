@@ -2,7 +2,7 @@ body {
 	font-family: 'Lato', 'Helvetica Neue', sans-serif;
 	color: #4c4c4c;
 	font-weight: 300;
-	font-size: 15px;
+	font-size: 16px;
   background-color: #fafafa;
 /*  -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -15,7 +15,7 @@ body {
 
 ::selection {
   background-color: transparent;
-  color: #6bb6ef;
+  color: #ffcb9b;
 }
 
 h2 {
@@ -26,18 +26,8 @@ h2 {
   color: #4c4c4c;
 }
 
-h2 .num {
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #00506d;
-}
-
 h3 {
 	font-weight: 300;
-}
-
-b {
-  color: #4c4c4c;
 }
 
 a {
@@ -47,32 +37,26 @@ a {
 a:hover, a:focus {
 	text-decoration: none;
 	cursor: pointer;
-  color: #4c4c4c;
 }
 
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+a:hover {
+  color: #ff7835;
 }
 
 footer {
-  border-top: solid 1px #4c4c4c;
+  border-top: dotted 1px #4c4c4c;
   padding-top: 50px;
   padding-bottom: 50px;
   margin-top: 60px;
   font-size: 14px;
   text-align: center;
-}
-
-#main footer {
   width: 65%;
   margin-right: auto;
   margin-left: auto;
 }
 
 .underline {
-  border-bottom: solid 1px #6bb6ef;
+  border-bottom: dotted 1px #ff7835;
 }
 
 #aboutme {
@@ -98,26 +82,40 @@ footer {
   margin-right: auto; 
 }
 
-.yeqing {
+.title {
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   text-align: left;
   font-size: 24px;
   line-height: 34px;
+  text-transform: uppercase;
+  color: #ff7835;
   font-weight: bold;
+}
+
+.title:hover {
+  color: #ff7835;
+  text-decoration: none;
+}
+
+.title:focus {
+  color: #ff7835;
+  text-decoration: none;
+}
+
+.yeqing {
   margin-bottom: 33px;
   margin-top: 100px;
-  /*color: #6bb6ef;*/
 }
 
 
 /*projects*/
 
-.prj_page {
+/*.prj_page {
   margin-top: 50px;
   width: 65%;
   margin-left: auto;
   margin-right: auto;
-}
+}*/
 
 #filter {
   text-align: left;
@@ -125,17 +123,16 @@ footer {
   /*font-weight: bold;*/
   line-height: 30px;
   font-size: 14px;
-}
-
-#filter li a {
-  color: #4c4c4c;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 /*thumbnails*/
 
-.allprj {
+/*.allprj {
   padding-top: 50px;
-}
+}*/
 
 .thumb {
   padding: 0;
@@ -172,15 +169,15 @@ footer {
   opacity: 0;
   z-index: 1;
 }
-.thumb:after {
-  background-color: #fafafa;
+.allthumbs .thumb:after {
+  background-color: #ff7835;
   position: absolute;
   content: "";
   display: block;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
+  top: 25px;
+  left: 25px;
+  right: 25px;
+  bottom: 25px;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   -webkit-transform: rotateX(-90deg);
@@ -191,52 +188,68 @@ footer {
   opacity: 0;
 }
 
-.thumb:hover figcaption,
-.thumb.hover figcaption {
+.allthumbs .thumb:hover figcaption,
+.allthumbs .thumb.hover figcaption {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
-.thumb:hover:after,
-.thumb.hover:after {
+.allthumbs .thumb:hover:after,
+.allthumbs .thumb.hover:after {
   -webkit-transform: rotateX(0);
   transform: rotateX(0);
   opacity: 1;
 }
 
-/*.thumb:hover img {
-  -moz-filter: grayscale(60%);
-  -webkit-filter: grayscale(60%);
-  filter: grayscale(60%);  
-}*/
+.allthumbs .thumb:hover img {
+  -moz-filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);  
+}
+
+figcaption {
+  font-size: 14px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #fafafa;
+}
 
 .name {
   font-weight: 600;
-  text-transform: uppercase;
 }
 
 
 /*project page*/
 
 .banner {
-  text-align: center;
+  text-align: justify;
+  color: #fafafa;
+  padding-top: 60px;
+  margin-bottom: 50px;
+}
+
+.banner .row>div {
+  padding: 0;
+}
+
+.banner a {
+  color: #fafafa;
 }
 
 .h0 {
-  font-family: "Helvetica Neue";
-  font-size: 6vw;
-  /*color: #fff;*/
-  margin: 0;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 50px;
 }
 
-.prj_content hr {
-  /*background-color: #4c4c4c;*/
-  /*height: 3px;*/
-  width: 200px;
-  /*border: none;*/
-  /*margin-left: 0;*/
+.date {
+  font-size: 14px;
 }
 
 .prj_content h2 {
@@ -256,8 +269,25 @@ footer {
   font-weight: 400;
 }
 
+.prj_content .num {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #00506d;
+}
+
+.prj_content .num2 {
+  color: #3294c1;
+  font-weight: 400;
+  border-top: solid 1px #3294c1;
+  font-size: 18px;
+}
+
 .prj_content b {
   color: #00506d;
+}
+
+.prj_content ul {
+  list-style-type: circle;
 }
 
 .overview {
@@ -266,8 +296,11 @@ footer {
 
 .prj_content {
   word-spacing: 2px;
-  margin-bottom: 50px;
   line-height: 26px;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
 }
 
 .prj_content .prj_text {
@@ -278,9 +311,9 @@ footer {
   text-align: center;
 }
 
-.prj_text {
+/*.prj_text {
   margin-bottom: 0;
-}
+}*/
 
 .prev_next {
   text-align: center;
@@ -288,6 +321,18 @@ footer {
 
 .up {
   text-align: right;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.topnav {
+  margin-bottom: 0;
+}
+
+.nav_content {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .down {
@@ -303,93 +348,11 @@ footer {
   text-decoration: none;
   color: #4c4c4c;
   padding: 7px 15px 9px 15px;
-  border: solid #4c4c4c 1px;
+  border: dotted #4c4c4c 1px;
 }
 
-/*banners*/
-.autel .h0 {
-  background: -moz-linear-gradient(left,  #C13F2B 0%, #FF5955 70%);
-  background: -webkit-linear-gradient(left,  #C13F2B 0%, #FF5955 70%);
-  background: linear-gradient(to right,  #C13F2B 0%, #FF5955 70%);
-  -moz-background-clip: text;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -moz-text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
-}
-
-.echo .h0 {
-/*  background: -moz-linear-gradient(left,  #1D3A97 0%, #72e4f8 80%);
-  background: -webkit-linear-gradient(left,  #1D3A97 0%, #72e4f8 80%);
-  background: linear-gradient(to right,  #1D3A97 0%, #72e4f8 80%);
-  -moz-background-clip: text;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -moz-text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;*/
-  color: gray;
-}
-
-.share .h0 {
-  background: -moz-linear-gradient(left,  #0e83ff 0%, #57deff 80%);
-  background: -webkit-linear-gradient(left,  #0e83ff 0%, #57deff 80%);
-  background: linear-gradient(to right,  #0e83ff 0%, #57deff 80%);
-  -moz-background-clip: text;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -moz-text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
-}
-
-.surf .h0 {
-  background: -moz-linear-gradient(left,  #0dc8dd 0%, #57deff 80%);
-  background: -webkit-linear-gradient(left,  #0dc8dd 0%, #57deff 80%);
-  background: linear-gradient(to right,  #0dc8dd 0%, #57deff 80%);
-  -moz-background-clip: text;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -moz-text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
-}
-
-.aqua .h0 {
-  background: -moz-linear-gradient(left,  #0dc8dd 0%, #40E9BA 50%);
-  background: -webkit-linear-gradient(left,  #0dc8dd 0%, #40E9BA 50%);
-  background: linear-gradient(to right,  #0dc8dd 0%, #40E9BA 50%);
-  -moz-background-clip: text;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -moz-text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
-}
-
-.bridge .h0 { 
-  background: -moz-linear-gradient(left,  #ee509d 0%, #ff8892 60%);
-  background: -webkit-linear-gradient(left,  #ee509d 0%, #ff8892 60%);
-  background: linear-gradient(to right,  #ee509d 0%, #ff8892 60%);
-  -moz-background-clip: text;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -moz-text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
-}
-
-.kc .h0 {
-  background: -moz-linear-gradient(left,  #aa5c16 0%, #e9ad71 70%);
-  background: -webkit-linear-gradient(left,  #aa5c16 0%, #e9ad71 70%);
-  background: linear-gradient(to right,  #aa5c16 0%, #e9ad71 70%);
-  -moz-background-clip: text;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -moz-text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
+.thumb b {
+  color: #fafafa;
 }
 
 
