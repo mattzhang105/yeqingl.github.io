@@ -44,11 +44,6 @@ projects.config(function($stateProvider, $urlRouterProvider, $locationProvider) 
       templateUrl: 'templates/projects/aqua.html'
     })
 
-    .state('projects.bridge', {
-      url:'/bridge',
-      templateUrl: 'templates/projects/bridge.html'
-    })
-
     .state('projects.echo', {
       url:'/echo',
       templateUrl: 'templates/projects/echo.html'

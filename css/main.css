@@ -2,7 +2,7 @@ body {
 	font-family: 'Lato', 'Helvetica Neue', sans-serif;
 	color: #4c4c4c;
 	font-weight: 300;
-	font-size: 16px;
+	font-size: 15px;
   background-color: #fafafa;
 /*  -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -18,13 +18,13 @@ body {
   color: #ffcb9b;
 }
 
-h2 {
-  /*text-transform: uppercase;*/
+/*h2 {
+  text-transform: uppercase;
   font-weight: 300;
   margin: 0;
   font-size: 22px;
   color: #4c4c4c;
-}
+}*/
 
 h3 {
 	font-weight: 300;
@@ -126,6 +126,10 @@ footer {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+#filter a:focus {
+  color: #4c4c4c;
 }
 
 /*thumbnails*/
@@ -253,7 +257,7 @@ figcaption {
 }
 
 .prj_content h2 {
-  margin-top: 2px;
+  /*margin-top: 2px;*/
   /*color: #424242;*/
 }
 
@@ -269,17 +273,18 @@ figcaption {
   font-weight: 400;
 }
 
-.prj_content .num {
-  font-weight: 400;
+.prj_content .num, .num {
+  font-weight: 700;
   text-transform: uppercase;
   color: #00506d;
+  font-size: 16px;
 }
 
-.prj_content .num2 {
+.prj_content .num2, .num2 {
   color: #3294c1;
-  font-weight: 400;
-  border-top: solid 1px #3294c1;
-  font-size: 18px;
+  font-weight: 700;
+  /*border-top: solid 1px #3294c1;*/
+  font-size: 16px;
 }
 
 .prj_content b {
@@ -300,7 +305,7 @@ figcaption {
   width: 65%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
+  /*margin-bottom: 50px;*/
 }
 
 .prj_content .prj_text {
@@ -360,6 +365,11 @@ figcaption {
 #about p {
   text-align: justify;
 }
+
+.colorpalette {
+  padding-top: 25%;
+}
+
 
 @media screen and (max-width: 480px) {
 }
