@@ -56,8 +56,10 @@ projects.config(function($stateProvider, $urlRouterProvider, $locationProvider) 
 });
 
 projects.run(['$rootScope', '$location', '$window', function ($rootScope, $state, $stateParams, $location, $window) {
-  $rootScope.$on('$stateChangeSuccess', function() {
-    window.scrollTo(0,0);
+  $window.ga('create', 'UA-75575300-1', 'auto');
+  $rootScope.$on('$stateChangeSuccess', function (event) {
+      window.scrollTo(0,0);
+      $window.ga('send', 'pageview', $location.path());
   });
 }]);
 
