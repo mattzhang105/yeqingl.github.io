@@ -55,13 +55,20 @@ projects.config(function($stateProvider, $urlRouterProvider, $locationProvider) 
     })
 });
 
-projects.run(['$rootScope', '$location', '$window', function ($rootScope, $state, $stateParams, $location, $window) {
+// projects.run(['$rootScope', '$location', '$window', function ($rootScope, $state, $stateParams, $location, $window) {
+//   $window.ga('create', 'UA-75575300-1', 'auto');
+//   $rootScope.$on('$stateChangeSuccess', function (event) {
+//       window.scrollTo(0,0);
+//       $window.ga('send', 'pageview', $location.path());
+//   });
+// }]);
+projects.run(function ($rootScope, $state, $stateParams, $location, $window) {
   $window.ga('create', 'UA-75575300-1', 'auto');
   $rootScope.$on('$stateChangeSuccess', function (event) {
       window.scrollTo(0,0);
       $window.ga('send', 'pageview', $location.path());
   });
-}]);
+});
 
 projects.controller("myCtrl", function($scope) {
     $scope.painting = [
