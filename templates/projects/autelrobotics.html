@@ -11,7 +11,7 @@
     <div class="row">
       <div class="col-sm-4">
         <p class="h0">Starlink Onboarding</p>
-        <p>Onboarding is a feature of Autel Robotics’ Starlink app that takes care of new user’s first time fly experience by providing interactive setup instructions and important fly tips.</p>
+        <p>A feature of Autel Robotics’ Starlink app that takes care of new user’s first time fly experience by providing interactive setup instructions and necessary fly tips.</p>
       </div>
       <div class="col-sm-1"></div>
       <div class="col-sm-7">
@@ -41,25 +41,30 @@
       </h2>
       <div class="prj_text">
         <p>
-          Imagine you were new to drones and just ordered your first drone. You were so excited when the drone finally came and couldn’t wait for the first try. <span class="highlight">However, you found the user manual unclear and had to spend way longer time than expected to assemble the drone, you were frustrated by keeping failing the compass calibration, and you were so confused by the icons and buttons on the app.</span> When you finally got ready to fly, would you still be that excited? Or you felt exhausted already?
+          Imagine you ordered your first drone a few days ago. You were so excited when the drone finally came and couldn’t wait for the first try, but you had no idea what to do. Then you found a Quick Start Guide and a user manual in the box. You opened the Quick Start Guide because it looked like what you need: a guide that is quick.
         </p>
         <p>
-          The original setup process includes two parts:
+          However...
           <ul>
-            <li>The user assembles and calibrates the drone according to the Quick Start Guide booklet</li>
-            <li>The user understands the app screen before they fly</li>
+            <li>you found the user manual so unclear that you had to spend way longer time than expected to assemble the drone</li>
+            <li>you were frustrated by keeping failing the compass calibration</li>
+            <li>you were so confused by the icons and buttons on the app and regretted skipping the screen walkthrough.</li>
           </ul>
+          When you finally got ready to fly, would you still be that excited?
         </p>
+        <br />
         <p>
-          There are a few factors that stop the setup process from being effective and efficient:
+          <span class="highlight">What the user wants to fly for the first time:</span>
           <ul>
-            <li>The Quick Start Guide was poorly written</li>
-            <li>Static images and lack of system feedback make users less confident</li>
-            <li>Calibration is hard and needs a good way to be demonstrated to the user</li>
-            <li>The app screen contains a lot of information and the annotations are overwhelming so that the user tends not to read them</li>
+            <li>An <span class="highlight">easy to read</span> instruction that helps them get into the air <span class="highlight">quickly</span> and complete some <span class="highlight">basic</span> operations.</li>
+          </ul>
+          <span class="highlight">NOT:</span>
+          <ul>
+            <li>A Quick Start Guide that is not quick</li>
+            <li>A user manual that provides too much information for the first fly</li>
+            <li>A couple of camera screens with overwhelming annotations that no one wants to read</li>
           </ul>
         </p>
-        <p>In the coming sections, I will talk about how I solved these problems through iterations.</p>
       </div>
     </div>
   </div>
@@ -68,13 +73,23 @@
 
 <section class="prj_content">
   <div class="row">
-    <div class="col-xs-12">
+    <div class="col-sm-6">
+      <h2>
+        <span class="num">goal</span>
+      </h2>
+      <div class="prj_text">
+        <p>
+          Before I joined, the idea of Onboarding was already generated, which aims to decrease total setup time and build a basic knowledge base for new users. My work focused on figuring out a smooth user flow for Onboarding and an efficient way to present information. 
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-6">
       <h2>
         <span class="num">challenge</span>
       </h2>
       <div class="prj_text">
         <p>
-          The setup process was defined by the hardware and software team together. Although I was aware of the complication of the setup process, there was no way to make changes to it but make it more comprehensive for users. Before I joined, the idea of Onboarding was already generated, which <span class="highlight">aims to decrease total setup time and build basic knowledge base</span> for new users. <span class="highlight">My work focused on figuring out a smooth user flow for Onboarding and how to present information effectively and efficiently by taking advantage of the mobile interactions.</span>
+          The setup process was defined by the hardware and software team together. Although I was aware of the complication of the setup process, there was no way to make changes to it but make it more comprehensive for users.
         </p>
       </div>
     </div>
@@ -89,59 +104,82 @@
         <span class="num">process</span>
       </h2>
       <div class="prj_text">
-        <p><span class="num2">Iteration 1 & Usability Testing</span></p>
+        <p><span class="num2">// Usability Testing //</span></p>
         <p>
-          I started with the usability testing of the first Onboarding prototype that was created by my partner Jasmine to see <span class="highlight">if the Onboarding would be a promising way to achieve the goal and what problems the prototype had at that stage</span>. We decided to conduct an A/B testing on the Quick Start Guide and the Onboarding prototype because we wanted to compare how differently the users appeared.
-        </p>
+          <span class="highlight">Onboarding vs User Manual</span><br />
+          I started with the usability testing of the Onboarding prototype version that was created by my partner before I joined to see if the Onboarding would be a promising way to achieve the goal and what problems the prototype had at that stage. We conducted an A/B testing on the user manual and the Onboarding prototype because we wanted to compare the results and decide whether or not to continue working on Onboarding.
         <p>
-          After 17 rounds of tests (9 on the Quick Start Guide and 8 on the Onboarding prototype), we were happy to see that the group who followed the Quick Start Guide needed over 30 minutes to finish the setup process, while the group who followed the prototype spent only about 15 minutes. What’s more, the <a href="https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html" target="_blank" class="underline">SUS scores</a> for the Quick Start Guide and the Onboarding prototype were 63 and 80 respectively.
+          <span class="highlight">Results: 15min vs 30min, 80 points vs 63 points</span><br />
+          After 16 rounds of tests (8 on the user manual and 8 on the Onboarding prototype), we were happy to see that on average the group who followed Onboarding spent only about 15 minutes to finish the setup process, while the group who followed the user manual needed over 30 minutes. What’s more, the <a href="https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html" target="_blank" class="underline">SUS scores</a> for Onboarding and the user manual were 80 and 63 respectively. 
         </p>
       </div>
 
       <br />
       <div class="prj_text">
-        <p><span class="num2">Iteration 2</span></p>
+        <p class="num2">// Iteration 1 - Changes To Orientation & Flow //</p>
         <p>
-          The Onboarding would be the first screen when the Starlink app is opened for the first time and the user is more likely to hold their phone vertically when they open the app. Therefore, in this iteration, we used vertical screens so that the user doesn’t have to rotate their phone to read the content and reading with vertical screen is more comfortable. 
+          With the happy results of the usability testing, the Onboarding got to be continued. Again, one of my responsibilities was to make sure the user flow is smooth. In order to achieve it, I suggested some changes that resulted in this iteration. 
+        </p>
+        <p class="highlight">Change 1: turned the screen orientation from horizontal to vertical</p>
+        <p>
+          Horizontal or vertical view has more effect on mobile phones than on tablets and it is more comfortable to read on a vertical screen when using a cell phone. Onboarding would be the first screen when the Starlink app is opened for the first time and mobile users are more likely to hold their phones vertically when they open the app. 
         </p>
         <p>
-          Another big change is the Onboarding content. Instead of simply walking the user through all the steps needed to get into the air, it is important to provide them needed knowledge to fly safely and correctly, as well. The modified content shows our consideration throughout the first fly experience. 
+          I have also thought about keeping both vertical and horizontal views for Onboarding, but because of the time limit, I decided to leave the horizontal view design for the future.
         </p>
         <p><img style="margin-top: 5px;" width="100%" src="templates/projects/autel/ver2.png"></p>
+        <p class="highlight">Change 2: simplified the user flow and replaced static images with GIFs</p>
         <p>
-          This iteration also solved the problems that the usability testing revealed:
+          The usability testing revealed some problems:
           <ul>
             <li>
-              <p><span class="highlight">Problem:</span> Users still had difficulty understanding some of the images. People feel unsafe about the things they don’t know. For example, it needs some strength to pull out the battery. The first prototype used a static image to tell users how to pull the battery and users failed because they were scared of breaking the drone.</p>
+              <p>
+                <span class="highlight">Static images didn’t provide enough information to build user’s confidence.</span>
+                <br />
+                People feel unsafe about the things they don’t know. For example, it needs some strength to pull out the battery. The first prototype used a static image to tell users how to pull the battery and users failed because they were scared of breaking the drone.
+              </p>
               <p><span class="highlight">Solution:</span> Use GIFs to show the results of the behavior so that users know what they are expecting and be more confident.</p> 
             </li>
             <li>
-              <p><span class="highlight">Problem:</span> Users were confused by how the tabs were aligned with the circles.</p> 
+              <p>
+                <span class="highlight">Step flow wasn’t intuitive and users were confused by how the tabs were aligned with the circles.</span>
+                <br />
+                What most users did during the test was to open the first circle, go through all the tabs, close the tab window, and then open the second circle instead of going to the next screen.
+              </p> 
               <p><span class="highlight">Solution:</span> Simplified the overall navigation by removing circles and tabs and changing them to labels and details.</p>
-              <p><img style="margin-top: 5px;" width="100%" src="templates/projects/autel/ver1.png"></p>
             </li>
           </ul>
+          <p><img style="margin-top: 5px;" width="100%" src="templates/projects/autel/ver1.png"></p>
         </p>
       </div>
 
       <br />
       <div class="prj_text">
-        <p><span class="num2">Iteration 3 - Recap the Onboarding Goal</span></p>
+        <p><span class="num2">// Iteration 2 - Keep It Short & Improve Screen Walkthrough //</span></p>
         <p>
-          Adding content created a new problem: the Onboarding was getting longer. <span class="highlight">I never forgot that the goal was to make the onboarding process short.</span> Therefore, I started to review the steps to see if they could be short and efficient. 
+          After showing the previous version to the manager, we were asked to add safety guidelines to the Onboarding. We agreed that it was needed, but adding content created a new challenge: the Onboarding was getting longer, which pushed our design away from the goal. We needed to keep the process short.  
         </p>
         <p>
-          I consulted the technicians in the company about important steps and knowledge for the setup and fly. Also, in the second version, the Onboarding was still independent to the actual app so that the user has to finish the instructions before connecting and calibrating their drone. During the usability tests, the screenshots and calibration video were shown to the users before they started to calibrate and most of them couldn’t calibrate successfully. They couldn’t find the button to get started and they forgot the steps already. 
+          <span class="highlight">Make it look short</span>
+          <br />
+          I read through all the steps to see if they could be combined. I also consulted the technicians in the company about important steps and knowledge for the setup and fly to make sure my changes were not misleading.
         </p>
         <p>
-          I suggested we break the onboarding content into two parts: the assemble part that only involves the drone and the connected part that the Starlink app is needed. In this way the Onboarding not only wouldn’t feel endlessly long before the user could interact with the app, but also easier to follow step by step.
+          <span class="highlight">Make it feel short</span>
+          <br />
+          Until then the Onboarding was still independent to the actual app so that the user had to finish the instructions before connecting and calibrating their drone, which means no matter how badly they wanted to try it on their own, they had to wait until they read everything. It might take 3 minutes in total, but it definitely feels more than that. Also, it’s more efficient and engaging to have users follow step by step.
         </p>
-        <p><img style="margin-top: 5px;" width="100%" src="templates/projects/autel/connected.png"></p>
         <p>
-          In this version, we also changed scrolling to pagination to keep the content in a reasonable length and divided the app screen walkthrough into small parts so that it could be easier to read.
+          Therefore, I suggested we break the onboarding content into two parts: the assemble part that only involves the drone and the connected part that the Starlink app is needed. In this way the Onboarding part not only feels shorter, but also is easier to follow.
+          <br />
+          <img style="margin-top: 5px;" width="100%" src="templates/projects/autel/connected.png">
         </p>
-        <p><img style="margin-top: 5px;" width="100%" src="templates/projects/autel/ver3.png"></p>
-        <p><img style="margin-top: 5px;" width="100%" src="templates/projects/autel/screen.png"></p>
+        <p>
+          <span class="highlight">Make annotations pleasant to read</span>
+          <br />
+          As mentioned before, the original camera screen walkthrough was overwhelming. According to the usability testing, most users just skipped it because facing such a mess, they didn’t know where to start. So we introduced the camera screen by sections and it became easier to read.
+          <img style="margin-top: 5px;" width="100%" src="templates/projects/autel/screen.png">
+        </p>
       </div>
     </div>
   </div>
@@ -155,14 +193,13 @@
         <span class="num">other contributions</span>
       </h2>
       <div class="prj_text">
-        <p><span class="num2">Autopilot Redesign Sketches</span></p>
+        <p><span class="num2">// Autopilot Redesign Sketches //</span></p>
         <p>
           Although we worked mostly on the onboarding part, we always kept in mind that there were other parts of the app needed to be considered. The sketches on the left are my ideas of the app’s auto pilot feature. This smart feature allows the user to program the route of the drone, such as following, orbiting, and flying along waypoints.
         </p>
         <p><img style="margin-top: 5px;" width="100%" src="templates/projects/autel/auto.png"></p>
         <br />
-
-        <p><span class="num2">Settings Card Sorting</span></p>
+        <p><span class="num2">// Settings Card Sorting //</span></p>
         <p>
           The Starlink app allows users to make changes to the app system, the hardware, and camera. The same time the settings maximize the app’s customizability, they confuse the users. It’s not only because there is too much information under the setting button so that the users need a long time to find what they want, but also many settings are for advanced users only so that general users feel confused when reading those professional terms.
         </p>
@@ -170,20 +207,7 @@
       </div>
     </div>
   </div>
-  <hr>
 </section>
-
-<!-- <section class="prj_content">
-  <div class="row">
-    <div class="col-xs-12">
-      <h2>
-        <span class="num">reflection</span>
-      </h2>
-      <div class="prj_text">
-      </div>
-    </div>
-  </div>
-</section> -->
 
 <section class="prj_content">
   <p class="end">- END -</p>
