@@ -1,0 +1,130 @@
+<style type="text/css">
+  #empty {
+    height: 50px;
+  }
+
+  .heading, #current_prj {
+    color: #C28FE0;
+  }
+
+  .highlight {
+    color: #B761E3;
+  }
+
+  #current_prj:hover {
+    color: #B761E3;
+  }
+</style>
+
+<script src="js/main.js" type="text/javascript"></script>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" ui-sref="main" style="color: #fff">YL</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a class="dropdown-toggle" id="current_prj" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" ng-click="gotoElement('top')">Ambient <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a ui-sref="projects.aqua">Aqua</a></li>
+            <li><a ui-sref="projects.doki">Doki·Doki</a></li>
+            <li><a ui-sref="projects.echo">How-To Helper</a></li>
+          </ul>
+        </li>
+        <li class="anchor"><a ng-click="gotoElement('problem')">PROBLEM</a></li>
+        <li class="anchor"><a ng-click="gotoElement('ideation')">IDEATION</a></li>
+        <li class="anchor"><a ng-click="gotoElement('interview')">INTERVIEW</a></li>
+        <!-- <li class="anchor"><a ng-click="gotoElement('sketch')">SKETCHES</a></li> -->
+        <!-- <li class="anchor"><a ng-click="gotoElement('prototype')">PROTOTYPE</a></li> -->
+        <!-- <li class="anchor"><a ng-click="gotoElement('final')">FINAL DESIGN</a></li> -->
+        <li class="anchor"><a ng-click="gotoElement('prototype')">FINAL DESIGN</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="project_title">
+  <p>Ambient</p>
+  <p class="role">Individual Project | Rapid Prototyping | Interaction Design | UI Design</p>
+</div>
+
+<h3 class="heading" id="problem">PROBLEM</h3>
+<div class="project_content">
+  <p>
+    The advantages of a calendar app over a traditional calendar are obvious, but for completing very simple tasks, using traditional methods can be easier. 
+  </p>
+  <p>
+    For example, if you want to check if there’s a plan on a specific day using your mobile phone, you need to get your phone, unlock it, find and open the app, and start checking. However, if you have calendar on the wall, all you need to do is to look up and find the date.
+  </p>
+  <p class="highlight">
+    Therefore, I wanted to design a calendar that keeps the advantages of a digital product and also makes basic tasks back to simple as they should have been. 
+  </p>
+</div>
+
+<h3 class="heading" id="ideation">IDEATION</h3>
+<div class="project_content">
+  <p>
+    I was inspired by the relationship between time and date that clock has 12 hours and calendar has 12 months, so I decided to explore the opportunities of combining a wall clock and a calendar into one piece.
+  </p>
+</div>
+
+<h3 class="heading" id="interview">INTERVIEW</h3>
+<div class="project_content">
+  <p>
+    Since it was a 2-week class project, I only did interviews with a small group of people. The purpose of interview was to understand indoor behaviors of checking time and dates and further help me to form concrete ideas about the design. 
+  </p>
+  <p>
+    From the interview, I learned that:
+  </p>
+  <p><img width="100%" src="templates/projects/ambient/interview.png"></p>
+  <p>
+    According to the interviews, I generated a persona of a lady called Georgina. Georgina is a young mother and has a 3-year old son. Recently, she has been considering finding a kindergarten for her son.
+  </p>
+  <p>
+    Scenario: Georgina is making a phone call with a local kindergarten to schedule a tour. Over the phone, she is given some dates to choose from and she wants to know which day works for her. She walks to the calendar on the wall and easily finds the information she needs. After she confirms the date, she updates the event to the calendar.
+  </p>
+  <p>
+    Then I combined the design goal with the interview findings to summarize the following design requirements:
+  </p>
+  <p><img width="100%" src="templates/projects/ambient/requirements.png"></p>
+</div>
+
+<!-- <h3 class="heading">SKETCHES</h3>
+<div class="project_content">
+  <p>
+    By default, Ambient is a clock and people can tell the time distance away. When tapped, it turns into a monthly calendar. 
+  </p>
+  <p><img width="100%" src="templates/projects/ambient/sketch.png"></p>
+</div> -->
+
+<h3 class="heading" id="prototype">final design</h3>
+<div class="project_content">
+  <p>
+    I made a video prototype as the deliverable of the class project to showcase the idea.
+  </p>
+  <div style="text-align: center;">
+    <iframe src="https://player.vimeo.com/video/211255391" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
+<!--   <br /><p>
+    After the class was over, I took some extra time tested the prototype with some participants and got feedback that led to the final design.
+  </p> -->
+</div>
+
+<!-- <h3 class="heading">FINAL DESIGN</h3>
+<div class="project_content">
+</div> -->
+
+<!-- <h3 class="heading">DESIGN NEVER ENDS</h3>
+<div class="project_content">
+</div> -->

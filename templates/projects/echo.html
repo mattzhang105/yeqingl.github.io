@@ -1,105 +1,89 @@
-<div class="topnav">
-  <div class="prev_next up nav_content">
-    <a ui-sref="projects.aqua"><img src="img/left.png" width="50"></a>
-    <a ui-sref="projects.surf"><img src="img/right.png" width="50"></a>
-    &nbsp;&nbsp;&nbsp;&nbsp;<a ui-sref="main"><img src="img/exit.png" width="50"></a>
-  </div>
+<style type="text/css">
+  #empty {
+    height: 50px;
+  }
+
+  .heading, #current_prj {
+    color: #82baf2;
+  }
+
+  .highlight {
+    color: #44a1ff;
+  }
+
+  #current_prj:hover {
+    color: #44a1ff;
+  }
+</style>
+
+<script src="js/main.js" type="text/javascript"></script>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" ui-sref="main" style="color: #fff">YL</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a class="dropdown-toggle" id="current_prj" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" ng-click="gotoElement('top')">How-To Helper <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a ui-sref="projects.aqua">Aqua</a></li>
+            <li><a ui-sref="projects.doki">Doki·Doki</a></li>
+            <li><a ui-sref="projects.ambient">Ambient</a></li>
+          </ul>
+        </li>
+        <li class="anchor"><a ng-click="gotoElement('background')">BACKGROUND</a></li>
+        <li class="anchor"><a ng-click="gotoElement('ideation')">IDEATION</a></li>
+        <li class="anchor"><a ng-click="gotoElement('design')">DESIGN</a></li>
+        <li class="anchor"><a ng-click="gotoElement('demo')">DEMO</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="project_title">
+  <p>How-To Helper Amazon Echo Skill</p>
+  <p class="role">My Contribution: Voice User Interface Design | Front-End Development</p>
 </div>
 
-<section class="banner" style="background: #30C8C8; /* For browsers that do not support gradients */
-  background: -webkit-radial-gradient(#30C8C8, #04344E); /* Safari 5.1 to 6.0 */
-  background: -o-radial-gradient(#30C8C8, #04344E); /* For Opera 11.6 to 12.0 */
-  background: -moz-radial-gradient(#30C8C8, #04344E); /* For Firefox 3.6 to 15 */
-  background: radial-gradient(#30C8C8, #04344E); /* Standard syntax */">
-  <div class="container-fluid prj_content">
-    <div class="row">
-      <div class="col-sm-4">
-        <p class="h0">How-To Helper</p>
-        <p>
-          A voice tutorial that “guides you through everything”.
-        </p>
-      </div>
-      <div class="col-sm-1"></div>
-      <div class="col-sm-7" style="text-align: center;">
-      <iframe width="640" height="360" src="https://www.youtube.com/embed/mWIl6DYVQ-E" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </div>
-    <div class="row"><div class="col-xs-12"><p class="date"><i>June 2016 - August 2016, Group of 2</i></p></div></div>
-  </div>
-</section>
+<h3 class="heading" id="background">BACKGROUND</h3>
+<div class="project_content">
+  <p>
+    In summer 2016, I attended a research class at UW, exploring the opportunities of VUI. At the end of the class, my partner and I built a prototype for our Amazon Echo skill.
+  </p>
+</div>
 
-<section class="prj_content">
-  <div class="row">
-    <div class="col-xs-12">
-      <p class="prj_text">
-        In summer 2016, the same time I was having an internship, I attended a research class at UW,  exploring the opportunities of VUI. At the end of the class, my partner and I built a prototype for our Amazon Echo skill.
-      </p>
-    </div>
-  </div>
-  <hr>
-</section>
+<h3 class="heading" id="ideation">IDEATION</h3>
+<div class="project_content">
+  <p>
+    Starting with comparing VUI and GUI I found that one of the advantages of voice interaction is that the user’s hands are free from the device, which breaks some limitations of current GUI interactions. So I started to think about what experience could be improved by freeing both hands. At that time, I was doing the usability testing of my internship project, which is a mobile solution that guides user through complex setup process for the drone. I noticed that during the setup process the participants have to switch their attentions back and forth between the cell phone and the drone and pick up and put down their phones multiple times. Having a voice instruction can make the user focus more on the drone and be more efficient.
+  </p>
+  <p>
+    My partner at first wanted to make a voice tutorial for bike fixing, so we decided to form a group and make an Alexa skill that provides general tutorials.
+  </p>
+</div>
 
-<section class="prj_content">
-  <div class="row">
-    <div class="col-xs-12">
-      <h2>
-        <span class="num">ideation</span>
-      </h2>
-      <div class="prj_text">
-        <p>
-          Starting with comparing VUI and GUI I found that one of the advantages of voice interaction is that the user’s hands are free from the device, which breaks some limitations of current GUI interactions. So I started to think about what experience could be improved by freeing both hands. At that time, I was doing the usability testing of my internship project, which is a mobile solution that guides user through complex setup process for the drone. I noticed that during the setup process the participants have to switch their attentions back and forth between the cell phone and the drone and pick up and put down their phones multiple times. Having a voice instruction can make the user focus more on the drone and be more efficient.
-        </p>
-        <p>
-          My partner at first wanted to make a voice tutorial for bike fixing, so we decided to form a group and make an Alexa skill that provides general tutorials. 
-        </p>
-      </div>
-    </div>
-  </div>
-  <hr>
-</section>
+<h3 class="heading" id="design">DESIGN</h3>
+<div class="project_content">
+  <p>
+    The design of VUI doesn’t involve physical interfaces, so the user flow becomes extremely important. We used Agile development and each sprint was one-week long. We started with the overall user flow from searching to ending a tutorial. Then every week, we designed and implemented one or two interactions each depending on the complexity. I mostly focused on the interactions on a specific tutorial, and by the time the class ended, the interactions included jumping between steps, pause, repeat, and exit half-way.
+  </p>
+  <p><img width="100%" src="templates/projects/echo/design.png"></p>
+</div>
 
-<section class="prj_content">
-  <div class="row">
-    <div class="col-xs-12">
-      <h2>
-        <span class="num">design & development</span>
-      </h2>
-      <div class="prj_text">
-        <p>
-          The design of VUI doesn’t involve physical interfaces, so the user flow becomes extremely important. We used Agile development and each sprint was one-week long. We started with the overall user flow from searching to ending a tutorial. Then every week, we designed and implemented one or two interactions each depending on the complexity. I mostly focused on the interactions on a specific tutorial, and by the time the class ended, the interactions included jumping between steps, pause, repeat, and exit half-way.
-        </p>
-        <div class="col-sm-6">
-          <p><img style="margin-top: 5px;" width="100%" src="templates/projects/echo/flow1.png"></p>
-        </div>
-        <div class="col-sm-6">
-          <p><img style="margin-top: 5px;" width="100%" src="templates/projects/echo/flow2.png"></p>
-        </div>
-      </div>
-    </div>
+<h3 class="heading" id="demo">DEMO</h3>
+<div class="project_content">
+  <div style="text-align: center;">
+    <iframe src="https://player.vimeo.com/video/211564965" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   </div>
-  <hr>
-</section>
-
-<section class="prj_content">
-  <div class="row">
-    <div class="col-xs-12">
-      <h2>
-        <span class="num">demo</span>
-      </h2>
-      <div class="prj_text">
-        <p style="text-align: center;"><iframe width="640" height="360" src="https://www.youtube.com/embed/mWIl6DYVQ-E" frameborder="0" allowfullscreen></iframe></p>
-      </div>
-    </div>
-  </div>
-  <!-- <hr> -->
-</section>
-
-<section class="prj_content">
-  <br />
-  <p class="end">- END -</p>
-  <div class="prev_next down">
-    <a ui-sref="projects.aqua"><img src="img/left.png" width="50"></a>
-    <a ui-sref="projects.surf"><img src="img/right.png" width="50"></a>
-  </div>
-  <br /><hr>
-</section>
+</div>

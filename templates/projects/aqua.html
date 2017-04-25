@@ -1,91 +1,159 @@
-<div class="topnav">
-  <div class="prev_next up nav_content">
-    <a ui-sref="projects.autelrobotics"><img src="img/left.png" width="50"></a>
-    <a ui-sref="projects.echo"><img src="img/right.png" width="50"></a>
-    &nbsp;&nbsp;&nbsp;&nbsp;<a ui-sref="main"><img src="img/exit.png" width="50"></a>
-  </div>
+<style type="text/css">
+  .heading, #current_prj {
+    color: #8fc1c4;
+  }
+
+  .highlight {
+    color: #09c6c6;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .bg {
+    margin-top: 0;
+  }
+
+  #list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  #current_prj:hover {
+    color: #09c6c6;
+  }
+
+  @media screen and (min-width: 1500px) {
+    #gif {
+      width: 50%;
+    }
+  }
+</style>
+
+<script src="js/main.js" type="text/javascript"></script>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" ui-sref="main" style="color: #fff">YL</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a class="dropdown-toggle" id="current_prj" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" ng-click="gotoElement('top')">Aqua <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a ui-sref="projects.ambient">Ambient</a></li>
+            <li><a ui-sref="projects.doki">Doki·Doki</a></li>
+            <li><a ui-sref="projects.echo">How-To Helper</a></li>
+          </ul>
+        </li>
+        <li class="anchor"><a ng-click="gotoElement('background')">BACKGROUND</a></li>
+        <li class="anchor"><a ng-click="gotoElement('ideation')">IDEATION</a></li>
+        <li class="anchor"><a ng-click="gotoElement('sketch')">SKETCHES</a></li>
+        <li class="anchor"><a ng-click="gotoElement('wireframes')">WIREFRAMES & PROTOTYPE</a></li>
+        <li class="anchor"><a ng-click="gotoElement('final')">FINAL DESIGN</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<div class="project_title">
+  <p>Aqua Music Player</p>
+  <p class="role">Individual Project | Wireframe | Prototype | UI Design | Interaction Design</p>
 </div>
 
-<section class="banner" style="text-shadow: 1px 1px 3px #634b38; background-image: url(templates/projects/aqua/banner.jpg); background-size: 100%; background-repeat: no-repeat; padding-top: 0">
-  <div class="container-fluid prj_content">
-    <div class="row">
-      <div class="col-xs-5 col-sm-4" style="padding: 15px; margin-top: 45px">
-        <p class="h0">Aqua Music Player</p>
-        <p>Aqua is your unique music player that remembers, learns, and visualizes user's listening habit.</p>
-      </div>
-      <div class="col-xs-6 col-sm-7" style="visibility: hidden;">
-        <img width="100%" src="templates/projects/aqua/banner.jpg">
-        <img width="100%" src="templates/projects/aqua/banner.jpg">
-      </div>
-    </div>
-    <div class="row"><div class="col-xs-12"><p class="date"><i>June 2015 - July 2015, Individual Project</i></p></div></div>
-  </div>
-</section>
+<div class="center" id="top">
+  <img id="gif" width="60%" src="templates/projects/aqua/aqua.gif">
+</div>
 
-<section class="prj_content">
-  <div class="row">
-    <div class="col-xs-12">
-      <h2>
-        <span class="num">ideation</span>
-      </h2>
-      <div class="prj_text">
-        <p>
-          Everyone has their own music player. At that time, I was using a Chinese music player called <a href="https://douban.fm/" target="_blank" class="underline">Douban FM</a>. Instead of giving users a wide range of control, its simplicity allows very limited interactions and wants users to “meet their music by chance” as its vision statement. Users can’t search for a specific song / singer or customize a playlist (the active search function is enabled in its latest version, which makes me a little sad because I think sometimes it’s good to be passive and enjoy the given beauty). 
-        </p>
-        <p>
-          <span class="highlight">Using a music player is like building a unique friendship.</span> The longer time you use it, the better it knows about you. You don’t have to tell it about what you like, and it already knows. Until that summer, I had been using Douban FM everyday for almost a year. During that period of time, I can feel the change of my taste and the music that Douban FM plays changes along with me. It is a unique existence to me and everyone’s Douban FM is unique. <span class="highlight">Therefore, I decided to design a music player that enhances the uniqueness.</span>
-        </p>
-      </div>
-    </div>
-  </div>
-  <hr>
-</section>
+<h3 class="heading bg" id="background">BACKGROUND</h3>
+<div class="project_content">
+  <p>
+    One day, I was going to play some music on Spotify when relaxing, but I got tired of listening to “my favorites” and wanted to find something new. I clicked on “Browse” and selected “Chill” as the mood. I was shown a lot of relevant playlists and I had no idea which one to choose. 
+  </p>
+  <p><img width="100%" src="templates/projects/aqua/spotify.png"></p>
+  <p>
+    I clicked on a random one and hoped it would match my taste, but it didn’t. So I tried another playlist but still didn’t like it. After a few attempts… “well, maybe I’ll just listen to my favorites.”
+  </p>
+  <p>
+    Many music apps on the market are undoubtedly powerful. They provide various functions and give people a lot of control. However, to me, instead of giving users a lot of freedom to make decisions, an ideal music app should make decisions for its users because it knows them so well.
+  </p>
+  <p class="highlight">
+    Therefore, I decided to design a music player that can make decisions for me and save my efforts.
+  </p>
+</div>
 
-<section class="prj_content">
-  <div class="row">
-    <div class="col-xs-12">
-      <h2>
-        <span class="num">design</span>
-      </h2>
-      <div class="prj_text">
-        <p><span class="num2">// Iteration 1 //</span></p>
-        <p>
-          I came up with an idea that the music player visualizes user’s listening history and taste. I first thought of a planet whose surface grows a little tree that will form a unique shape and inside is composed of the top 4 genres the user listens to.
-        </p>
-        <p><img style="margin-top: 5px;" width="100%" src="templates/projects/aqua/ver1.png"></p>
-        <br />
-        <p><span class="num2">// Iteration 2 //</span></p>
-        <p>
-          Then I realized that it is unnecessary to show the user percentage since the numbers don’t mean a lot to them and without the numbers it’s not obvious to see the difference between each genre. Therefore, I decided to remove the planet and combine its function to the tree.
-        </p>
-        <br />
-        <p><span class="num2">// Iteration 3 //</span></p>
-        <p>
-          This iteration focuses on the UI. I changed the theme color from blue to green because some of my feedback said that the blue tree created a supernatural feeling and not very friendly. I also changed the hamburger menu to a tab bar since it’s easier to switch between different views and easier to see which screen the user is interacting with.
-        </p>
-        <p><img style="margin-top: 5px;" width="100%" src="templates/projects/aqua/ver2-3.png"></p>
-        <br />
-        <p><span class="num2">// Sketches //</span></p>
-        <p><img style="margin-top: 5px;" width="100%" src="templates/projects/aqua/sketch.png"></p>
-      </div>
-    </div>
-  </div>
-  <hr>
-</section>
+<h3 class="heading" id="ideation">IDEATION</h3>
+<div class="project_content">
+  <p>
+    My design focuses on solving two problems: how to play the right songs and how to adapt to the changes to the user’s taste over time. I figured that the solution should do the following things:
+  </p>
+  <ol id="list">
+    <li>
+      <span class="highlight">Play the right song</span><br />
+      New users need to complete a quiz about their listening habits. As they listen to more music, the music player will play music that match their tastes.
+    </li><br />
+    <li>
+      <span class="highlight">Play at an appropriate frequency</span><br />
+      Users are unlikely to have equal preference to each song in their “favorites”, so the the music player records users’ behaviors when they listen to their favorites and figures out an appropriate frequency for each song.
+    </li><br />
+    <li>
+      <span class="highlight">Visualize listening history</span><br />
+      It’s an interesting add-on feature to help users describe their music tastes.
+    </li>
+  </ol>
+</div>
 
-<section class="prj_content">
-  <div class="row">
-    <div class="col-xs-12">
-      <p class="prj_text" style="text-align: center;"><img width="70%" src="templates/projects/aqua/aqua.gif"></p>
-    </div>
-  </div>
-</section>
+<h3 class="heading" id="sketch">SKETCHES</h3>
+<div class="project_content">
+  <p>
+    I did brainstorm about how the tree should look like. The idea of the leaves were not chosen because as the tree grew luxuriant, it would be hard to tell which branch the leaves belong to.
+  </p>
+  <p><img width="100%" src="templates/projects/aqua/sketch.png"></p>
+</div>
 
-<section class="prj_content">
-  <p class="end">- END -</p>
-  <div class="prev_next down">
-    <a ui-sref="projects.autelrobotics"><img src="img/left.png" width="50"></a>
-    <a ui-sref="projects.echo"><img src="img/right.png" width="50"></a>
-  </div>
-  <br /><hr>
-</section>
+<h3 class="heading" id="wireframes">WIREFRAMES & PROTOTYPE</h3>
+<div class="project_content">
+  <p>
+    The wireframes were created based on the main user flow for testing purpose. Genre was chosen to be visualized because it is more descriptive and accurate than other categories, such as mood or occasions.
+  </p>
+  <br />
+  <p><img width="100%" src="templates/projects/aqua/wireframe.png"></p>
+  <br />
+  <p>
+    Since I only had time to do one serie of usability testing, I decided to add colors and make them higher fidelity so that I could get more feedbacks. 
+  </p>
+  <p><img width="100%" src="templates/projects/aqua/gen1.png"></p>
+  <p>
+    Based on the feedbacks, I changed the color theme from blue to green to make the music player more natural and friendly. I also replaced the hamburger menu with a navigation bar to  make the user flow clear.
+  </p>
+</div>
+
+<h3 class="heading" id="final">FINAL DESIGN</h3>
+<div class="project_content">
+  <p>
+    Based on the feedbacks, I changed the color theme from blue to green to make the music player more natural and friendly. I also replaced the hamburger menu with a navigation bar to  make the user flow clear.
+  </p>
+  <p>The final design accomplishes the three things mentioned above.</p>
+  <p class="center"><img width="100%" src="templates/projects/aqua/final.png"></p>
+</div>
+
+<h3 class="heading" if="future">DESIGN NEVER ENDS</h3>
+<div class="project_content">
+  <p>
+    The quiz and the app feature should be more matched. One of the questions asks “In what occasions do you listen to music?” and the options include “driving”, “running”, “relaxing”, etc. The idea was to help the music player to provide the right songs in different occasions, but the app doesn’t show an intention to learn about when it’s used. Therefore, I’m interested in exploring more about this in the future to make the app smarter. 
+  </p>
+</div>

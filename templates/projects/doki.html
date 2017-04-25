@@ -1,0 +1,131 @@
+<style type="text/css">
+  #empty {
+    height: 50px;
+  }
+
+  .heading, #current_prj {
+    color: #ef7777;
+  }
+
+  .highlight {
+    color: #F24A4A;
+  }
+
+  #current_prj:hover {
+    color: #F24A4A;
+  }
+</style>
+
+<script src="js/main.js" type="text/javascript"></script>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" ui-sref="main" style="color: #fff">YL</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a class="dropdown-toggle" id="current_prj" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" ng-click="gotoElement('top')">Doki·Doki <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a ui-sref="projects.aqua">Aqua</a></li>
+            <li><a ui-sref="projects.ambient">Ambient</a></li>
+            <li><a ui-sref="projects.echo">How-To Helper</a></li>
+          </ul>
+        </li>
+        <li class="anchor"><a ng-click="gotoElement('problem')">PROBLEM</a></li>
+        <li class="anchor"><a ng-click="gotoElement('users')">TARGETED USERS</a></li>
+        <li class="anchor"><a ng-click="gotoElement('initial')">INITIAL RESEARCH</a></li>
+        <li class="anchor"><a ng-click="gotoElement('research')">USER RESEARCH</a></li>
+        <li class="anchor"><a ng-click="gotoElement('design')">DESIGN</a></li>
+        <li class="anchor"><a ng-click="gotoElement('low-fi')">LOW-FI</a></li>
+        <li class="anchor"><a ng-click="gotoElement('final')">FINAL DESIGN</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="project_title">
+  <p>Doki·Doki</p>
+  <p class="role">My Contribution: Research | Wireframe | Prototype | UI Design | Visual Design</p>
+</div>
+
+<h3 class="heading bg" id="problem">PROBLEM</h3>
+<div class="project_content">
+  <p>
+    Approximately 610,000 people die of heart disease in the United States yearly - accounting for 1 in every 4 deaths, yet the common person has little to none knowledge on heart diseases unless their family had heart disease histories. 
+  </p>
+  <p>
+    Our goal is to bring heart disease awareness and prevention to people, as well as to motivate them to take an active role in their health. Because...
+  </p>
+  <p class="highlight">
+    hearts shouldn’t stop beating early.
+  </p>
+</div>
+
+<h3 class="heading bg" id="users">TARGETED USERS</h3>
+<div class="project_content">
+  <p>
+    The targeted users are students and working professionals who spend most of their time studying and working and are likely to neglect to live a healthy lifestyle. Based on our findings, we created a persona.
+  </p>
+</div>
+
+<h3 class="heading bg" id="initial">INITIAL RESEARCH</h3>
+<div class="project_content">
+  <p>
+    Our initial research showed that there were three problems that could cause heart disease due to unstable blood pressure.
+  </p>
+  <p><img width="100%" src="templates/projects/doki/cause.png"></p>
+  <p>
+    Fortunately, these problems are totally correctable, which were great entry points for us to solve the problem.
+  </p>
+</div>
+
+<h3 class="heading bg" id="research">USER RESEARCH</h3>
+<div class="project_content">
+  <p>
+    We conducted user research to understand lifestyles of our targeted users, their concerns about their health, and current technology they use to track health.
+  </p>
+  <p><img width="100%" src="templates/projects/doki/persona.png"></p>
+  <p>
+    From the survey, we also learned that wearable could be a good option.
+  </p>
+  <p><img width="100%" src="templates/projects/doki/survey.png"></p>
+</div>
+
+<h3 class="heading bg" id="design">DESIGN</h3>
+<div class="project_content">
+  <p>
+    We decided to move forward with a wearable, since compared with the heart health monitor on the market, a wearable is portable, provides real-time information, easy to understand, and affordable.
+  </p>
+  <p>
+    The idea is a wearable paired with smart phone app. The wearable is used mainly for gathering data from user and the app is used for data interpretation, notifications and detailed information. 
+  </p>
+  <p>
+    I also thought of using gradient outer ring on the wearable to indicate general health condition for long term motivation because lifestyle change is a slow process.
+  </p>
+  <p><img width="100%" src="templates/projects/doki/map.png"></p>
+</div>
+
+<h3 class="heading bg" id="low-fi">LOW-FI</h3>
+<div class="project_content">
+  <p>
+  </p>
+  <p><img width="100%" src="templates/projects/doki/prototype.png"></p>
+</div>
+
+<h3 class="heading bg" id="final">FINAL DESIGN</h3>
+<div class="project_content">
+  <p><img width="100%" src="templates/projects/doki/logo.png"></p>
+  <p><img width="100%" src="templates/projects/doki/hi-fi.png"></p>  
+<!--   <div id="empty" style="text-align: center;">
+    <iframe width="438" height="930" src="//invis.io/7V9JYVXH6" frameborder="0" allowfullscreen></iframe>
+  </div> -->
+</div>

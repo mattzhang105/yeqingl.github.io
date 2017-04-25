@@ -4,17 +4,14 @@
   <div class="container-fluid main_content">
     <div class="row">
       <div class="col-xs-12 yeqing">
-        <p class="yeqing" style="font-size: 40px; text-align: center;">+&nbsp;&nbsp;<span id="intro"> yeqing lou</span>&nbsp;&nbsp;+</p>
+        <p class="yeqing" style="font-size: 40px; text-align: center;"><span id="intro">YEQING LOU</span></p>
       </div>
     </div>
+
     <div class="row">
       <div class="col-sm-2">
         <ul id="filter">
           <li><a ui-sref="main">PROJECTS</a></li>
-          <!-- <li><a ui-sref="main" class="prj" id="mobile">&nbsp;&nbsp;&nbsp;&nbsp;MOBILE</a></li>
-          <li><a ui-sref="main" class="prj" id="web">&nbsp;&nbsp;&nbsp;&nbsp;WEB</a></li>
-          <li><a ui-sref="main" class="prj" id="print">&nbsp;&nbsp;&nbsp;&nbsp;PRINT</a></li>
-          <li><a ui-sref="main" class="prj" id="other">&nbsp;&nbsp;&nbsp;&nbsp;OTHER</a></li> -->
           <br />
           <li><a ui-sref="main.about">ABOUT</a></li>
           <br />
@@ -24,81 +21,75 @@
             <a href="https://www.linkedin.com/in/yeqinglou" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
             <a href="https://medium.com/@yeqinglou" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
           </li>
- <!--          <br />
-          <li>
-            MOBILE<br /><img src="img/qrcode.png" width="50%" alt="QR">
-          </li> -->
         </ul>
       </div>
-      <!-- <div class="col-xs-1"></div> -->
+
       <div class="col-sm-10">
         <div ui-view>
           <script src="js/main.js" type="text/javascript"></script>
+          
           <!-- thumbnails -->
           <div class="container-fluid">
             <div class="row allthumbs">
-              <!-- 1 -->
-              <div class="col-xl-3 col-md-4 col-sm-12 thumb thumb1 mobile">
-                <a ui-sref="projects.autelrobotics">
-                  <figure>
-                    <img src="img/autel.jpg" alt="Autel Robotics">
-                    <figcaption><span class="name">Starlink Onboarding</span><br />UX <b>-</b> Mobile App</figcaption>
-                  </figure>
-                </a>
+
+              <div class="col-xl-3 col-md-4 col-sm-12 thumb">
+                <figure>
+                  <a ui-sref="projects.aqua"><img src="img/aqua.jpg" alt="Aqua Music Player"></a>
+                  <figcaption>
+                    <hr>
+                    <h4>Aqua Music Player</h4>
+                    <p>Wireframe | Prototype | UI Design | Interaction Design</p>
+                    <hr>
+                  </figcaption>
+                </figure>
               </div>
-              <!-- 2 -->
-              <div class="col-xl-3 col-md-4 col-sm-12 thumb thumb1 mobile">
-                <a ui-sref="projects.aqua">
-                  <figure>
-                    <img src="img/aqua.jpg" alt="Aqua Music Player">
-                    <figcaption><span class="name">Aqua Music Player</span><br />UI <b>-</b> Mobile App</figcaption>
-                  </figure>
-                </a>
+
+              <div class="col-xl-3 col-md-4 col-sm-12 thumb">
+                <figure>
+                  <a ui-sref="projects.doki"><img src="img/doki.png" alt="DokiDoki"></a>
+                  <figcaption>
+                    <hr>
+                    <h4>Doki·Doki</h4>
+                    <p>Research | Wireframe | Prototype | UI Design | Visual Design</p>
+                    <hr>
+                  </figcaption>
+                </figure>
               </div>
-              <!-- 3 -->
-              <div class="col-xl-3 col-md-4 col-sm-12 thumb thumb1 other">
-                <a ui-sref="projects.echo">
-                  <figure>
-                    <img src="img/echo.jpg" alt="How-to Helper">
-                    <figcaption><span class="name">How-to Helper</span><br />Dev <b>-</b> Amazon Echo Skill</figcaption>
-                  </figure>
-                <!-- </a> -->
+
+              <div class="col-xl-3 col-md-4 col-sm-12 thumb">
+                <figure>
+                  <a ui-sref="projects.ambient"><img src="img/ambient.png" alt="Ambient"></a>
+                  <figcaption>
+                    <hr>
+                    <h4>Ambient</h4>
+                    <p>Rapid Prototyping | Interaction Design | UI Design</p>
+                    <hr>
+                  </figcaption>
+                </figure>
               </div>
-              <!-- 5 -->
-              <div class="col-xl-3 col-md-4 col-sm-12 thumb thumb1 print web">
-                <a ui-sref="projects.surf">
-                  <figure>
-                    <img src="img/surf.jpg" alt="Surf Incubator">
-                    <figcaption><span class="name">Surf Incubator Redesign</span><br />Brand <b>-</b> Digital, Print</figcaption>
-                  </figure>
-                </a>
+
+              <div class="col-xl-3 col-md-4 col-sm-12 thumb">
+                <figure>
+                  <a ui-sref="projects.echo"><img src="img/echo.jpg" alt="How-to Helper"></a>
+                  <figcaption>
+                    <hr>
+                    <h4>How-To Helper</h4>
+                    <p>Voice User Interface Design | Front-End Development</p>
+                    <hr>
+                  </figcaption>
+                </figure>
               </div>
-              <!-- 6 -->
-              <div class="col-xl-3 col-md-4 col-sm-12 thumb thumb1 web">
-                <a ui-sref="projects.share">
-                  <figure>
-                    <img src="img/share.jpg" alt="Share">
-                    <figcaption><span class="name">Share</span><br />Dev <b>-</b> Web Application</figcaption>
-                  </figure>
-                </a>
-              </div>
-              <!-- 7 -->
-              <div class="col-xl-3 col-md-4 col-sm-12 thumb thumb1 web">
-                <a ui-sref="projects.kc">
-                  <figure>
-                    <img src="img/kc.jpg" alt="Koran Cuban">
-                    <figcaption><span class="name">Korean Cubans Photos</span><br />Dev <b>-</b> Website</figcaption>
-                  </figure>
-                </a>
-              </div>
-            </div>
+
+            </div>   
           </div>
+
         </div>
       </div>
+
     </div>
   </div>
 
-  <footer>
-    Last update: Feb 2016
+  <footer id="footer1">
+    <img height="100%" src="img/bg.jpg">
   </footer>
 </div>
