@@ -40,13 +40,13 @@
             <li><a ui-sref="projects.echo">How-To Helper</a></li>
           </ul>
         </li>
-        <li class="anchor"><a ng-click="gotoElement('problem')">PROBLEM</a></li>
-        <li class="anchor"><a ng-click="gotoElement('users')">TARGETED USERS</a></li>
+        <li class="anchor"><a ng-click="gotoElement('challenge')">CHALLENGE</a></li>
+        <li class="anchor"><a ng-click="gotoElement('solution')">OUR SOLUTION</a></li>
         <li class="anchor"><a ng-click="gotoElement('initial')">INITIAL RESEARCH</a></li>
         <li class="anchor"><a ng-click="gotoElement('research')">USER RESEARCH</a></li>
-        <li class="anchor"><a ng-click="gotoElement('design')">DESIGN</a></li>
-        <li class="anchor"><a ng-click="gotoElement('low-fi')">LOW-FI</a></li>
-        <li class="anchor"><a ng-click="gotoElement('final')">FINAL DESIGN</a></li>
+        <li class="anchor"><a ng-click="gotoElement('ideation')">IDEATION</a></li>
+        <li class="anchor"><a ng-click="gotoElement('low-fi')">PROTOTYPE</a></li>
+        <li class="anchor"><a ng-click="gotoElement('final')">REFINE & FINAL DESIGN</a></li>
       </ul>
     </div>
   </div>
@@ -57,28 +57,37 @@
   <p class="role">My Contribution: Research | Wireframe | Prototype | UI Design | Visual Design</p>
 </div>
 
-<h3 class="heading bg" id="problem">PROBLEM</h3>
+<h3 class="heading bg" id="challenge">CHALLENGE</h3>
 <div class="project_content">
-  <p>
-    Approximately 610,000 people die of heart disease in the United States yearly - accounting for 1 in every 4 deaths, yet the common person has little to none knowledge on heart diseases unless their family had heart disease histories. 
-  </p>
-  <p>
-    Our goal is to bring heart disease awareness and prevention to people, as well as to motivate them to take an active role in their health. Because...
-  </p>
-  <p class="highlight">
-    hearts shouldn’t stop beating early.
-  </p>
+  <p>Our group were given a challenge to design a heart health monitor that can</p>
+  <ol id="list">
+    <li>
+      Measure and track pulse dynamics and other physiological states
+    </li>
+    <li>
+      Display several key parameters of heart health
+    </li>
+    <li>
+      Recommend nutrition, stress and exercise options to improve health
+    </li>
+  </ol>
 </div>
 
-<h3 class="heading bg" id="users">TARGETED USERS</h3>
+<h3 class="heading bg" id="solution">OUR SOLUTION</h3>
 <div class="project_content">
   <p>
-    The targeted users are students and working professionals who spend most of their time studying and working and are likely to neglect to live a healthy lifestyle. Based on our findings, we created a persona.
+    A wearable paired with a mobile app that tracks daily heart health and prevents heart disease due to unhealthy lifestyle in the long run.
   </p>
 </div>
 
 <h3 class="heading bg" id="initial">INITIAL RESEARCH</h3>
 <div class="project_content">
+  <p>
+    Speaking of heart health monitor, the first thing that came into my mind was a device designed specifically for heart disease patients.
+  </p>
+  <p>
+    However, instead of focusing on a medical solution, we wanted to raise heart health awareness among a larger population.
+  </p>
   <p>
     Our initial research showed that there were three problems that could cause heart disease due to unstable blood pressure.
   </p>
@@ -88,10 +97,17 @@
   </p>
 </div>
 
+<h3 class="heading bg" id="users">TARGETED USERS</h3>
+<div class="project_content">
+  <p>
+    The targeted users are students and working professionals who spend most of their time studying and working and are likely to neglect to live a healthy lifestyle.
+  </p>
+</div>
+
 <h3 class="heading bg" id="research">USER RESEARCH</h3>
 <div class="project_content">
   <p>
-    We conducted user research to understand lifestyles of our targeted users, their concerns about their health, and current technology they use to track health.
+    We conducted user research to understand lifestyles of our targeted users, their concerns about their health, and current technology they use to track health. Based on our findings, we created a persona.
   </p>
   <p><img width="100%" src="templates/projects/doki/persona.png"></p>
   <p>
@@ -100,7 +116,7 @@
   <p><img width="100%" src="templates/projects/doki/survey.png"></p>
 </div>
 
-<h3 class="heading bg" id="design">DESIGN</h3>
+<h3 class="heading bg" id="ideation">IDEATION</h3>
 <div class="project_content">
   <p>
     We decided to move forward with a wearable, since compared with the heart health monitor on the market, a wearable is portable, provides real-time information, easy to understand, and affordable.
@@ -114,16 +130,25 @@
   <p><img width="100%" src="templates/projects/doki/map.png"></p>
 </div>
 
-<h3 class="heading bg" id="low-fi">LOW-FI</h3>
+<h3 class="heading bg" id="low-fi">PROTOTYPE</h3>
 <div class="project_content">
   <p>
+    We recruited 5 participants for our usability testing. The purpose was to find any problem with the user flow and information display. 
   </p>
   <p><img width="100%" src="templates/projects/doki/prototype.png"></p>
+  <p>
+    <span class="highlight">Key finding 1: </span>Participants didn’t interpret “doctor” icon as send health profile to a doctor. They thought that was for consulting.
+  </p>
+  <p>
+    <span class="highlight">Key finding 2: </span>Participants didn’t realize the recommendations were swipeable and there were three kinds of recommendations in total.
+  </p>
 </div>
 
-<h3 class="heading bg" id="final">FINAL DESIGN</h3>
+<h3 class="heading bg" id="final">REFINE & FINAL DESIGN</h3>
 <div class="project_content">
+  <p>Logo Iterations</p>
   <p><img width="100%" src="templates/projects/doki/logo.png"></p>
+  <p>High Fidelity</p>
   <p><img width="100%" src="templates/projects/doki/hi-fi.png"></p>  
 <!--   <div id="empty" style="text-align: center;">
     <iframe width="438" height="930" src="//invis.io/7V9JYVXH6" frameborder="0" allowfullscreen></iframe>
