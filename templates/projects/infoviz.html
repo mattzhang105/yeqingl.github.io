@@ -1,0 +1,113 @@
+<style type="text/css">
+  #empty {
+    height: 50px;
+  }
+
+  .heading, #current_prj {
+    color: #f9cd7f;
+  }
+
+  .highlight {
+    color: #FFA500;
+  }
+
+  #current_prj:hover {
+    color: #FFA500;
+  }
+</style>
+
+<script src="js/main.js" type="text/javascript"></script>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" ui-sref="main" style="color: #fff">YL</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a class="dropdown-toggle" id="current_prj" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" ng-click="gotoElement('top')">Seattleites' Travel Trend <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <!-- <li><a ui-sref="projects.autelrobotics">Working @ Autel Robotics</a></li> -->
+            <li><a ui-sref="projects.aqua">Aqua</a></li>
+            <li><a ui-sref="projects.doki">Doki·Doki</a></li>
+            <li><a ui-sref="projects.ambient">Ambient</a></li>
+            <li><a ui-sref="projects.echo">How-To Helper</a></li>
+          </ul>
+        </li>
+        <li class="anchor"><a ng-click="gotoElement('problem')">PROBLEM</a></li>
+        <li class="anchor"><a ng-click="gotoElement('design')">DESIGN</a></li>
+        <li class="anchor"><a ng-click="gotoElement('test')">TEST & IMPLEMENT</a></li>
+        <li class="anchor"><a ng-click="gotoElement('final')">FINAL RESULT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="project_title">
+  <p>Seattleites' Travel Trend</p><br />
+  <p class="role">My Contribution: Problem Defining | Visual Design | Front-End Development</p>
+</div>
+
+<div class="project_content">
+  <div style="text-align: center;">
+    <iframe src="https://player.vimeo.com/video/217911041" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
+</div>
+
+<h3 class="heading bg" id="problem">PROBLEM</h3>
+<div class="project_content">
+  <p>
+    Most travel planning tools on the Internet required either a specific destination or a travel time. For people who do not have a clear preference for when and where to go, determining where to go is difficult due to a lack of inspiration.
+  </p>
+  <p class="highlight">
+    Therefore, by visualizing the monthly popular destinations from Seattle over the year 2016, we aimed to provide inspirations of places to visit for people traveling from Seattle.  
+  </p>
+</div>
+
+<h3 class="heading bg" id="design">DESIGN</h3>
+<div class="project_content">
+  <p>
+    We used a visualization methodology called <span class="highlight">Five Design Sheets</span> to guide the ideation process and finalize the design. 
+  </p>
+  <p class="highlight">Sheet 1: Brainstorm</p>
+  <p>At this stage, we each came up with a few ideas to visualize travel trend.</p>
+  <p><img width="100%" src="templates/projects/infoviz/sketch.png"></p>
+  <p class="highlight">Sheet 2 / 3 / 4: Initial Designs</p>
+  <p>Then we generalized three different designs and did analysis to them.</p>
+  <p><img width="100%" src="templates/projects/infoviz/analysis.png"></p>
+  <p class="highlight">Sheet 5: Realization Design</p>
+  <p>
+    After our discussion, the map visualization was selected. Instead of realizing the design at this stage, we created a paper prototype for testing.
+  </p>
+  <p><img width="100%" src="templates/projects/infoviz/paper.jpg"></p>
+</div>
+
+<h3 class="heading bg" id="test">TEST & IMPLEMENT</h3>
+<div class="project_content">
+  <p>
+    After testing the paper prototype, we made changes to our design and implemented into interactive visualization using D3.js.
+  </p>
+  <p>
+    <span class="highlight">Key finding 1: The context and purpose were not clear enough. </span>Participants couldn’t interpret the visualization as a map immediately without outline. Since the visualization didn’t have a title, they didn’t know what it was about until they finished the tasks.
+  </p>
+  <p>
+    <span class="highlight">Key finding 2: Visualization was crowded with information. </span>Since all destinations had their names labeled and were connected with Seattle, the image looked a little crowded. Also, the circles were overlapping each other, which made it difficulty to interact with.
+  </p>
+</div>
+
+<h3 class="heading bg" id="final">FINAL RESULT</h3>
+<div class="project_content">
+  <p>We made some changes according to the findings.</p>
+  <p><span class="highlight">Add titles: </span>We added titles to both pages of the visualization.</p>
+  <p><span class="highlight">Mitigate occlusion: </span>We removed lines and labels on the circles and allowed the map to zoom in and out to decrease occlusion.</p>
+  <p><img width="100%" src="templates/projects/infoviz/final.png"></p>
+  <p><img width="100%" src="templates/projects/infoviz/show.jpg"></p>
+</div>

@@ -24,15 +24,15 @@ projects.config(function($stateProvider, $urlRouterProvider, $locationProvider) 
       templateUrl: 'templates/projects.html',
     })
 
-    // .state('projects.autelrobotics', {
-    //   url:'/autelrobotics',
-    //   templateUrl: 'templates/projects/autelrobotics.html'
-    // })
+    .state('projects.autelrobotics', {
+      url:'/autelrobotics',
+      templateUrl: 'templates/projects/autelrobotics.html'
+    })
 
-    // .state('projects.share', {
-    //   url:'/share',
-    //   templateUrl: 'templates/projects/share.html'
-    // })
+    .state('projects.infoviz', {
+      url:'/infoviz',
+      templateUrl: 'templates/projects/infoviz.html'
+    })
 
     .state('projects.doki', {
       url:'/doki',

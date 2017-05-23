@@ -35,9 +35,11 @@
         <li class="dropdown">
           <a class="dropdown-toggle" id="current_prj" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" ng-click="gotoElement('top')">Doki·Doki <span class="caret"></span></a>
           <ul class="dropdown-menu">
+            <!-- <li><a ui-sref="projects.autelrobotics">Working @ Autel Robotics</a></li> -->
             <li><a ui-sref="projects.aqua">Aqua</a></li>
             <li><a ui-sref="projects.ambient">Ambient</a></li>
             <li><a ui-sref="projects.echo">How-To Helper</a></li>
+            <li><a ui-sref="projects.infoviz">Seattleites' Travel Trend</a></li>
           </ul>
         </li>
         <li class="anchor"><a ng-click="gotoElement('challenge')">CHALLENGE</a></li>
@@ -45,7 +47,7 @@
         <li class="anchor"><a ng-click="gotoElement('initial')">INITIAL RESEARCH</a></li>
         <li class="anchor"><a ng-click="gotoElement('research')">USER RESEARCH</a></li>
         <li class="anchor"><a ng-click="gotoElement('ideation')">IDEATION</a></li>
-        <li class="anchor"><a ng-click="gotoElement('low-fi')">PROTOTYPE</a></li>
+        <li class="anchor"><a ng-click="gotoElement('low-fi')">DESIGN & PROTOTYPE</a></li>
         <li class="anchor"><a ng-click="gotoElement('final')">REFINE & FINAL DESIGN</a></li>
       </ul>
     </div>
@@ -127,15 +129,18 @@
   <p>
     I also thought of using gradient outer ring on the wearable to indicate general health condition for long term motivation because lifestyle change is a slow process.
   </p>
-  <p><img width="100%" src="templates/projects/doki/map.png"></p>
 </div>
 
-<h3 class="heading bg" id="low-fi">PROTOTYPE</h3>
+<h3 class="heading bg" id="low-fi">DESIGN & PROTOTYPE</h3>
 <div class="project_content">
+  <p>
+    During design, we had a discussion over the initial app structure, since I found there should be stronger connection between the health profile page and the visualization of health condition. Later, a new version with the visualization being the subscreen was created.
+  </p>
+  <p><img width="100%" src="templates/projects/doki/map.png"></p>
+  <p><img width="100%" src="templates/projects/doki/prototype.png"></p>
   <p>
     We recruited 5 participants for our usability testing. The purpose was to find any problem with the user flow and information display. 
   </p>
-  <p><img width="100%" src="templates/projects/doki/prototype.png"></p>
   <p>
     <span class="highlight">Key finding 1: </span>Participants didn’t interpret “doctor” icon as send health profile to a doctor. They thought that was for consulting.
   </p>
