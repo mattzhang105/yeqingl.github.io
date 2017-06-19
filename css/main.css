@@ -6,6 +6,7 @@ body {
 	font-size: 1.2vw;
   /*background-color: #fafafa;*/
   cursor: default;
+  text-align: justify;
 }
 
 ::selection {
@@ -51,11 +52,6 @@ footer {
   border-bottom: dotted 1px #ff7328;
 }
 
-#aboutme {
-  text-align: justify;
-  margin: 50px 5px 60px 5px;
-}
-
 
 /*main*/
 
@@ -71,30 +67,38 @@ footer {
 }
 
 .title {
-  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-  text-align: left;
-  font-size: 24px;
-  text-transform: uppercase;
-  color: #ff7328;
-  font-weight: bold;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 2vw;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
-.title:hover {
-  color: #ff7328;
-  text-decoration: none;
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,.85);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .3s ease;
 }
 
-.title:focus {
-  color: #ff7328;
-  text-decoration: none;
+.image:hover .overlay {
+  height: 40%;
 }
 
-.yeqing {
-  margin-bottom: 65px;
-  margin-top: 60px;
-  color: #ff7328;
+.text {
+  white-space: nowrap; 
+  color: #fafafa;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
-
 
 /*projects*/
 
@@ -138,8 +142,6 @@ footer {
 .name {
   font-weight: 600;
 }
-
-
 
 #project_main {
   margin-left: auto;
@@ -211,9 +213,9 @@ footer {
 }
 
 /*about*/
-#about p {
+/*#about p {
   text-align: justify;
-}
+}*/
 
 .colorpalette {
   padding-top: 25%;
