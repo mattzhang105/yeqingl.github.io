@@ -1,6 +1,6 @@
 body {
 	font-family: 'Open Sans', sans-serif;
-	color: #4c4c4c;
+	color: #606060;
 	font-weight: 300;
   line-height: 150%;
 	font-size: 1.2vw;
@@ -18,8 +18,12 @@ h3 {
 	font-weight: 300;
 }
 
+h4 {
+  font-family: 'Noto Sans', sans-serif;
+}
+
 a {
-  color: #4c4c4c;
+  color: #606060;
 }
 
 a:hover, a:focus {
@@ -117,7 +121,7 @@ footer {
 }
 
 #filter a:focus {
-  color: #4c4c4c;
+  color: #606060;
 }
 
 .thumb {
@@ -197,7 +201,7 @@ footer {
 }
 
 .dropdown-menu>li>a {
-  color: #4c4c4c;
+  color: #606060;
   font-weight: 300;
   line-height: 150%;
   font-size: 1.2vw;
@@ -221,6 +225,15 @@ footer {
   padding-top: 25%;
 }
 
+.not-a-link:hover, .not-a-link:focus {
+  cursor: default;
+  color: #606060;
+}
+
+.list {
+  list-style-type: none;
+  padding-left: 0;
+}
 
 @media screen and (min-width: 1500px) {
   body, .role {

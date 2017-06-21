@@ -1,0 +1,133 @@
+<style type="text/css">
+  #empty {
+    height: 50px;
+  }
+
+  .heading, #current_prj {
+    color: #66bfff;
+  }
+
+  .highlight, #current_prj:hover {
+    color: #2aa6ff;
+  }
+</style>
+
+<script src="js/main.js" type="text/javascript"></script>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" ui-sref="main" style="color: #fff">YL</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" id="current_prj" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" ng-click="gotoElement('top')">Surf Brand Redesign <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <!-- <li><a ui-sref="projects.autelrobotics">Working @ Autel Robotics</a></li> -->
+            <li><a ui-sref="projects.aqua">Aqua Music Player</a></li>
+            <li><a ui-sref="projects.doki">Doki·Doki</a></li>
+            <li><a ui-sref="projects.ambient">Ambient</a></li>
+            <hr>
+            <li><a ui-sref="projects.echo">How-To Helper</a></li>
+            <li><a href="http://depts.washington.edu/korcuban/#/home" target="_blank">Korean Cubans History</a></li>
+            <li><a ui-sref="projects.share">Share Web App</a></li>
+            <li><a ui-sref="projects.infoviz">Seattleites' Travel Trend</a></li>
+            <li><a ui-sref="projects.more">Fun Time</a></li>
+          </ul>
+        </li>
+
+        <li class="anchor"><a ng-click="gotoElement('brand')">BRAND IDENTITY</a></li>
+        <li class="anchor"><a ng-click="gotoElement('web')">WEB REDESIGN</a></li>
+        <li class="anchor"><a ng-click="gotoElement('app')">MOBILE APP</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="project_title">
+  <p>Surf Brand Redesign</p><br />
+  <p class="role">Brand Identity | Visual Communication Design</p>
+</div>
+
+<div class="project_content">
+  <p><img width="100%" src="templates/punch/surf/final.png"></p>
+</div>
+
+<h3 class="heading bg" id="brand">BRAND IDENTITY</h3>
+<div class="project_content">
+  <p>
+    Surf Incubator is a company that helps technology startups grow and develop by providing an affordable and professional environment. I identified Surf’s brand attributes as technological and credible, which came from its target (technology startups) and its missions (being supportive).
+  </p>
+  <p><img width="100%" src="templates/punch/surf/logo_sketch.png"></p>
+  <p><img width="100%" src="templates/punch/surf/logo_iterations.png"></p>
+</div>
+
+<h3 class="heading bg" id="web">WEB REDESIGN</h3>
+<div class="project_content">
+  <p>I redesigned the homepage and room reservation page (above the fold). The design went through three iterations.</p>
+  <p><img width="100%" src="templates/punch/surf/web1.png"></p>
+  <p style="text-align: center;">Iteration 1</p>
+  <p><img width="100%" src="templates/punch/surf/web2.png"></p>
+  <p style="text-align: center;">Iteration 2</p>
+  <p><img width="100%" src="templates/punch/surf/web3.png"></p>
+  <p style="text-align: center;">Iteration 3</p>
+</div>
+
+<h3 class="heading bg">Home PAGE</h3>
+<div class="project_content">
+  <p>
+    The most possible users of a company’s homepage are its potential clients. The goal of visiting the homepage is to get important information about Surf, including what it does, what it looks like, and its service. Based on those information, the user determines whether or not to join Surf. Therefore, I made several changes to make the information delivered more effectively.
+  </p>
+  <p>I made three major changes to the original homepage: </p>
+  <ol class="list">
+    <li>
+      <span class="highlight">Change 1: highlighted “Join” button</span><br />
+      I moved the “Join” button to the very right and changed its background color to distinguish it from other links so that it is very easy to notice, which fulfill one of Surf’s mission: having people join it. Its button-liked look creates a feeling that the register process would be simple and fast.
+    </li><br />
+    <li>
+      <span class="highlight">Change 2: categorized contents</span><br />
+      On the original homepage, all the information was listed in bullet points and is mixed with different types of services Surf can provide. Audience may find the information too much and not be willing to read carefully. Therefore, I divided them into several categories and put the texts together with corresponding images to make the information impressive and easy to read.
+    </li><br />
+    <li>
+      <span class="highlight">Change 3: added membership information</span><br />
+      After organizing the bullet points, there was extra space for me to put information. Since the goal was to let visitors know more about the company, I decided to add the membership information, which I found on the other page
+    </li>
+  </ol>
+  <p><img width="100%" src="templates/punch/surf/web-landing.png"></p>
+</div>
+
+<h3 class="heading bg">Room Reservation Page</h3>
+<div class="project_content">
+  <p>
+    People who want to reserve a room will visit this page. In order to book a page, they need to know different types rooms available,  what they look like and if they meet their requirements.
+  </p>
+  <p>I made two main changes to the page. </p>
+  <ol class="list">
+    <li>
+      <span class="highlight">Change 1: categorized contents</span><br />
+      On the original homepage, all the information was listed in bullet points and is mixed with different types of services Surf can provide. Audience may find the information too much and not be willing to read carefully. Therefore, I divided them into several categories and put the texts together with corresponding images to make the information impressive and easy to read.
+    </li><br />
+    <li>
+      <span class="highlight">Change 2: added membership information</span><br />
+      After organizing the bullet points, there was extra space for me to put information. Since the goal was to let visitors know more about the company, I decided to add the membership information, which I found on the other page.
+    </li>
+  </ol>
+  <p><img width="100%" src="templates/punch/surf/web-sub.png"></p>
+</div>
+
+<h3 class="heading bg" id="app">Mobile App</h3>
+<div class="project_content">
+  <p>
+    I also designed a mobile app for internal use. Employees of Surf’s clients can use the app to manage schedules and make reservations quickly.
+  </p>
+  <p><img width="100%" src="templates/punch/surf/app.png"></p>
+</div>

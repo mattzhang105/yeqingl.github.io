@@ -1,0 +1,109 @@
+<style type="text/css">
+  #empty {
+    height: 50px;
+  }
+
+  .heading, #current_prj {
+    color: #00b7cc;
+  }
+
+  .highlight, #current_prj:hover {
+    color: #00e5ff;
+  }
+</style>
+
+<script src="js/main.js" type="text/javascript"></script>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" ui-sref="main" style="color: #fff">YL</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" id="current_prj" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" ng-click="gotoElement('top')">Share Web App <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <!-- <li><a ui-sref="projects.autelrobotics">Working @ Autel Robotics</a></li> -->
+            <li><a ui-sref="projects.aqua">Aqua Music Player</a></li>
+            <li><a ui-sref="projects.doki">Doki·Doki</a></li>
+            <li><a ui-sref="projects.ambient">Ambient</a></li>
+            <li><a ui-sref="projects.surf">Surf Brand Redesign</a></li>
+            <hr>
+            <li><a ui-sref="projects.echo">How-To Helper</a></li>
+            <li><a href="http://depts.washington.edu/korcuban/#/home" target="_blank">Korean Cubans History</a></li>
+            <li><a ui-sref="projects.infoviz">Seattleites' Travel Trend</a></li>
+            <li><a ui-sref="projects.more">Fun Time</a></li>
+          </ul>
+        </li>
+
+        <li class="anchor"><a ng-click="gotoElement('problem')">PROBLEM</a></li>
+        <li class="anchor"><a ng-click="gotoElement('solution')">SOLUTION</a></li>
+        <li class="anchor"><a ng-click="gotoElement('challenge')">CHALLENGE</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="project_title">
+  <p>Share Web App</p><br />
+  <p class="role">Web Development</p>
+  <p>
+    This is a web application that was created using Google App Engine, python, and Ajax. It updates latest post automatically with no need to refresh the page and only displays posts nearby to enhance efficient usage.
+  </p>
+</div>
+
+<div class="project_content">
+  <div style="text-align: center;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Soy12jQGwE4" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+<h3 class="heading bg" id="problem">PROBLEM</h3>
+<div class="project_content">
+  <p>
+    Imagine you are writing a paper that is due in one hour on your laptop in the library, and suddenly, you realize your laptop has only 10% battery. You look around and find out that you are the only person in the room using a Macbook……
+  </p>
+  <p><img width="100%" src="templates/punch/share/storyboard.jpg"></p>
+  <p>
+    People tend to turn to their friends when they are in trouble even if their friends are not nearby. Although mobile phones can let them contact their friends immediately, their problems might not be able to wait until their friends show up. Therefore, in many cases, they have to turn to strangers, but it is not very effective and efficient for them to ask for help one by one. 
+  </p>
+  <p class="highlight">It would be great if there is an application that is designed for people to get help from strangers easily.</p>
+</div>
+
+<h3 class="heading bg" id="solution">SOLUTION</h3>
+<div class="project_content">
+  <p>
+    We created a web application using Python on Google App Engine. It is a single page web app that allows users to post their requests or have a little chat with people nearby.
+  </p>
+  <ol>
+    <li>
+      Users can connect their Facebook account so that they don’t have to enter their names every time they post.
+    </li>
+    <li>
+      The posts show and vanish automatically upon its duration so that the page won’t be filled with expired posts.
+    </li>
+    <li>
+      Only posts within certain miles are shown to keep the communication effective.
+    </li>
+  </ol>
+  <p><img width="50%" src="templates/punch/share/mockup.png"><img width="50%" src="templates/punch/share/mockup2.png"></p>
+</div>
+
+<h3 class="heading bg" id="challenge">CHALLENGE</h3>
+<div class="project_content">
+  <p>
+    The posts are stored on Google Cloud Datastore. At first, there was a problem to show the latest post. After the user submitted the form and the page refreshed, the latest post didn’t show up and the user had to refresh the page manually again. I double checked the code many times and also consulted TA, and finally we figured that Datastore couldn’t finish updating the entry before the page refreshed. We didn’t want to spend too much class time on this issue so we set a short wait time before the page refreshed after the form was submitted. I wasn’t satisfied with that solution and believed there would be a better way. 
+  </p>
+  <p>
+    In the early stage of the project, I was thinking about using Ajax to make the page update the latest post automatically without refreshing, but I decided to wait until we finished other features. The night after class, I was looking for a better solution for the Datastore problem. I found it worth trying to use Ajax to accomplish these two things the same time. So I spent a couple hours to work on Ajax and made it happen.
+  </p>
+</div>

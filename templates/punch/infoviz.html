@@ -7,11 +7,7 @@
     color: #f9cd7f;
   }
 
-  .highlight {
-    color: #FFA500;
-  }
-
-  #current_prj:hover {
+  .highlight, #current_prj:hover {
     color: #FFA500;
   }
 </style>
@@ -33,13 +29,19 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="dropdown">
+
           <a class="dropdown-toggle" id="current_prj" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" ng-click="gotoElement('top')">Seattleites' Travel Trend <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <!-- <li><a ui-sref="projects.autelrobotics">Working @ Autel Robotics</a></li> -->
             <li><a ui-sref="projects.aqua">Aqua</a></li>
             <li><a ui-sref="projects.doki">Doki·Doki</a></li>
             <li><a ui-sref="projects.ambient">Ambient</a></li>
+            <hr>
             <li><a ui-sref="projects.echo">How-To Helper</a></li>
+            <li><a href="http://depts.washington.edu/korcuban/#/home" target="_blank">Korean Cubans History</a></li>
+            <li><a ui-sref="projects.share">Share Web App</a></li>
+            <li><a ui-sref="projects.more">Fun Time</a></li>
+
           </ul>
         </li>
         <li class="anchor"><a ng-click="gotoElement('problem')">PROBLEM</a></li>
@@ -53,7 +55,7 @@
 
 <div class="project_title">
   <p>Seattleites' Travel Trend</p><br />
-  <p class="role">My Contribution: Problem Defining | Visual Design | Front-End Development</p>
+  <p class="role">My Contribution: Problem Defining | Front-End Development</p>
 </div>
 
 <div class="project_content">
@@ -79,15 +81,15 @@
   </p>
   <p class="highlight">Sheet 1: Brainstorm</p>
   <p>At this stage, we each came up with a few ideas to visualize travel trend.</p>
-  <p><img width="100%" src="templates/projects/infoviz/sketch.png"></p>
+  <p><img width="100%" src="templates/punch/infoviz/sketch.png"></p>
   <p class="highlight">Sheet 2 / 3 / 4: Initial Designs</p>
   <p>Then we generalized three different designs and did analysis to them.</p>
-  <p><img width="100%" src="templates/projects/infoviz/analysis.png"></p>
+  <p><img width="100%" src="templates/punch/infoviz/analysis.png"></p>
   <p class="highlight">Sheet 5: Realization Design</p>
   <p>
     After our discussion, the map visualization was selected. Instead of realizing the design at this stage, we created a paper prototype for testing.
   </p>
-  <p><img width="100%" src="templates/projects/infoviz/paper.jpg"></p>
+  <p><img width="100%" src="templates/punch/infoviz/paper.jpg"></p>
 </div>
 
 <h3 class="heading bg" id="test">TEST & IMPLEMENT</h3>
@@ -103,11 +105,11 @@
   </p>
 </div>
 
-<h3 class="heading bg" id="final">FINAL RESULT</h3>
+<h3 class="heading bg" id="final">FINAL VISUALIZATION</h3>
 <div class="project_content">
   <p>We made some changes according to the findings.</p>
   <p><span class="highlight">Add titles: </span>We added titles to both pages of the visualization.</p>
   <p><span class="highlight">Mitigate occlusion: </span>We removed lines and labels on the circles and allowed the map to zoom in and out to decrease occlusion.</p>
-  <p><img width="100%" src="templates/projects/infoviz/final.png"></p>
-  <p><img width="100%" src="templates/projects/infoviz/show.jpg"></p>
+  <p><img width="100%" src="templates/punch/infoviz/final.png"></p>
+  <p><img width="100%" src="templates/punch/infoviz/show.jpg"></p>
 </div>

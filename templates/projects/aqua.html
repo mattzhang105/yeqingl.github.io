@@ -17,11 +17,6 @@
     margin-top: 0;
   }
 
-  #list {
-    list-style-type: none;
-    padding-left: 0;
-  }
-
   #current_prj:hover {
     color: #09c6c6;
   }
@@ -51,16 +46,23 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+
         <li class="dropdown">
-          <a class="dropdown-toggle" id="current_prj" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" ng-click="gotoElement('top')">Aqua <span class="caret"></span></a>
+          <a class="dropdown-toggle" id="current_prj" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" ng-click="gotoElement('top')">Aqua Music Player <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <!-- <li><a ui-sref="projects.autelrobotics">Working @ Autel Robotics</a></li> -->
             <li><a ui-sref="projects.doki">Doki·Doki</a></li>
             <li><a ui-sref="projects.ambient">Ambient</a></li>
+            <li><a ui-sref="projects.surf">Surf Brand Redesign</a></li>
+            <hr>
             <li><a ui-sref="projects.echo">How-To Helper</a></li>
+            <li><a href="http://depts.washington.edu/korcuban/#/home" target="_blank">Korean Cubans History</a></li>
+            <li><a ui-sref="projects.share">Share Web App</a></li>
             <li><a ui-sref="projects.infoviz">Seattleites' Travel Trend</a></li>
+            <li><a ui-sref="projects.more">Fun Time</a></li>
           </ul>
         </li>
+
         <li class="anchor"><a ng-click="gotoElement('background')">BACKGROUND</a></li>
         <li class="anchor"><a ng-click="gotoElement('ideation')">IDEATION</a></li>
         <li class="anchor"><a ng-click="gotoElement('sketch')">SKETCHES</a></li>
@@ -104,7 +106,7 @@
   <p>
     My design focuses on solving two problems: how to play the right songs and how to adapt to the changes to the user’s taste over time. I figured that the solution should do the following things:
   </p>
-  <ol id="list">
+  <ol class="list">
     <li>
       <span class="highlight">Play the right song</span><br />
       New users need to complete a quiz about their listening habits. As they listen to more music, the music player will play music that match their tastes.

@@ -29,11 +29,6 @@ projects.config(function($stateProvider, $urlRouterProvider, $locationProvider) 
       templateUrl: 'templates/projects/autelrobotics.html'
     })
 
-    .state('projects.infoviz', {
-      url:'/infoviz',
-      templateUrl: 'templates/projects/infoviz.html'
-    })
-
     .state('projects.doki', {
       url:'/doki',
       templateUrl: 'templates/projects/doki.html'
@@ -49,9 +44,31 @@ projects.config(function($stateProvider, $urlRouterProvider, $locationProvider) 
       templateUrl: 'templates/projects/ambient.html'
     })
 
+    .state('projects.surf', {
+      url:'/surf',
+      templateUrl: 'templates/projects/surf.html'
+    })
+
+
+
     .state('projects.echo', {
       url:'/echo',
-      templateUrl: 'templates/projects/echo.html'
+      templateUrl: 'templates/punch/echo.html'
+    })
+
+    .state('projects.share', {
+      url:'/share',
+      templateUrl: 'templates/punch/share.html'
+    })
+
+    .state('projects.infoviz', {
+      url:'/infoviz',
+      templateUrl: 'templates/punch/infoviz.html'
+    })
+
+    .state('projects.more', {
+      url:'/more',
+      templateUrl: 'templates/punch/more.html'
     })
 });
 

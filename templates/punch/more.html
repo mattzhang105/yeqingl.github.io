@@ -4,15 +4,11 @@
   }
 
   .heading, #current_prj {
-    color: #ea5c3c;
+    color: #bc66ff;
   }
 
-  .highlight {
-    color: #ff4d21;
-  }
-
-  #current_prj:hover {
-    color: #ff4d21;
+  .highlight, #current_prj:hover {
+    color: #9f23ff;
   }
 </style>
 
@@ -34,8 +30,9 @@
       <ul class="nav navbar-nav">
 
         <li class="dropdown">
-          <a class="dropdown-toggle" id="current_prj" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" ng-click="gotoElement('top')">Working @ Autel Robotics <span class="caret"></span></a>
+          <a class="dropdown-toggle" id="current_prj" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" ng-click="gotoElement('top')">Fun Time <span class="caret"></span></a>
           <ul class="dropdown-menu">
+            <!-- <li><a ui-sref="projects.autelrobotics">Working @ Autel Robotics</a></li> -->
             <li><a ui-sref="projects.aqua">Aqua Music Player</a></li>
             <li><a ui-sref="projects.doki">Doki·Doki</a></li>
             <li><a ui-sref="projects.ambient">Ambient</a></li>
@@ -45,20 +42,31 @@
             <li><a href="http://depts.washington.edu/korcuban/#/home" target="_blank">Korean Cubans History</a></li>
             <li><a ui-sref="projects.share">Share Web App</a></li>
             <li><a ui-sref="projects.infoviz">Seattleites' Travel Trend</a></li>
-            <li><a ui-sref="projects.more">Fun Time</a></li>
           </ul>
         </li>
 
-        <!-- <li class="anchor"><a ng-click="gotoElement('problem')">PROBLEM</a></li> -->
-        <!-- <li class="anchor"><a ng-click="gotoElement('design')">DESIGN</a></li> -->
-        <!-- <li class="anchor"><a ng-click="gotoElement('test')">TEST & IMPLEMENT</a></li> -->
-        <!-- <li class="anchor"><a ng-click="gotoElement('final')">FINAL RESULT</a></li> -->
+        <li class="anchor"><a ng-click="gotoElement('COMIC')">COMIC</a></li>
+        <li class="anchor"><a ng-click="gotoElement('ILLUSTRATIONS')">ILLUSTRATIONS</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <div class="project_title">
-  <p>Working @ Autel Robotics (NDA)</p><br />
-  <p class="role">UI/UX Designer | Wireframe | Prototype | Usability Testing | UI Design</p>
+  <p class="role">Sketching and illustration skills are very important to a designer, so I often do some pratice when I have time.</p>
+</div>
+
+<h3 class="heading" id="COMIC">COMIC - Super Memory</h3>
+<div class="project_content">
+  <p><img width="100%" src="templates/punch/more/p1.jpg"></p>
+  <p><img width="100%" src="templates/punch/more/p2.jpg"></p>
+  <p><img width="100%" src="templates/punch/more/p3.jpg"></p>
+  <p><img width="100%" src="templates/punch/more/p4.jpg"></p>
+</div>
+
+<h3 class="heading" id="ILLUSTRATIONS">ILLUSTRATIONS</h3>
+<div class="project_content">
+  <p><img width="50%" src="templates/punch/more/me.png"><img width="50%" src="templates/punch/more/a.jpg"></p>
+  <p><img width="50%" src="templates/punch/more/b.jpg"><img width="50%" src="templates/punch/more/c.jpg"></p>
+  <p><img width="50%" src="templates/punch/more/d.jpg"></p>
 </div>

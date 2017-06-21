@@ -7,11 +7,7 @@
     color: #ef7777;
   }
 
-  .highlight {
-    color: #F24A4A;
-  }
-
-  #current_prj:hover {
+  .highlight, #current_prj:hover {
     color: #F24A4A;
   }
 </style>
@@ -32,18 +28,25 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+
         <li class="dropdown">
           <a class="dropdown-toggle" id="current_prj" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" ng-click="gotoElement('top')">Doki·Doki <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <!-- <li><a ui-sref="projects.autelrobotics">Working @ Autel Robotics</a></li> -->
-            <li><a ui-sref="projects.aqua">Aqua</a></li>
+            <li><a ui-sref="projects.aqua">Aqua Music Player</a></li>
             <li><a ui-sref="projects.ambient">Ambient</a></li>
+            <li><a ui-sref="projects.surf">Surf Brand Redesign</a></li>
+            <hr>
             <li><a ui-sref="projects.echo">How-To Helper</a></li>
+            <li><a href="http://depts.washington.edu/korcuban/#/home" target="_blank">Korean Cubans History</a></li>
+            <li><a ui-sref="projects.share">Share Web App</a></li>
             <li><a ui-sref="projects.infoviz">Seattleites' Travel Trend</a></li>
+            <li><a ui-sref="projects.more">Fun Time</a></li>
           </ul>
         </li>
+
         <li class="anchor"><a ng-click="gotoElement('challenge')">CHALLENGE</a></li>
-        <li class="anchor"><a ng-click="gotoElement('solution')">OUR SOLUTION</a></li>
+        <li class="anchor"><a ng-click="gotoElement('solution')">SOLUTION</a></li>
         <li class="anchor"><a ng-click="gotoElement('initial')">INITIAL RESEARCH</a></li>
         <li class="anchor"><a ng-click="gotoElement('research')">USER RESEARCH</a></li>
         <li class="anchor"><a ng-click="gotoElement('ideation')">IDEATION</a></li>
@@ -62,7 +65,7 @@
 <h3 class="heading bg" id="challenge">CHALLENGE</h3>
 <div class="project_content">
   <p>Our group were given a challenge to design a heart health monitor that can</p>
-  <ol id="list">
+  <ol>
     <li>
       Measure and track pulse dynamics and other physiological states
     </li>
