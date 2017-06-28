@@ -35,6 +35,10 @@ a:hover {
   color: #ff7328;
 }
 
+a:visited {
+  color: #606060;
+}
+
 footer {
   margin-top: 40px;
   font-size: 1.1vw;
