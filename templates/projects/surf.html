@@ -13,6 +13,7 @@
 </style>
 
 <script src="js/main.js" type="text/javascript"></script>
+<script src="js/navi.js" type="text/javascript"></script>
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
@@ -31,19 +32,7 @@
 
         <li class="dropdown">
           <a class="dropdown-toggle" id="current_prj" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" ng-click="gotoElement('top')">Surf Brand Redesign <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <!-- <li><a ui-sref="projects.autelrobotics">Working @ Autel Robotics</a></li> -->
-            <li><a href="https://drive.google.com/file/d/0B93V9lskuMwDd2xSeGRWbUcyNlk/view?usp=sharing" target="_blank">WA Miles (Capstone Project)</a></li>
-            <li><a ui-sref="projects.aqua">Aqua Music Player</a></li>
-            <li><a ui-sref="projects.doki">Doki·Doki</a></li>
-            <li><a ui-sref="projects.ambient">Ambient</a></li>
-            <hr>
-            <li><a ui-sref="projects.echo">How-To Helper</a></li>
-            <li><a href="http://depts.washington.edu/korcuban/#/home" target="_blank">Korean Cubans History</a></li>
-            <li><a ui-sref="projects.share">Share Web App</a></li>
-            <li><a ui-sref="projects.infoviz">Seattleites' Travel Trend</a></li>
-            <li><a ui-sref="projects.more">Fun Time</a></li>
-          </ul>
+          <ul class="dropdown-menu" id="navMenu"></ul>
         </li>
 
         <li class="anchor"><a ng-click="gotoElement('brand')">BRAND IDENTITY</a></li>
