@@ -3,6 +3,7 @@
 '<li><a href="https://drive.google.com/file/d/0B93V9lskuMwDd2xSeGRWbUcyNlk/view?usp=sharing" target="_blank">WA Miles (Capstone Project)</a></li>'+
 '<li><a ui-sref="projects.aqua">Aqua Music Player</a></li>'+
 '<li><a ui-sref="projects.ambient">Ambient</a></li>'+
+'<li><a ui-sref="projects.doki">Doki·Doki</a></li>'+
 '<li><a ui-sref="projects.surf">Surf Brand Redesign</a></li>'+
 '<hr>'+
 '<li><a ui-sref="projects.echo">How-To Helper</a></li>'+
